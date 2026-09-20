@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#072167">
+    <meta name="theme-color" content="#C97B5A">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>Agrisense - Dashboard Agro-Spatial</title>
+    <title>AGRISCIENCE - Dashboard Agro-Spatial</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
@@ -118,12 +118,12 @@
             align-items: center;
             justify-content: center;
             border-radius: 14px;
-            color: #072167;
+            color: #C97B5A;
             transition: all 0.4s ease;
         }
 
         .zone-btn-card:hover .zone-card-icon {
-            background: linear-gradient(135deg, #072167, #C9A227);
+            background: linear-gradient(135deg, #C97B5A, #C9A227);
             color: #ffffff;
             transform: scale(1.1);
         }
@@ -138,7 +138,7 @@
         }
 
         .zone-btn-card:hover .zone-name {
-            color: #072167;
+            color: #C97B5A;
         }
 
         .zone-btn-card .zone-badge {
@@ -148,7 +148,7 @@
             font-size: 8px;
             font-weight: 800;
             background: rgba(201, 123, 90, 0.06);
-            color: #072167;
+            color: #C97B5A;
             padding: 3px 8px;
             border-radius: 8px;
             text-transform: uppercase;
@@ -187,7 +187,7 @@
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
             transform: scale(0.9);
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            border-top: 8px solid #072167;
+            border-top: 8px solid #C97B5A;
         }
 
         #zone-popup-overlay.active .zone-popup-content {
@@ -213,12 +213,12 @@
 
         .close-popup:hover {
             background: #e5e7eb;
-            color: #072167;
+            color: #C97B5A;
             transform: rotate(90deg);
         }
 
         .popup-title {
-            color: #072167;
+            color: #C97B5A;
             font-family: 'Orbitron', sans-serif;
             font-size: 20px;
             margin-bottom: 20px;
@@ -270,7 +270,7 @@
         .step-number {
             width: 24px;
             height: 24px;
-            background: #072167;
+            background: #C97B5A;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -322,9 +322,9 @@
             <button class="sidebar-toggle-btn"
                 onclick="document.querySelector('.dashboard-container').classList.toggle('sidebar-collapsed'); document.querySelector('.dashboard-container').classList.toggle('sidebar-open')"
                 title="Toggle Sidebar"></button>
-            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">sense</span></div>
+            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">Science</span></div>
             <div class="nav-item active" data-tooltip="Dashboard" data-i18n="nav_dashboard"><span
-                    class="nav-icon">??</span> <span class="nav-text">Dashboard</span></div>
+                    class="nav-icon">üè†</span> <span class="nav-text">Dashboard</span></div>
             <div class="nav-item" id="nav-plan" onclick="window.location.href='plan_parfait_arganier.html'"
                 data-tooltip="Plan Arganier" data-i18n="nav_plan"><span class="nav-icon"><img
                         src="../images/arganier.png" style="width:20px; height:20px; vertical-align:middle;"></span>
@@ -332,19 +332,19 @@
                     Arganier</span>
             </div>
             <div class="nav-item" id="nav-today" onclick="window.location.href='plan_parfait_arganier.html?view=today'"
-                data-tooltip="Aujourd'hui" data-i18n="nav_today"><span class="nav-icon">??</span> <span
+                data-tooltip="Aujourd'hui" data-i18n="nav_today"><span class="nav-icon">üìÖ</span> <span
                     class="nav-text">Aujourd'hui</span>
             </div>
             <div class="nav-item" onclick="window.location.href='fournisseurs.html'" data-tooltip="Fournisseurs"
-                data-i18n="nav_suppliers"><span class="nav-icon">??</span> <span class="nav-text">Fournisseurs</span>
+                data-i18n="nav_suppliers"><span class="nav-icon">üöõ</span> <span class="nav-text">Fournisseurs</span>
             </div>
             <div class="nav-item" onclick="window.location.href='analyse_financiere.html'"
-                data-tooltip="Analyse FinanciËre" data-i18n="nav_finance"><span class="nav-icon">??</span> <span
-                    class="nav-text">Analyse FinanciËre</span></div>
+                data-tooltip="Analyse Financi√®re" data-i18n="nav_finance"><span class="nav-icon">üìä</span> <span
+                    class="nav-text">Analyse Financi√®re</span></div>
 
             <div class="nav-divider"></div>
             <div class="nav-item back-btn" onclick="window.location.href='../map/index.html'"
-                data-tooltip="Retour Carte" data-i18n="nav_back_map">MAP <span class="nav-icon">???</span> <span
+                data-tooltip="Retour Carte" data-i18n="nav_back_map">MAP <span class="nav-icon">üó∫Ô∏è</span> <span
                     class="nav-text">Retour Carte</span>
             </div>
 
@@ -352,13 +352,13 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <h1 class="main-title" data-i18n="dash_main_title">?? TABLEAU DE BORD AGRO-SPATIAL</h1>
+            <h1 class="main-title" data-i18n="dash_main_title">üåç TABLEAU DE BORD AGRO-SPATIAL</h1>
 
             <!-- Active Crop Indicator Banner -->
-            <div id="active-crop-indicator" class="active-crop-banner" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(201, 123, 90, 0.08); border: 1px solid rgba(201, 162, 39, 0.35); padding: 8px 18px; border-radius: 25px; margin-top: 5px; margin-bottom: 25px; font-size: 14px; font-weight: 600; color: #072167; box-shadow: 0 4px 15px rgba(201, 123, 90, 0.05);">
-                <span id="active-crop-icon" style="font-size: 1.3rem;">??</span>
-                <span><span data-i18n="crop_active_label">Culture analysÈe :</span> <strong id="active-crop-name" style="color: #C9A227; font-size: 15px;">Arganier</strong></span>
-                <span style="background: #072167; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
+            <div id="active-crop-indicator" class="active-crop-banner" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(201, 123, 90, 0.08); border: 1px solid rgba(201, 162, 39, 0.35); padding: 8px 18px; border-radius: 25px; margin-top: 5px; margin-bottom: 25px; font-size: 14px; font-weight: 600; color: #C97B5A; box-shadow: 0 4px 15px rgba(201, 123, 90, 0.05);">
+                <span id="active-crop-icon" style="font-size: 1.3rem;">üå≥</span>
+                <span><span data-i18n="crop_active_label">Culture analys√©e :</span> <strong id="active-crop-name" style="color: #C9A227; font-size: 15px;">Arganier</strong></span>
+                <span style="background: #C97B5A; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
             </div>
 
             <!-- Horizontal Layout for Score & Reference -->
@@ -367,14 +367,14 @@
 
                 <!-- Global Advancement Score Card -->
                 <div class="card"
-                    style="border-top: 5px solid #072167; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
+                    style="border-top: 5px solid #C97B5A; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
                     <h3 data-i18n="dash_matching_score"
-                        style="margin: 0 0 10px 0; color: #072167; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px;">
-                        ?? Score díavancement
+                        style="margin: 0 0 10px 0; color: #C97B5A; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px;">
+                        üéØ Score d‚Äôavancement
                     </h3>
                     <p id="matching-score-desc" data-i18n="dash_matching_desc"
                         style="margin: 0 0 30px 0; color: #555; font-size: 14px;">
-                        Votre parcelle progresse vers les conditions agricoles ciblÈes pour votre culture.
+                        Votre parcelle progresse vers les conditions agricoles cibl√©es pour votre culture.
                     </p>
 
                     <!-- Circular Score -->
@@ -389,34 +389,34 @@
                             <defs>
                                 <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                                     <stop offset="0%" stop-color="#C9A227" />
-                                    <stop offset="100%" stop-color="#072167" />
+                                    <stop offset="100%" stop-color="#C97B5A" />
                                 </linearGradient>
                             </defs>
                         </svg>
                         <div
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                             <span id="matching-score-text"
-                                style="font-size: 42px; font-weight: 800; color: #072167; font-family: 'Orbitron', sans-serif;">67%</span>
+                                style="font-size: 42px; font-weight: 800; color: #C97B5A; font-family: 'Orbitron', sans-serif;">67%</span>
                         </div>
                     </div>
 
                     <div
-                        style="background: rgba(201,123,90,0.08); padding: 8px 20px; border-radius: 20px; color: #072167; font-weight: 700; font-size: 12px; text-transform: uppercase; border: 1px solid rgba(201,123,90,0.2);"
+                        style="background: rgba(201,123,90,0.08); padding: 8px 20px; border-radius: 20px; color: #C97B5A; font-weight: 700; font-size: 12px; text-transform: uppercase; border: 1px solid rgba(201,123,90,0.2);"
                         data-i18n="dash_certified">
-                        ? Objectif agricole ciblÈ
+                        ‚úì Objectif agricole cibl√©
                     </div>
                 </div>
 
                 <!-- Reference Card -->
                 <div class="card ref-card"
-                    style="border-top: 5px solid #072167 !important; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 40px 20px; display: flex; flex-direction: column; justify-content: center;">
+                    style="border-top: 5px solid #C97B5A !important; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 40px 20px; display: flex; flex-direction: column; justify-content: center;">
                     <h3
-                        style="margin: 0 0 20px 0; color: #072167; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px; border-bottom: none;">
-                        ?? RÈfÈrence Projet</h3>
+                        style="margin: 0 0 20px 0; color: #C97B5A; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px; border-bottom: none;">
+                        üìã R√©f√©rence Projet</h3>
                     <div class="ref-grid"
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
                         <div class="ref-item">
-                            <span class="ref-label" data-i18n="dash_ref_id_label">RÈf:</span>
+                            <span class="ref-label" data-i18n="dash_ref_id_label">R√©f:</span>
                             <span id="ref-id" class="ref-value">TN/DS/2024/789654/P01/V4.2-FR-SUP</span>
                         </div>
                         <div class="ref-item">
@@ -426,47 +426,47 @@
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_culture">Culture:</span>
-                            <span id="ref-culture" class="ref-value">Solanum tuberosum L. cv. 'DÈsirÈe'</span>
+                            <span id="ref-culture" class="ref-value">Solanum tuberosum L. cv. 'D√©sir√©e'</span>
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_date">Date Simulation:</span>
                             <span id="ref-date" class="ref-value">30 mars 2026</span>
                         </div>
                         <div class="ref-item">
-                            <span class="ref-label" data-i18n="dash_ref_ia">ModËle IA:</span>
-                            <span id="ref-ia" class="ref-value">Agrisense-DeepSoil v5.3</span>
+                            <span class="ref-label" data-i18n="dash_ref_ia">Mod√®le IA:</span>
+                            <span id="ref-ia" class="ref-value">AGRISCIENCE-DeepSoil v5.3</span>
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_module">Module:</span>
-                            <span id="ref-module" class="ref-value">Agrisense v2.1</span>
+                            <span id="ref-module" class="ref-value">agriscience v2.1</span>
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_area">Superficie:</span>
-                            <span id="display-area" class="ref-value" style="color: #072167; font-weight: 700;">2
+                            <span id="display-area" class="ref-value" style="color: #C97B5A; font-weight: 700;">2
                                 ht</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Section DÈcoupage du terrain -->
+            <!-- Section D√©coupage du terrain -->
             <section id="terrain-split-section" class="section" style="padding: 40px 0;">
                 <div class="royal-frame">
                     <div style="text-align: center; margin-bottom: 40px;">
                         <h2 data-i18n="zone_split_title"
-                            style="color: #072167; display: inline-block; font-family: 'Orbitron', sans-serif; font-size: 26px; position: relative; letter-spacing: 2px; text-transform: uppercase;">
-                            DÈcoupage du terrain
+                            style="color: #C97B5A; display: inline-block; font-family: 'Orbitron', sans-serif; font-size: 26px; position: relative; letter-spacing: 2px; text-transform: uppercase;">
+                            D√©coupage du terrain
                             <div
-                                style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: linear-gradient(90deg, #072167, #C9A227, #072167); border-radius: 2px;">
+                                style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: linear-gradient(90deg, #C97B5A, #C9A227, #C97B5A); border-radius: 2px;">
                             </div>
                         </h2>
                         <p style="color: #666; margin-top: 25px; font-size: 15px; max-width: 600px; margin-left: auto; margin-right: auto;"
-                            data-i18n="dash_zoning_desc">Division intelligente de la parcelle en zones homogËnes basÈe
-                            sur les donnÈes multi-spectrales pour une prÈcision agronomique absolue.</p>
+                            data-i18n="dash_zoning_desc">Division intelligente de la parcelle en zones homog√®nes bas√©e
+                            sur les donn√©es multi-spectrales pour une pr√©cision agronomique absolue.</p>
                     </div>
 
                     <div class="zones-buttons-grid" id="zones-buttons-container">
-                        <!-- GÈnÈrÈ par JS -->
+                        <!-- G√©n√©r√© par JS -->
                     </div>
                 </div>
             </section>
@@ -474,10 +474,10 @@
             <!-- Popups Detail Overlay -->
             <div id="zone-popup-overlay" onclick="if(event.target === this) closeZonePopup()">
                 <div class="zone-popup-content">
-                    <span class="close-popup" onclick="closeZonePopup()">?</span>
+                    <span class="close-popup" onclick="closeZonePopup()">‚úï</span>
                     <h3 id="popup-zone-name" class="popup-title"></h3>
                     <div class="start-point-box">
-                        <span class="start-point-label" data-i18n="zone_point_depart">Point de dÈpart</span>
+                        <span class="start-point-label" data-i18n="zone_point_depart">Point de d√©part</span>
                         <p id="popup-zone-desc" class="popup-desc" style="margin:0;"></p>
                     </div>
                 </div>
@@ -491,20 +491,20 @@
             <section id="overview" class="section">
 
                 <!-- Quick Access to Plan Fruits de l'arganier -->
-                <div class="card" style="background: #FFFFFF; border: 2px solid #072167; text-align: center;">
-                    <h3 style="color: #072167; margin-bottom: 15px;"><img src="../images/arganier.png"
+                <div class="card" style="background: #FFFFFF; border: 2px solid #C46A3A; text-align: center;">
+                    <h3 style="color: #C46A3A; margin-bottom: 15px;"><img src="../images/arganier.png"
                             style="width:24px; height:24px; vertical-align:middle; margin-right:8px;"><span
                             data-i18n="plan_hero_title">PLAN PARFAIT
                             FRUITS DE L'ARGANIER</span></h3>
-                    <p style="margin-bottom: 20px; color: #000000; font-size: 14px;" data-i18n="dash_plan_desc">AccÈdez
+                    <p style="margin-bottom: 20px; color: #000000; font-size: 14px;" data-i18n="dash_plan_desc">Acc√©dez
                         au plan de
-                        culture complet et optimisÈ par IA pour maximiser votre production de arganier.</p>
+                        culture complet et optimis√© par IA pour maximiser votre production de arganier.</p>
                     <button id="quick-access-btn"
-                        style="padding: 12px 30px; background: #072167; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; transition: 0.3s; box-shadow: 0 4px 15px rgba(196, 106, 58, 0.3); font-size: 14px;"
+                        style="padding: 12px 30px; background: #C46A3A; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; transition: 0.3s; box-shadow: 0 4px 15px rgba(196, 106, 58, 0.3); font-size: 14px;"
                         onmouseover="this.style.background='#a1562e'; this.style.transform='scale(1.05)'"
-                        onmouseout="this.style.background='#072167'; this.style.transform='scale(1)'"
+                        onmouseout="this.style.background='#C46A3A'; this.style.transform='scale(1)'"
                         data-i18n="dash_view_plan">
-                        ?? VOIR LE PLAN COMPLET
+                        üìã VOIR LE PLAN COMPLET
                     </button>
                 </div>
 
@@ -512,12 +512,12 @@
 
                 <!-- Key Metrics -->
                 <div class="card">
-                    <h3 data-i18n="dash_kpi_title">?? Indicateurs ClÈs de Performance</h3>
+                    <h3 data-i18n="dash_kpi_title">üìà Indicateurs Cl√©s de Performance</h3>
                     <div class="data-grid">
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_kpi_health">SantÈ Culture</span>
+                            <span class="metric-label" data-i18n="dash_kpi_health">Sant√© Culture</span>
                             <span class="metric-value warning">68/100</span>
-                            <span class="metric-note" data-i18n="dash_kpi_health_note">? 12% vs S-1</span>
+                            <span class="metric-note" data-i18n="dash_kpi_health_note">‚Üë 12% vs S-1</span>
                         </div>
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_kpi_vigueur">Vigueur (NDVI)</span>
@@ -530,7 +530,7 @@
                             <span class="metric-note" data-i18n="dash_kpi_stress_note">Seuil critique: 200</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_kpi_regen">Potentiel RÈgen.</span>
+                            <span class="metric-label" data-i18n="dash_kpi_regen">Potentiel R√©gen.</span>
                             <span class="metric-value success">82%</span>
                             <span class="metric-note" data-i18n="dash_kpi_regen_note">Module terracloud Actif</span>
                         </div>
@@ -539,20 +539,20 @@
 
                 <!-- Soil Analysis -->
                 <div class="card">
-                    <h3 data-i18n="dash_soil_title">?? …tat du Sol</h3>
+                    <h3 data-i18n="dash_soil_title">üåç √âtat du Sol</h3>
                     <div class="data-grid">
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_soil_mo">MatiËre Organique</span>
+                            <span class="metric-label" data-i18n="dash_soil_mo">Mati√®re Organique</span>
                             <span class="metric-value alert">0.82%</span>
                             <span class="metric-note" data-i18n="dash_soil_mo_note">Critique (<2.5%)< /span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_soil_density">DensitÈ</span>
-                            <span class="metric-value alert">1.52 g/cm≥</span>
+                            <span class="metric-label" data-i18n="dash_soil_density">Densit√©</span>
+                            <span class="metric-value alert">1.52 g/cm¬≥</span>
                             <span class="metric-note" data-i18n="dash_soil_density_note">Compactage</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_soil_porosity">PorositÈ</span>
+                            <span class="metric-label" data-i18n="dash_soil_porosity">Porosit√©</span>
                             <span class="metric-value warning">38%</span>
                             <span class="metric-note" data-i18n="dash_soil_porosity_note">Cible: 45-50%</span>
                         </div>
@@ -566,10 +566,10 @@
 
                 <!-- Production Forecast -->
                 <div class="card">
-                    <h3 data-i18n="dash_forecast_title">?? PrÈvisions Production</h3>
+                    <h3 data-i18n="dash_forecast_title">üéØ Pr√©visions Production</h3>
                     <div class="scenario-comparison">
                         <div class="scenario-card base">
-                            <h4 data-i18n="dash_forecast_current">ScÈnario Actuel</h4>
+                            <h4 data-i18n="dash_forecast_current">Sc√©nario Actuel</h4>
                             <div class="scenario-stats">
                                 <div class="stat">
                                     <span class="stat-label" data-i18n="dash_forecast_yield">Rendement</span>
@@ -604,11 +604,11 @@
 
                 <div class="detail-grid">
                     <div class="card">
-                        <h3 data-i18n="dash_thermal_hydro_title">??? Thermique & Hydrique</h3>
+                        <h3 data-i18n="dash_thermal_hydro_title">üå°Ô∏è Thermique & Hydrique</h3>
                         <div class="data-grid">
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_metric_stress_zone">Zone A1 (Stress)</span>
-                                <span class="metric-value alert">35.8∞C</span>
+                                <span class="metric-value alert">35.8¬∞C</span>
                             </div>
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_metric_wue">Indice WUE</span>
@@ -616,14 +616,14 @@
                                 <span class="metric-note" data-i18n="dash_metric_wue_note">Efficience eau</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-label" data-i18n="dash_metric_et">…vapotranspir. (ET)</span>
+                                <span class="metric-label" data-i18n="dash_metric_et">√âvapotranspir. (ET)</span>
                                 <span class="metric-value">4.2 mm/j</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3 data-i18n="dash_veg_vitality_title">?? VitalitÈ VÈgÈtale</h3>
+                        <h3 data-i18n="dash_veg_vitality_title">üå± Vitalit√© V√©g√©tale</h3>
                         <div class="data-grid">
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_metric_lue">LUE Index</span>
@@ -632,7 +632,7 @@
                             </div>
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_metric_chloro">Chlorophylle</span>
-                                <span class="metric-value">42.5 µg/cm≤</span>
+                                <span class="metric-value">42.5 ¬µg/cm¬≤</span>
                             </div>
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_metric_lai">Surface Foliaire</span>
@@ -643,7 +643,7 @@
                 </div>
 
                 <div class="card">
-                    <h3 data-i18n="dash_microbio_title">?? Microbiologie & Vie du Sol</h3>
+                    <h3 data-i18n="dash_microbio_title">üî¨ Microbiologie & Vie du Sol</h3>
                     <div class="data-grid">
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_micro_biomass">Biomasse Microbienne</span>
@@ -651,39 +651,39 @@
                             <span class="metric-note" data-i18n="dash_micro_target">Cible: >350</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_enzymatic_activity">ActivitÈ Enzymatique</span>
-                            <span class="metric-value warning">12.4 µmol/g/h</span>
+                            <span class="metric-label" data-i18n="dash_enzymatic_activity">Activit√© Enzymatique</span>
+                            <span class="metric-value warning">12.4 ¬µmol/g/h</span>
                         </div>
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_fungi_bact_ratio">Ratio Fongi/Bact.</span>
                             <span class="metric-value">0.18</span>
-                            <span class="metric-note" data-i18n="dash_fungi_note">DÈsÈquilibre fongique</span>
+                            <span class="metric-note" data-i18n="dash_fungi_note">D√©s√©quilibre fongique</span>
                         </div>
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_basal_respiration">Respiration (Basale)</span>
-                            <span class="metric-value">1.2 mg CO2/kg/j</span>
+                            <span class="metric-value">1.2 mg CO‚ÇÇ/kg/j</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3 data-i18n="dash_radar_soil_title">?? Radar Sol & PÈnÈtromÈtrie</h3>
+                    <h3 data-i18n="dash_radar_soil_title">üì° Radar Sol & P√©n√©trom√©trie</h3>
                     <div class="data-grid">
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_moisture_depth">HumiditÈ 0-60cm</span>
+                            <span class="metric-label" data-i18n="dash_moisture_depth">Humidit√© 0-60cm</span>
                             <span class="metric-value info">22.4%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_wilting_point">Point de FlÈtrissement</span>
+                            <span class="metric-label" data-i18n="dash_wilting_point">Point de Fl√©trissement</span>
                             <span class="metric-value">12.8%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_soil_resistance">RÈsistance (40cm)</span>
+                            <span class="metric-label" data-i18n="dash_soil_resistance">R√©sistance (40cm)</span>
                             <span class="metric-value alert">3.2 MPa</span>
                             <span class="metric-note" data-i18n="dash_soil_resistance_note">Blocage racinaire</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_air_porosity">PorositÈ Air</span>
+                            <span class="metric-label" data-i18n="dash_air_porosity">Porosit√© Air</span>
                             <span class="metric-value warning">8.4%</span>
                         </div>
                     </div>
@@ -692,28 +692,28 @@
 
             <!-- Agronomie Section -->
             <section id="agronomie" class="section">
-                <h2 data-i18n="dash_agro_protocols_title">?? PROTOCOLES AGRONOMIQUES R…G…N…RATIFS</h2>
+                <h2 data-i18n="dash_agro_protocols_title">üåæ PROTOCOLES AGRONOMIQUES R√âG√âN√âRATIFS</h2>
                 <div class="detail-grid">
                     <div class="card zone-card critical">
-                        <h3 data-i18n="dash_emergency_plan_title">?? Plan d'Action d'Urgence (Zone 1)</h3>
+                        <h3 data-i18n="dash_emergency_plan_title">üèÅ Plan d'Action d'Urgence (Zone 1)</h3>
                         <ol style="font-size: 12px; line-height: 1.8;">
-                            <li data-i18n="dash_ep_step1"><strong>DÈcompactage mÈcanique :</strong> Sous-solage 55cm
+                            <li data-i18n="dash_ep_step1"><strong>D√©compactage m√©canique :</strong> Sous-solage 55cm
                                 (Dents vibrantes)</li>
                             <li data-i18n="dash_ep_step2"><strong>Amendement organique :</strong> 35 t/ha Compost de
-                                fumier normÈ</li>
+                                fumier norm√©</li>
                             <li data-i18n="dash_ep_step3"><strong>Cocktail Biologique :</strong> Mycorhizes (Glomus) +
                                 Rhizobiums</li>
                             <li data-i18n="dash_ep_step4"><strong>Correction pH :</strong> 1.5 t/ha de Carbonate de
                                 Calcium</li>
                         </ol>
                         <div class="cost-roi">
-                            <span data-i18n="dash_ep_invest">Investissement: Ä2,450</span>
+                            <span data-i18n="dash_ep_invest">Investissement: ‚Ç¨2,450</span>
                             <span class="success" data-i18n="dash_ep_roi">ROI Attendu: 380%</span>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3 data-i18n="dash_pathogen_risk_title">?? Gestion des Risques PathogËnes</h3>
+                        <h3 data-i18n="dash_pathogen_risk_title">ü¶† Gestion des Risques Pathog√®nes</h3>
                         <div class="data-grid">
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_mildew_risk">Risque Mildiou</span>
@@ -721,33 +721,33 @@
                             </div>
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_rhizo_alert">Alerte Rhizoctone</span>
-                                <span class="metric-value alert" data-i18n="dash_risk_high">…levÈe</span>
+                                <span class="metric-value alert" data-i18n="dash_risk_high">√âlev√©e</span>
                             </div>
                             <div class="metric">
-                                <span class="metric-label" data-i18n="dash_hsi_index">Indice SantÈ (HSI)</span>
+                                <span class="metric-label" data-i18n="dash_hsi_index">Indice Sant√© (HSI)</span>
                                 <span class="metric-value">62/100</span>
                             </div>
                         </div>
                         <div class="alert-box info" style="margin-top: 10px; font-size: 11px;"
                             data-i18n="dash_pathogen_note">
-                            Traitement prÈventif Bio-fongicide recommandÈ sous 48h.
+                            Traitement pr√©ventif Bio-fongicide recommand√© sous 48h.
                         </div>
                     </div>
                 </div>
 
                 <div class="card">
-                    <h3 data-i18n="dash_vri_title">?? VRI (Irrigation ‡ Taux Variable)</h3>
+                    <h3 data-i18n="dash_vri_title">üíß VRI (Irrigation √† Taux Variable)</h3>
                     <div class="irrigation-summary">
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_net_need">Besoin Net</span>
-                            <span class="metric-value">22 m≥/ha/j</span>
+                            <span class="metric-value">22 m¬≥/ha/j</span>
                         </div>
                         <div class="metric">
                             <span class="metric-label" data-i18n="dash_vri_modulation">Modulation Secteur A</span>
                             <span class="metric-value success" data-i18n="dash_vri_correction">+15% (Correction)</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label" data-i18n="dash_vri_savings">…conomie Globale</span>
+                            <span class="metric-label" data-i18n="dash_vri_savings">√âconomie Globale</span>
                             <span class="metric-value success" data-i18n="dash_vri_savings_note">32% vs Local</span>
                         </div>
                     </div>
@@ -756,21 +756,21 @@
 
             <!-- Monitoring Section -->
             <section id="monitoring" class="section">
-                <h2 data-i18n="dash_monitoring_title">? MONITORING TEMPS R…EL IA</h2>
+                <h2 data-i18n="dash_monitoring_title">‚ö° MONITORING TEMPS R√âEL IA</h2>
                 <div class="detail-grid">
                     <div class="card">
-                        <h3 data-i18n="dash_monitoring_phenology">?? PhÈnologie IA</h3>
+                        <h3 data-i18n="dash_monitoring_phenology">üì∑ Ph√©nologie IA</h3>
                         <div style="text-align: center; margin-bottom: 15px;">
                             <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
-                                <span style="font-size: 14px; font-weight: 700; color: #072167;"
-                                    data-i18n="dash_phenology_stage">STADE : TUB…RISATION
+                                <span style="font-size: 14px; font-weight: 700; color: #C97B5A;"
+                                    data-i18n="dash_phenology_stage">STADE : TUB√âRISATION
                                     (60%)</span>
                             </div>
                         </div>
                         <div class="data-grid">
                             <div class="metric">
-                                <span class="metric-label" data-i18n="dash_gdd_cumul">GDD CumulÈs</span>
-                                <span class="metric-value">1,245 ∞C/j</span>
+                                <span class="metric-label" data-i18n="dash_gdd_cumul">GDD Cumul√©s</span>
+                                <span class="metric-value">1,245 ¬∞C/j</span>
                             </div>
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_growth_rate">Taux Croissance</span>
@@ -779,13 +779,13 @@
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_vision_anomalies">Anomalies Vision</span>
                                 <span class="metric-value warning"><span>2</span> <span
-                                        data-i18n="dash_vision_detected">dÈtectÈes</span></span>
+                                        data-i18n="dash_vision_detected">d√©tect√©es</span></span>
                             </div>
                         </div>
                     </div>
 
                     <div class="card">
-                        <h3 data-i18n="dash_iot_status_title">?? Status RÈseau IoT (LoRaWAN)</h3>
+                        <h3 data-i18n="dash_iot_status_title">üåê Status R√©seau IoT (LoRaWAN)</h3>
                         <div class="data-grid">
                             <div class="metric">
                                 <span class="metric-label" data-i18n="dash_active_sensors">Capteurs Actifs</span>
@@ -802,7 +802,7 @@
                         </div>
                         <div style="margin-top: 10px; font-size: 11px; text-align: center; color: #000000;"
                             data-i18n="dash_iot_sync">
-                            DerniËre synchronisation : Il y a 4 min.
+                            Derni√®re synchronisation : Il y a 4 min.
                         </div>
                     </div>
                 </div>
@@ -810,14 +810,14 @@
             </section>
 
 
-            <!-- DurabilitÈ Section -->
+            <!-- Durabilit√© Section -->
             <section id="durabilite" class="section">
-                <h2 data-i18n="dash_durability_title">?? DURABILIT…</h2>
+                <h2 data-i18n="dash_durability_title">‚ôªÔ∏è DURABILIT√â</h2>
                 <div class="card">
-                    <h3 data-i18n="dash_carbon_title">?? Bilan Carbone</h3>
+                    <h3 data-i18n="dash_carbon_title">üåç Bilan Carbone</h3>
                     <div class="carbon-balance">
                         <div class="carbon-section emissions">
-                            <h4 data-i18n="dash_carbon_emissions">…missions</h4>
+                            <h4 data-i18n="dash_carbon_emissions">√âmissions</h4>
                             <ul style="font-size: 12px;">
                                 <li><span data-i18n="dash_carbon_fertilizer">Engrais:</span> 850</li>
                                 <li><span data-i18n="dash_carbon_fuel">Carburant:</span> 420</li>
@@ -826,7 +826,7 @@
                             </ul>
                         </div>
                         <div class="carbon-section sequestration">
-                            <h4 data-i18n="dash_carbon_seq">SÈquestration</h4>
+                            <h4 data-i18n="dash_carbon_seq">S√©questration</h4>
                             <ul style="font-size: 12px;">
                                 <li><span data-i18n="dash_carbon_biomass">Biomasse:</span> 320</li>
                                 <li><span data-i18n="dash_carbon_humus">Humus:</span> 580</li>
@@ -834,7 +834,7 @@
                             </ul>
                         </div>
                         <div class="carbon-balance-result success">
-                            <strong>Bilan: -550 kg CO2/ha</strong>
+                            <strong>Bilan: -550 kg CO‚ÇÇ/ha</strong>
                             <p data-i18n="dash_carbon_sink">(Puits de carbone)</p>
                         </div>
                     </div>
@@ -843,9 +843,9 @@
 
             <footer
                 style="margin-top: 50px; padding: 30px; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: #000000; font-size: 11px; line-height: 1.6;">
-                <p data-i18n="dash_footer">Document gÈnÈrÈ automatiquement par Agrisense Decision Support System.</p>
+                <p data-i18n="dash_footer">Document g√©n√©r√© automatiquement par AgriScience Decision Support System.</p>
                 <p><em data-i18n="dash_footer_validity"> Version: 4.2-SUP </em></p>
-                <p><em data-i18n="dash_copyright">© 2026 Agrisense Technologies. Tous droits rÈservÈs. </em></p>
+                <p><em data-i18n="dash_copyright">¬© 2026 AgriScience Technologies. Tous droits r√©serv√©s. </em></p>
             </footer>
         </div>
     </div>
@@ -873,7 +873,7 @@
             if (input.value.trim() === '') return;
 
             // User msg
-            msgs.innerHTML += `<div style="margin-bottom:10px; text-align:right;"><span style="background:#072167; color:#0a0e27; padding:6px 12px; border-radius:12px; font-size:12px; display:inline-block;">${input.value}</span></div>`;
+            msgs.innerHTML += `<div style="margin-bottom:10px; text-align:right;"><span style="background:#C97B5A; color:#0a0e27; padding:6px 12px; border-radius:12px; font-size:12px; display:inline-block;">${input.value}</span></div>`;
 
             const userText = input.value.toLowerCase();
             input.value = '';
@@ -882,11 +882,11 @@
             // Simple Auto-reply
             setTimeout(() => {
                 const config = (typeof getCropConfig === 'function') ? getCropConfig(getSelectedCrop()) : CROP_CONFIG[getSelectedCrop()];
-                let reply = "Merci pour votre message. Un expert Agrisense va vous rÈpondre sous peu.";
-                if (userText.includes("plan") || (config && userText.includes(config.name.toLowerCase()))) reply = `Le plan ${config ? config.display : ''} est optimisÈ pour votre zone. Souhaitez-vous des dÈtails sur un jour prÈcis ?`;
-                if (userText.includes("prix") || userText.includes("co˚t")) reply = "Les co˚ts sont estimÈs selon votre surface. Contactez-nous pour un devis prÈcis.";
+                let reply = "Merci pour votre message. Un expert AgriScience va vous r√©pondre sous peu.";
+                if (userText.includes("plan") || (config && userText.includes(config.name.toLowerCase()))) reply = `Le plan ${config ? config.display : ''} est optimis√© pour votre zone. Souhaitez-vous des d√©tails sur un jour pr√©cis ?`;
+                if (userText.includes("prix") || userText.includes("co√ªt")) reply = "Les co√ªts sont estim√©s selon votre surface. Contactez-nous pour un devis pr√©cis.";
 
-                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
+                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
                 msgs.scrollTop = msgs.scrollHeight;
             }, 1000);
         }
@@ -909,7 +909,7 @@
             btn.disabled = true;
 
             setTimeout(() => {
-                alert('Merci pour votre message ! Votre commentaire a ÈtÈ envoyÈ avec succËs ‡ l\'Èquipe Agrisense.');
+                alert('Merci pour votre message ! Votre commentaire a √©t√© envoy√© avec succ√®s √† l\'√©quipe AgriScience.');
                 document.getElementById('feedback-text').value = '';
                 toggleFeedback();
                 btn.innerText = 'ENVOYER';
@@ -946,7 +946,7 @@
                         </div>
                         <span style="font-size:10px; font-weight:700; color:${getZoneColorDark(zone.ndvi)}">${(zone.ndvi * 100).toFixed(0)}%</span>
                     </div>
-                    <button onclick="runSimulation('${zone.id}', ${scaledArea})" style="width:100%; padding:6px; background:rgba(201,123,90,0.1); color:#072167; border:1px solid #072167; border-radius:4px; font-size:9px; font-weight:700; cursor:pointer;">
+                    <button onclick="runSimulation('${zone.id}', ${scaledArea})" style="width:100%; padding:6px; background:rgba(201,123,90,0.1); color:#C97B5A; border:1px solid #C97B5A; border-radius:4px; font-size:9px; font-weight:700; cursor:pointer;">
                         ${simulateBtnText}
                     </button>
                 </div>
@@ -994,7 +994,7 @@
             const title = document.getElementById('sim-title');
 
             const zoneName = (typeof t === 'function' && zone.i18nName) ? t(zone.i18nName) : zone.name;
-            const resTitle = (typeof t === 'function') ? t('dash_sim_results_title') : '?? R…SULTATS DE SIMULATION';
+            const resTitle = (typeof t === 'function') ? t('dash_sim_results_title') : 'üöÄ R√âSULTATS DE SIMULATION';
             title.innerText = `${resTitle} : ${zoneName}`;
             overlay.style.display = 'block';
             overlay.scrollIntoView({ behavior: 'smooth' });
@@ -1002,54 +1002,54 @@
             content.innerHTML = `
                 <div class="detail-grid">
                     <div style="border: 1px solid rgba(0,0,0,0.1); padding:15px; border-radius:10px; background:#fff;">
-                        <h4 style="color:#1F4E79; margin-top:0; font-weight:700;" data-i18n="dash_sim_status_current">?? …TAT ACTUEL VS SOL PARFAIT</h4>
+                        <h4 style="color:#1F4E79; margin-top:0; font-weight:700;" data-i18n="dash_sim_status_current">üìä √âTAT ACTUEL VS SOL PARFAIT</h4>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.05); color:#111;">
                             <span data-i18n="dash_kpi_vigueur">Vigueur (NDVI)</span>
-                            <span>${zone.ndvi} ? <b style="color:#072167">0.75</b></span>
+                            <span>${zone.ndvi} ‚ûî <b style="color:#C97B5A">0.75</b></span>
                         </div>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.05); color:#111;">
-                            <span data-i18n="dash_sim_moisture">HumiditÈ Sol</span>
-                            <span>${zone.moisture} ? <b style="color:#072167">22%</b></span>
+                            <span data-i18n="dash_sim_moisture">Humidit√© Sol</span>
+                            <span>${zone.moisture} ‚ûî <b style="color:#C97B5A">22%</b></span>
                         </div>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; color:#111;">
                             <span data-i18n="dash_sim_potential">Potentiel de Rendement</span>
-                            <span style="color:#072167; font-weight:700;">${zone.target_yield}</span>
+                            <span style="color:#C97B5A; font-weight:700;">${zone.target_yield}</span>
                         </div>
                     </div>
 
                     <div style="border: 1px solid rgba(201,123,90,0.3); background:rgba(201,123,90,0.04); padding:15px; border-radius:10px;">
-                        <h4 style="color:#0a4a3d; margin-top:0; font-weight:700;"><span data-i18n="dash_sim_status_93d">?? BILAN 93 JOURS</span> (${area} ${typeof t === 'function' ? t('dash_unit_ht') : 'ht'})</h4>
+                        <h4 style="color:#0a4a3d; margin-top:0; font-weight:700;"><span data-i18n="dash_sim_status_93d">üìà BILAN 93 JOURS</span> (${area} ${typeof t === 'function' ? t('dash_unit_ht') : 'ht'})</h4>
                         <div class="data-grid" style="grid-template-columns: 1fr 1fr; gap:10px;">
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:85%; opacity:0.3;"></div>
-                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_water">?? EAU TOTALE</span>
-                                <span class="metric-value success" style="font-size:18px;">${bilan.eau_totale} m≥</span>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:85%; opacity:0.3;"></div>
+                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_water">üíß EAU TOTALE</span>
+                                <span class="metric-value success" style="font-size:18px;">${bilan.eau_totale} m¬≥</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:65%; opacity:0.3;"></div>
-                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_compost">?? COMPOST M€R</span>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:65%; opacity:0.3;"></div>
+                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_compost">üçÇ COMPOST M√õR</span>
                                 <span class="metric-value success" style="font-size:18px;">${bilan.compost_total} T</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:45%; opacity:0.3;"></div>
-                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_amendments">?? AMENDEMENTS</span>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C46A3A; width:45%; opacity:0.3;"></div>
+                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_amendments">üß™ AMENDEMENTS</span>
                                 <span class="metric-value" style="font-size:18px; color:#7c4500;">${bilan.amendements_kg} kg</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:95%; opacity:0.3;"></div>
-                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_co2">?? CO2 S…QUESTR…</span>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:95%; opacity:0.3;"></div>
+                                <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_co2">üå≥ CO‚ÇÇ S√âQUESTR√â</span>
                                 <span class="metric-value" style="font-size:18px; color:#0a4a3d;">${bilan.co2_sequestre} T</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div style="margin-top:20px; background:#FFF9F0; padding:20px; border-radius:10px; border-top:2px solid #072167; border:1px solid rgba(196,106,58,0.25);">
-                    <h4 style="color:#7c4500; margin-top:0; font-weight:700;" data-i18n="dash_sim_action_title">?? ACTION DIRECTIVE GAIA EYE (AUTO-PILOT)</h4>
-                    <p style="font-size:12px; color:#2d3748;" data-i18n="dash_sim_action_desc">Simulation complËte effectuÈe pour le cycle de 93 jours. Le plan sera exÈcutÈ par la Box Gaia Eye par micro-secteurs pour maximiser l'homogÈnÈitÈ.</p>
+                <div style="margin-top:20px; background:#FFF9F0; padding:20px; border-radius:10px; border-top:2px solid #C46A3A; border:1px solid rgba(196,106,58,0.25);">
+                    <h4 style="color:#7c4500; margin-top:0; font-weight:700;" data-i18n="dash_sim_action_title">ü§ñ ACTION DIRECTIVE GAIA EYE (AUTO-PILOT)</h4>
+                    <p style="font-size:12px; color:#2d3748;" data-i18n="dash_sim_action_desc">Simulation compl√®te effectu√©e pour le cycle de 93 jours. Le plan sera ex√©cut√© par la Box Gaia Eye par micro-secteurs pour maximiser l'homog√©n√©it√©.</p>
                     <div style="display:flex; gap:15px; margin-top:10px; flex-wrap:wrap;">
-                        <span style="font-size:10px; background:rgba(196,106,58,0.1); color:#7c4500; padding:5px 10px; border-radius:15px; border:1px solid rgba(196,106,58,0.2);"><span data-i18n="dash_sim_global_cost">Co˚t Global:</span> ${bilan.cout_estime}Ä</span>
-                        <span style="font-size:10px; background:rgba(201,123,90,0.1); color:#0a4a3d; padding:5px 10px; border-radius:15px; border:1px solid rgba(201,123,90,0.2);"><span data-i18n="dash_sim_ai_eff">EfficacitÈ IA:</span> 98.4%</span>
+                        <span style="font-size:10px; background:rgba(196,106,58,0.1); color:#7c4500; padding:5px 10px; border-radius:15px; border:1px solid rgba(196,106,58,0.2);"><span data-i18n="dash_sim_global_cost">Co√ªt Global:</span> ${bilan.cout_estime}‚Ç¨</span>
+                        <span style="font-size:10px; background:rgba(201,123,90,0.1); color:#0a4a3d; padding:5px 10px; border-radius:15px; border:1px solid rgba(201,123,90,0.2);"><span data-i18n="dash_sim_ai_eff">Efficacit√© IA:</span> 98.4%</span>
                     </div>
                 </div>
             `;
@@ -1077,27 +1077,27 @@
 
                 // Soil Grid
                 metrics[4].innerText = (isAdvanced ? (0.68 + uRand(0, 0.05)) : (0.82 + uRand(0, 0.1))).toFixed(2) + "%";
-                metrics[5].innerText = (isAdvanced ? (1.54 + uRand(0, 0.05)) : (1.48 + uRand(0, 0.05))).toFixed(2) + " g/cm≥";
+                metrics[5].innerText = (isAdvanced ? (1.54 + uRand(0, 0.05)) : (1.48 + uRand(0, 0.05))).toFixed(2) + " g/cm¬≥";
                 metrics[6].innerText = Math.round((isAdvanced ? 36 : 41) + uRand(0, 3)) + "%";
                 metrics[7].innerText = (6.4 + uRand(0.1, 0.3)).toFixed(1);
 
-                // ??? Thermique & Hydrique
-                metrics[8].innerText = (isAdvanced ? (34.2 + uRand(0, 2.5)) : (29.5 + uRand(0, 2))).toFixed(1) + "∞C";
+                // üå°Ô∏è Thermique & Hydrique
+                metrics[8].innerText = (isAdvanced ? (34.2 + uRand(0, 2.5)) : (29.5 + uRand(0, 2))).toFixed(1) + "¬∞C";
                 metrics[9].innerText = (isAdvanced ? (0.58 + uRand(0, 0.08)) : (0.78 + uRand(0, 0.1))).toFixed(2);
                 metrics[10].innerText = (isAdvanced ? (4.6 + uRand(0, 0.6)) : (3.8 + uRand(0, 0.4))).toFixed(1) + " mm/j";
 
-                // ?? VitalitÈ VÈgÈtale
+                // üå± Vitalit√© V√©g√©tale
                 metrics[11].innerText = (isAdvanced ? (2.1 + uRand(0, 0.4)) : (2.7 + uRand(0, 0.3))).toFixed(2);
-                metrics[12].innerText = Math.round((isAdvanced ? 36 : 43) + uRand(0, 5)) + " µg/cm≤";
+                metrics[12].innerText = Math.round((isAdvanced ? 36 : 43) + uRand(0, 5)) + " ¬µg/cm¬≤";
                 metrics[13].innerText = (isAdvanced ? (2.4 + uRand(0, 0.5)) : (3.1 + uRand(0, 0.4))).toFixed(1) + " LAI";
 
-                // ?? Microbiologie
+                // üî¨ Microbiologie
                 metrics[14].innerText = Math.round((isAdvanced ? 135 : 225) + uRand(0, 40)) + " mg C/kg";
-                metrics[15].innerText = (isAdvanced ? (10.2 + uRand(0, 2)) : (14.5 + uRand(0, 3))).toFixed(1) + " µmol/g/h";
+                metrics[15].innerText = (isAdvanced ? (10.2 + uRand(0, 2)) : (14.5 + uRand(0, 3))).toFixed(1) + " ¬µmol/g/h";
                 metrics[16].innerText = (isAdvanced ? (0.14 + uRand(0, 0.04)) : (0.22 + uRand(0, 0.06))).toFixed(2);
-                metrics[17].innerText = (isAdvanced ? (0.9 + uRand(0, 0.3)) : (1.4 + uRand(0, 0.4))).toFixed(1) + " mg CO2/kg/j";
+                metrics[17].innerText = (isAdvanced ? (0.9 + uRand(0, 0.3)) : (1.4 + uRand(0, 0.4))).toFixed(1) + " mg CO‚ÇÇ/kg/j";
 
-                // ?? Radar & PÈnÈtromÈtrie
+                // üì° Radar & P√©n√©trom√©trie
                 metrics[18].innerText = (isAdvanced ? (19.4 + uRand(0, 3)) : (23.2 + uRand(0, 2))).toFixed(1) + "%";
                 metrics[19].innerText = (isAdvanced ? (13.8 + uRand(0, 1)) : (11.5 + uRand(0, 1))).toFixed(1) + "%";
                 metrics[20].innerText = (isAdvanced ? (3.2 + uRand(0, 0.6)) : (2.3 + uRand(0, 0.4))).toFixed(1) + " MPa";
@@ -1115,20 +1115,20 @@
 
             // Deductions Logic
             const deductions = isAdvanced ? [
-                "VariabilitÈ micro-hydrique du sol dÈtectÈe.",
-                "Signaux de fatigue biologique localisÈe.",
+                "Variabilit√© micro-hydrique du sol d√©tect√©e.",
+                "Signaux de fatigue biologique localis√©e.",
                 "Interactions sol-racines complexes.",
-                "Optimisation recommandÈe selon zones internes."
+                "Optimisation recommand√©e selon zones internes."
             ] : [
-                "DonnÈes agro-spatiales standards validÈes.",
-                "HumiditÈ moyenne du sol : Niveau stable.",
-                "…volution vÈgÈtative progressive constatÈe.",
-                "Surveillance rÈguliËre recommandÈe."
+                "Donn√©es agro-spatiales standards valid√©es.",
+                "Humidit√© moyenne du sol : Niveau stable.",
+                "√âvolution v√©g√©tative progressive constat√©e.",
+                "Surveillance r√©guli√®re recommand√©e."
             ];
 
             const footerNote = document.querySelector('footer p em');
             if (footerNote) {
-                footerNote.innerText = `Analyse Agro-Spatiale | Statut: ${isAdvanced ? 'PrÈcision' : 'Standard'} | DÈduction: ` + deductions[Math.floor(Math.random() * deductions.length)];
+                footerNote.innerText = `Analyse Agro-Spatiale | Statut: ${isAdvanced ? 'Pr√©cision' : 'Standard'} | D√©duction: ` + deductions[Math.floor(Math.random() * deductions.length)];
             }
         }
 
@@ -1289,11 +1289,11 @@
         </button>
         <div class="fab-options">
             <button class="fab-btn" data-tooltip="Support" onclick="toggleChat()" data-i18n="[title]chat_title">
-                <span>??</span>
+                <span>üí¨</span>
             </button>
             <button class="fab-btn" data-tooltip="Envoyer un commentaire" onclick="toggleFeedback()"
                 data-i18n="[title]fb_title">
-                <span>??</span>
+                <span>üìù</span>
             </button>
         </div>
     </div>
@@ -1302,7 +1302,7 @@
     <div id="feedback-modal">
         <div class="feedback-header">
             <h4 data-i18n="fb_title">Envoyer un commentaire</h4>
-            <span class="feedback-close" onclick="toggleFeedback()">?</span>
+            <span class="feedback-close" onclick="toggleFeedback()">‚úï</span>
         </div>
         <div class="feedback-body">
             <label data-i18n="fb_label">Votre message ou feedback :</label>
@@ -1318,17 +1318,17 @@
     <div id="chat-widget"
         style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #C9A227; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
         <div
-            style="background:linear-gradient(90deg, #072167, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
-            <span data-i18n="chat_title">?? SUPPORT Agrisense</span>
+            style="background:linear-gradient(90deg, #C97B5A, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
+            <span data-i18n="chat_title">üí¨ SUPPORT AGRISCIENCE</span>
             <button onclick="toggleChat()"
-                style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">?</button>
+                style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">‚úï</button>
         </div>
         <div id="chat-messages"
             style="flex:1; padding:15px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; font-size:13px; color:#111; background:#e8f5f2; background-image:url('images/moroccan_zellige.png'); background-size:100px; background-blend-mode:multiply;">
             <div style="margin-bottom:10px;"><span
-                    style="background:rgba(201, 123, 90, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)"
+                    style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)"
                     data-i18n="chat_welcome">Bienvenue
-                    dans l'espace de communication Agrisense. Comment pouvons-nous vous aider aujourd'hui ?</span>
+                    dans l'espace de communication AgriScience. Comment pouvons-nous vous aider aujourd'hui ?</span>
             </div>
         </div>
         <div

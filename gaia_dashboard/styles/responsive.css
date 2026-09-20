@@ -1,12 +1,12 @@
-/* ============================================================
-   Agrisense � RESPONSIVE STYLES (Mobile-First)
+﻿/* ============================================================
+   AGRISCIENCE — RESPONSIVE STYLES (Mobile-First)
    Breakpoints:
-     Mobile : 320px � 480px
-     Tablet : 481px � 1024px
+     Mobile : 320px – 480px
+     Tablet : 481px – 1024px
      Desktop: 1025px+
    ============================================================ */
 
-/* -- Global fluid foundation -- */
+/* ── Global fluid foundation ── */
 *, *::before, *::after { box-sizing: border-box; }
 
 img, video, canvas, svg {
@@ -18,7 +18,7 @@ table {
   width: 100%;
 }
 
-/* -- Prevent horizontal overflow globally -- */
+/* ── Prevent horizontal overflow globally ── */
 body {
   overflow-x: hidden;
 }
@@ -32,7 +32,7 @@ body {
   top: 12px;
   left: 12px;
   z-index: 9999;
-  background: var(--moroccan-emerald, #072167);
+  background: var(--moroccan-emerald, #C97B5A);
   border: none;
   border-radius: 10px;
   width: 46px;
@@ -73,7 +73,7 @@ body {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* -- Sidebar Overlay (dark backdrop on mobile) -- */
+/* ── Sidebar Overlay (dark backdrop on mobile) ── */
 .sidebar-overlay {
   display: none;
   position: fixed;
@@ -86,7 +86,7 @@ body {
 }
 
 /* ============================================================
-   TABLET: 481px � 1024px
+   TABLET: 481px – 1024px
    ============================================================ */
 @media (max-width: 1024px) {
 
@@ -150,13 +150,13 @@ body {
     left: 0 !important;
   }
 
-  /* Grid layouts ? 2 cols on tablet */
+  /* Grid layouts → 2 cols on tablet */
   .detail-grid {
     grid-template-columns: 1fr 1fr !important;
     gap: 16px;
   }
 
-  /* Scoring + Reference top section ? stack vertically on tablet/mobile */
+  /* Scoring + Reference top section → stack vertically on tablet/mobile */
   .top-score-grid,
   .main-content > div[style*="grid-template-columns: 1fr 2fr"] {
     display: flex !important;
@@ -291,7 +291,7 @@ body {
     font-size: 18px !important;
   }
 
-  /* FAB � keep but adjust position */
+  /* FAB – keep but adjust position */
   .fab-wrapper {
     bottom: 15px;
     right: 15px;
@@ -338,7 +338,7 @@ body {
 }
 
 /* ============================================================
-   MOBILE: 320px � 480px
+   MOBILE: 320px – 480px
    ============================================================ */
 @media (max-width: 480px) {
 
@@ -385,7 +385,7 @@ body {
     border-radius: 10px !important;
   }
 
-  /* Score circle � scale down */
+  /* Score circle – scale down */
   .card svg[width="160"] {
     width: 130px !important;
     height: 130px !important;
@@ -430,7 +430,7 @@ body {
     font-size: 11px !important;
   }
 
-  /* Buttons � larger touch targets */
+  /* Buttons – larger touch targets */
   button, .nav-item, .nav-btn, .access-btn {
     min-height: 44px;
   }
@@ -777,7 +777,7 @@ body {
 }
 
 /* ============================================================
-   MAP PAGE � responsive overrides for index.html
+   MAP PAGE — responsive overrides for index.html
    (the body has overflow: hidden for map, so use fixed positioning)
    ============================================================ */
 @media (max-width: 1024px) {
@@ -834,7 +834,7 @@ body {
     padding: 6px 3px !important;
   }
 
-  /* Bottom panel � full-width */
+  /* Bottom panel – full-width */
   .bottom-panel {
     width: 96% !important;
     padding: 8px 10px !important;
@@ -844,7 +844,7 @@ body {
     font-size: 0.75rem !important;
   }
 
-  /* Analysis card � full width */
+  /* Analysis card – full width */
   .analysis-overlay > .analysis-card {
     width: 96vw !important;
     padding: 18px 12px !important;
@@ -880,7 +880,7 @@ body {
 }
 
 /* ============================================================
-   GUIDE OVERLAY � responsive
+   GUIDE OVERLAY — responsive
    ============================================================ */
 .guide-overlay {
   z-index: 4000;

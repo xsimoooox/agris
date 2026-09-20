@@ -1,15 +1,15 @@
 /* ============================================================
-   Agrisense — MOROCCAN INNOVATION THEME
-   Palette: Emerald Green, Gold, #072167, Atlas Blue, Sand
+   AGRISCIENCE — MOROCCAN INNOVATION THEME
+   Palette: Emerald Green, Gold, Terracotta, Atlas Blue, Sand
    ============================================================ */
 
 /* --- CSS Variables --- */
 :root {
-  --moroccan-emerald: #072167;
+  --moroccan-emerald: #C97B5A;
   --moroccan-emerald-light: #D4906F;
   --moroccan-gold: #C9A227;
   --moroccan-gold-light: #f0c843;
-  --moroccan-#072167: #072167;
+  --moroccan-terracotta: #C46A3A;
   --moroccan-blue: #1F4E79;
   --moroccan-blue-light: #2e6fa3;
   --moroccan-sand: #E8DCCB;
@@ -185,7 +185,7 @@ body {
   background: linear-gradient(180deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue));
   background-size: 100% 300%;
   animation: borderFlow 6s ease infinite;
@@ -245,7 +245,7 @@ body {
   background: linear-gradient(90deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue));
   background-size: 200% 100%;
   animation: borderFlow 4s ease infinite;
@@ -370,7 +370,7 @@ body {
   background: linear-gradient(90deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue),
       var(--moroccan-emerald));
   background-size: 300% 100%;
@@ -429,7 +429,7 @@ body {
   content: '— ✦ —';
   display: block;
   font-size: 12px;
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
   letter-spacing: 6px;
   margin-top: 8px;
   font-family: 'Inter', sans-serif;
@@ -551,7 +551,7 @@ h4 {
   background: linear-gradient(180deg,
       var(--moroccan-emerald) 0%,
       var(--moroccan-gold) 30%,
-      var(--moroccan-#072167) 60%,
+      var(--moroccan-terracotta) 60%,
       var(--moroccan-blue) 100%);
   opacity: 0.5;
   z-index: 50;
@@ -589,7 +589,7 @@ h4 {
   background: linear-gradient(90deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue));
 }
 
@@ -723,7 +723,7 @@ h4 {
   background: linear-gradient(90deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue),
       var(--moroccan-emerald));
   z-index: 200;
@@ -788,7 +788,7 @@ h4 {
   content: '— ✦ —';
   display: block;
   font-size: 12px;
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
   letter-spacing: 6px;
   margin-top: 8px;
   font-family: 'Inter', sans-serif;
@@ -957,7 +957,7 @@ h4 {
 }
 
 .metric-value.alert {
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
 }
 
 .metric-value.warning {
@@ -1009,7 +1009,7 @@ h4 {
 }
 
 .data-table td.alert {
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
   font-weight: 600;
 }
 
@@ -1057,7 +1057,7 @@ h4 {
 
 .alert-box.warning {
   background: #FFF9F0;
-  border-color: var(--moroccan-#072167);
+  border-color: var(--moroccan-terracotta);
   color: #7c4500;
   font-weight: 500;
 }
@@ -1115,7 +1115,7 @@ h4 {
 }
 
 .horizon li strong.alert {
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
 }
 
 .horizon li strong.warning {
@@ -1136,7 +1136,7 @@ h4 {
 }
 
 .zone-card.critical {
-  border-color: var(--moroccan-#072167);
+  border-color: var(--moroccan-terracotta);
 }
 
 .zone-card.medium {
@@ -1323,7 +1323,7 @@ h4 {
 
 .alert-level.warning {
   background: rgba(196, 106, 58, 0.08);
-  border-color: var(--moroccan-#072167);
+  border-color: var(--moroccan-terracotta);
 }
 
 .alert-level.critical {
@@ -1449,7 +1449,7 @@ h4 {
 }
 
 .carbon-section.emissions {
-  border-left: 3px solid var(--moroccan-#072167);
+  border-left: 3px solid var(--moroccan-terracotta);
 }
 
 .carbon-section.sequestration {
@@ -1704,7 +1704,7 @@ em {
 }
 
 .alert {
-  color: var(--moroccan-#072167);
+  color: var(--moroccan-terracotta);
   font-weight: 600;
 }
 
@@ -2250,7 +2250,7 @@ em {
   content: attr(data-tooltip);
   position: absolute;
   left: 80px;
-  background: #072167;
+  background: #C97B5A;
   color: #FFFFFF !important;
   padding: 6px 12px !important;
   border-radius: 6px;
@@ -2305,7 +2305,7 @@ em {
 
 .fab-wrapper:hover .fab-main {
   transform: scale(1.1) rotate(45deg);
-  background: #072167; /* Vibrant Green on hover */
+  background: #C97B5A; /* Vibrant Green on hover */
 }
 
 .fab-options {

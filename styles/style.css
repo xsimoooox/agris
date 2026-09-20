@@ -1,10 +1,10 @@
-/* ============================================================
-   Agrisense � MOROCCAN LANDING PAGE (3D Globe)
+﻿/* ============================================================
+   AGRISCIENCE — MOROCCAN LANDING PAGE (3D Globe)
    ============================================================ */
 :root {
-  --moroccan-emerald: #072167;
+  --moroccan-emerald: #C97B5A;
   --moroccan-gold: #C9A227;
-  --moroccan-#072167: #072167;
+  --moroccan-terracotta: #C46A3A;
   --moroccan-blue: #1F4E79;
 }
 
@@ -72,7 +72,7 @@ canvas {
 
 /* Subtle Moroccan ornament strip below title */
 .gaia-title::after {
-  content: '?  ?  ?';
+  content: '✦  ✦  ✦';
   display: block;
   font-family: 'Inter', sans-serif;
   font-size: 0.7rem;
@@ -174,7 +174,7 @@ body::before {
   background: linear-gradient(180deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-blue),
       var(--moroccan-emerald));
   z-index: 100;
@@ -190,7 +190,7 @@ body::after {
   height: 100%;
   background: linear-gradient(180deg,
       var(--moroccan-blue),
-      var(--moroccan-#072167),
+      var(--moroccan-terracotta),
       var(--moroccan-gold),
       var(--moroccan-emerald),
       var(--moroccan-blue));
@@ -274,7 +274,7 @@ canvas {
 .gaia-text {
   display: inline-block;
   /* Darker Green "Gaia" */
-  color: #072167;
+  color: #C97B5A;
   text-shadow:
     0 0 5px rgba(15, 157, 88, 0.8),
     0 0 20px rgba(0, 100, 255, 0.6);
@@ -453,14 +453,14 @@ canvas {
 
 .security-field input:focus {
   outline: none;
-  border-color: #072167;
+  border-color: #C97B5A;
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 0 10px rgba(201, 123, 90, 0.2);
 }
 
 .access-btn {
   width: 100%;
-  background: linear-gradient(135deg, #072167, #D4906F);
+  background: linear-gradient(135deg, #C97B5A, #D4906F);
   color: white;
   border: none;
   padding: 15px;

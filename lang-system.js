@@ -1,7 +1,7 @@
 // lang-system.js
 
-const LANG_KEY = 'Agrisense_lang';
-const LEGACY_LANG_KEY = 'Agrisense_lang';
+const LANG_KEY = 'agriscience_lang';
+const LEGACY_LANG_KEY = 'terranova_lang';
 
 function getSavedLang() {
     return localStorage.getItem(LANG_KEY) || localStorage.getItem(LEGACY_LANG_KEY) || 'fr';
@@ -77,7 +77,7 @@ function applyLanguage(lang) {
         });
 
         // Dispatch global event so local page scripts can react
-        window.dispatchEvent(new CustomEvent('AgrisenseLanguageChanged', { detail: lang }));
+        window.dispatchEvent(new CustomEvent('agriscienceLanguageChanged', { detail: lang }));
 
         // Apply fade-in
         document.body.style.opacity = '1';

@@ -1,4 +1,4 @@
-// 🌍 SYSTÈME DE DONNÉES DYNAMIQUE Agrisense
+// 🌍 SYSTÈME DE DONNÉES DYNAMIQUE AGRISCIENCE
 // Ce module génère une analyse unique à chaque exécution tout en restant cohérent.
 
 const PLAN_ARGANIER_VARIANTS = {

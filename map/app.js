@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://127.0.0.1:5001';
+ï»¿const API_BASE_URL = 'http://127.0.0.1:5001';
 const API_URL = `${API_BASE_URL}/api/analyze`;
 
 let currentIndicator = 'NDVI';
@@ -31,7 +31,7 @@ const drawControl = new L.Control.Draw({
         circlemarker: false,
         rectangle: {
             shapeOptions: {
-                color: '#072167',
+                color: '#C97B5A',
                 weight: 2
             }
         }
@@ -90,7 +90,7 @@ function updateDateFromSlider() {
 
     const display = document.getElementById('date-display');
     if (display) {
-        const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr';
+        const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
         const locale = lang === 'ar' ? 'ar-MA' : 'fr-FR';
         display.textContent = date.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
     }
@@ -137,7 +137,7 @@ document.getElementById('my-location-custom').addEventListener('click', () => {
     const statusMsg = document.getElementById('status-msg');
     if (statusMsg) statusMsg.className = 'status-text loading';
     
-    // Forced destination: Université Euro Méditerranéenne de Fès
+    // Forced destination: UniversitÃ© Euro MÃ©diterranÃ©enne de FÃ¨s
     const targetPos = [34.04501, -5.06529];
     map.flyTo(targetPos, 16);
     
@@ -205,7 +205,7 @@ document.getElementById('draw-zone-custom').addEventListener('click', function (
 
     if (isCustomDrawing) {
         btn.classList.add('active'); // Style for active state
-        btn.style.color = "#072167";
+        btn.style.color = "#C97B5A";
         btn.style.backgroundColor = "rgba(74, 222, 128, 0.1)";
         if (statusMsg) updateStatus('analysis_draw_mode');
         map.getContainer().style.cursor = 'crosshair';
@@ -243,7 +243,7 @@ map.on('click', function (e) {
     // Add marker
     const marker = L.circleMarker(latlng, {
         radius: 4,
-        color: '#072167',
+        color: '#C97B5A',
         fillColor: '#000',
         fillOpacity: 1,
         weight: 2
@@ -254,9 +254,9 @@ map.on('click', function (e) {
     if (customPoints.length > 1) {
         if (tempPolygon) map.removeLayer(tempPolygon);
         tempPolygon = L.polygon(customPoints, {
-            color: '#072167',
+            color: '#C97B5A',
             weight: 2,
-            fillColor: '#072167',
+            fillColor: '#C97B5A',
             fillOpacity: 0.2,
             dashArray: '5, 10'
         }).addTo(map);
@@ -268,9 +268,9 @@ function finalizeCustomZone() {
     if (currentLayer) map.removeLayer(currentLayer);
 
     const finalPolygon = L.polygon(customPoints, {
-        color: '#072167',
+        color: '#C97B5A',
         weight: 2,
-        fillColor: '#072167',
+        fillColor: '#C97B5A',
         fillOpacity: 0.3
     }).addTo(drawnItems);
 
@@ -398,7 +398,7 @@ async function fetchAnalysis() {
                 updateStatus('analysis_ready');
             }
         } else {
-            throw new Error('Réponse invalide');
+            throw new Error('RÃ©ponse invalide');
         }
 
     } catch (error) {
@@ -455,11 +455,11 @@ function showAnalysisOverlay(areaInSquareMeters) {
         // Format area with appropriate units
         let displayText;
         if (areaInSquareMeters >= 1000000) {
-            displayText = (areaInSquareMeters / 1000000).toFixed(2) + ' km²';
+            displayText = (areaInSquareMeters / 1000000).toFixed(2) + ' kmÂ²';
         } else if (areaInSquareMeters >= 10000) {
             displayText = (areaInSquareMeters / 10000).toFixed(2) + ' ha';
         } else {
-            displayText = areaInSquareMeters.toLocaleString('fr-FR', { maximumFractionDigits: 0 }) + ' m²';
+            displayText = areaInSquareMeters.toLocaleString('fr-FR', { maximumFractionDigits: 0 }) + ' mÂ²';
         }
 
         areaDisplay.textContent = displayText;
@@ -480,7 +480,7 @@ if (startAnalysisBtn) {
             if (customVal) {
                 selectedCrop = customVal;
             } else {
-                selectedCrop = 'Culture personnalisée';
+                selectedCrop = 'Culture personnalisÃ©e';
             }
         }
 
@@ -509,9 +509,9 @@ if (startAnalysisBtn) {
                 const numStr = match[0].replace(',', '.');
                 const num = parseFloat(numStr);
                 if (!isNaN(num)) {
-                    if (txt.includes('km²')) areaHa = num * 100;
+                    if (txt.includes('kmÂ²')) areaHa = num * 100;
                     else if (txt.includes('ha')) areaHa = num;
-                    else if (txt.includes('m²')) areaHa = num / 10000;
+                    else if (txt.includes('mÂ²')) areaHa = num / 10000;
                 }
             }
         }
@@ -649,7 +649,7 @@ function updateStatus(key, extra = "") {
     const statusMsg = document.getElementById('status-msg');
     if (!statusMsg) return;
     
-    const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr';
+    const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
     let text = (langData[lang] && langData[lang][key]) ? langData[lang][key] : key;
     if (extra) text += " " + extra;
     
@@ -657,10 +657,10 @@ function updateStatus(key, extra = "") {
 }
 
 // Global lang system listener
-window.addEventListener('AgrisenseLanguageChanged', (e) => {
+window.addEventListener('agriscienceLanguageChanged', (e) => {
     updateStatus(lastStatusKey, lastStatusExtra);
 });
-window.addEventListener('AgrisenseLanguageChanged', (e) => {
+window.addEventListener('agriscienceLanguageChanged', (e) => {
     updateStatus(lastStatusKey, lastStatusExtra);
 });
 
