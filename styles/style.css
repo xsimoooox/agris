@@ -4,7 +4,7 @@
 :root {
   --moroccan-emerald: #072167;
   --moroccan-gold: #C9A227;
-  --moroccan-terracotta: #072167;
+  --moroccan-#072167: #072167;
   --moroccan-blue: #1F4E79;
 }
 
@@ -174,7 +174,7 @@ body::before {
   background: linear-gradient(180deg,
       var(--moroccan-emerald),
       var(--moroccan-gold),
-      var(--moroccan-terracotta),
+      var(--moroccan-#072167),
       var(--moroccan-blue),
       var(--moroccan-emerald));
   z-index: 100;
@@ -190,7 +190,7 @@ body::after {
   height: 100%;
   background: linear-gradient(180deg,
       var(--moroccan-blue),
-      var(--moroccan-terracotta),
+      var(--moroccan-#072167),
       var(--moroccan-gold),
       var(--moroccan-emerald),
       var(--moroccan-blue));

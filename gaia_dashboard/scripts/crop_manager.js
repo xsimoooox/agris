@@ -10,10 +10,10 @@ function updatePageTerminology() {
     const config = getCropConfig(cropId);
     if (!config) return;
 
-    const lang = (typeof getSavedLang === 'function') ? getSavedLang() : (localStorage.getItem('Agrisense_lang') || localStorage.getItem('terranova_lang') || 'fr');
+    const lang = (typeof getSavedLang === 'function') ? getSavedLang() : (localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr');
     const isAr = lang === 'ar';
 
-    // 1. BRANDING: Replace any residual "TerraNova" occurrences in visible UI
+    // 1. BRANDING: Replace any residual "Agrisense" occurrences in visible UI
     const allTextElements = document.querySelectorAll('h1, h2, h3, h4, h5, p, span, div, button, li, a, label, .nav-text, .metric-label, .metric-note, .ref-value');
     allTextElements.forEach(el => {
         // Skip script/style tags or inputs
@@ -21,8 +21,8 @@ function updatePageTerminology() {
 
         // Clean up branding in text nodes if present
         if (el.children.length === 0) {
-            if (el.textContent.includes('TerraNova') || el.textContent.includes('Terranova') || el.textContent.includes('TERRANOVA')) {
-                el.textContent = el.textContent.replace(/TerraNova|Terranova/g, 'Agrisense').replace(/TERRANOVA/g, 'Agrisense');
+            if (el.textContent.includes('Agrisense') || el.textContent.includes('Agrisense') || el.textContent.includes('Agrisense')) {
+                el.textContent = el.textContent.replace(/Agrisense|Agrisense/g, 'Agrisense').replace(/Agrisense/g, 'Agrisense');
             }
             if (el.textContent.includes('Matching') || el.textContent.includes('matching')) {
                 el.textContent = el.textContent.replace(/Score de [Mm]atching [Gg]lobal/g, isAr ? 'نسبة التقدم الزراعي' : 'Score d’avancement')
@@ -40,7 +40,7 @@ function updatePageTerminology() {
             gaia.textContent = 'Agri';
             eye.textContent = 'Science';
         } else if (header.children.length === 0 || header.textContent.toLowerCase().includes('terra')) {
-            header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">Science</span>';
+            header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">sense</span>';
         }
     });
 
@@ -213,8 +213,8 @@ function updatePageTerminology() {
     }
 
     // 8. UPDATE DOCUMENT TITLE
-    if (document.title.includes('TERRANOVA') || document.title.includes('Terranova')) {
-        document.title = document.title.replace(/TERRANOVA|Terranova/g, 'Agrisense');
+    if (document.title.includes('Agrisense') || document.title.includes('Agrisense')) {
+        document.title = document.title.replace(/Agrisense|Agrisense/g, 'Agrisense');
     }
 }
 

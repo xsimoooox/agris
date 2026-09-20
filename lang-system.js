@@ -1,7 +1,7 @@
 // lang-system.js
 
 const LANG_KEY = 'Agrisense_lang';
-const LEGACY_LANG_KEY = 'terranova_lang';
+const LEGACY_LANG_KEY = 'Agrisense_lang';
 
 function getSavedLang() {
     return localStorage.getItem(LANG_KEY) || localStorage.getItem(LEGACY_LANG_KEY) || 'fr';

@@ -21,7 +21,7 @@
         :root {
             --emerald: #072167;
             --gold: #C9A227;
-            --terracotta: #072167;
+            --#072167: #072167;
             --light-bg: #F8F4EA;
             --card-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
         }
@@ -118,7 +118,7 @@
         }
 
         .kpi-card.terra {
-            border-top-color: var(--terracotta);
+            border-top-color: var(--#072167);
         }
 
         .kpi-card.green {
@@ -171,7 +171,7 @@
         }
 
         .kpi-card.terra .kpi-value {
-            color: var(--terracotta);
+            color: var(--#072167);
         }
 
         .kpi-card.green .kpi-value {
@@ -203,7 +203,7 @@
         .fin-section-title {
             font-family: 'Orbitron', sans-serif;
             font-size: 17px;
-            color: var(--terracotta);
+            color: var(--#072167);
             display: flex;
             align-items: center;
             gap: 12px;
@@ -214,7 +214,7 @@
 
         .fin-section-title .badge {
             background: rgba(196, 106, 58, .1);
-            color: var(--terracotta);
+            color: var(--#072167);
             font-size: 10px;
             padding: 4px 12px;
             border-radius: 20px;
@@ -298,7 +298,7 @@
 
         .fin-table .total-row td {
             font-weight: 700;
-            color: var(--terracotta);
+            color: var(--#072167);
             background: rgba(196, 106, 58, .05);
             border-top: 2px solid rgba(196, 106, 58, .3);
         }
@@ -505,7 +505,7 @@
         /* --- DIVIDER --- */
         .fin-divider {
             height: 4px;
-            background: linear-gradient(90deg, var(--terracotta), var(--gold), var(--emerald));
+            background: linear-gradient(90deg, var(--#072167), var(--gold), var(--emerald));
             border-radius: 4px;
             margin: 10px 0 28px;
             opacity: .3;
@@ -876,7 +876,7 @@
                                 production (année 2).</p>
                         </div>
                     </div>
-                    <div class="rec-card" style="border-left-color:var(--terracotta);">
+                    <div class="rec-card" style="border-left-color:var(--#072167);">
                         <div class="rec-icon">??</div>
                         <div>
                             <h4 data-i18n="fin_rec3_title">Prioriser le goutte-à-goutte</h4>
@@ -929,7 +929,7 @@
 
         const EMERALD = '#072167';
         const GOLD = '#C9A227';
-        const TERRACOTTA = '#072167';
+        const #072167 = '#072167';
 
         const chartDefaults = {
             font: { family: 'Inter, sans-serif' },
@@ -954,7 +954,7 @@
                                 'rgba(201,123,90,.7)'
                     ),
                     borderColor: years.map((_, i) =>
-                        i === 0 ? TERRACOTTA :
+                        i === 0 ? #072167 :
                             i < 2 ? GOLD :
                                 EMERALD
                     ),
@@ -999,7 +999,7 @@
                     borderColor: EMERALD,
                     backgroundColor: 'rgba(201,123,90,.08)',
                     borderWidth: 3,
-                    pointBackgroundColor: [-8875, -7875, 887625, 1889625, 3032025].map(v => v < 0 ? TERRACOTTA : EMERALD),
+                    pointBackgroundColor: [-8875, -7875, 887625, 1889625, 3032025].map(v => v < 0 ? #072167 : EMERALD),
                     pointRadius: 6,
                     pointHoverRadius: 9,
                     fill: true,
@@ -1046,7 +1046,7 @@
                 labels: ['Irrigation', 'Plants d\'argan', 'Diagnostic sol', 'Outillage', 'Semences', 'Divers & Transport'],
                 datasets: [{
                     data: [4100, 2400, 680, 655, 480, 560],
-                    backgroundColor: [EMERALD, GOLD, TERRACOTTA, '#1565C0', '#7b1fa2', '#616161'],
+                    backgroundColor: [EMERALD, GOLD, #072167, '#1565C0', '#7b1fa2', '#616161'],
                     borderColor: '#fff',
                     borderWidth: 3,
                     hoverOffset: 10
@@ -1072,13 +1072,13 @@
         function renderBudgetBars() {
             const barsEl = document.getElementById('budgetBars');
             if (!barsEl) return;
-            const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('terranova_lang') || 'fr';
+            const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr';
             const sectionVisible = barsEl.closest('.reveal').classList.contains('visible');
             barsEl.innerHTML = '';
             const items = [
                 { key: 'fin_label_irrigation', amount: 4100, total: 8875, color: EMERALD },
                 { key: 'fin_label_plants', amount: 2400, total: 8875, color: GOLD },
-                { key: 'fin_label_soil', amount: 680, total: 8875, color: TERRACOTTA },
+                { key: 'fin_label_soil', amount: 680, total: 8875, color: #072167 },
                 { key: 'fin_label_tools', amount: 655, total: 8875, color: '#1565C0' },
                 { key: 'fin_label_other', amount: 560, total: 8875, color: '#616161' },
                 { key: 'fin_label_seeds', amount: 480, total: 8875, color: '#7b1fa2' },

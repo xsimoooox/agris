@@ -90,7 +90,7 @@ function updateDateFromSlider() {
 
     const display = document.getElementById('date-display');
     if (display) {
-        const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('terranova_lang') || 'fr';
+        const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr';
         const locale = lang === 'ar' ? 'ar-MA' : 'fr-FR';
         display.textContent = date.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
     }
@@ -649,7 +649,7 @@ function updateStatus(key, extra = "") {
     const statusMsg = document.getElementById('status-msg');
     if (!statusMsg) return;
     
-    const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('terranova_lang') || 'fr';
+    const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('Agrisense_lang') || 'fr';
     let text = (langData[lang] && langData[lang][key]) ? langData[lang][key] : key;
     if (extra) text += " " + extra;
     

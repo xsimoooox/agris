@@ -23,7 +23,7 @@
   --moroccan-emerald: #072167;
   --moroccan-emerald-light: #D4906F;
   --moroccan-gold: #C9A227;
-  --moroccan-terracotta: #072167;
+  --moroccan-#072167: #072167;
   --moroccan-blue: #1F4E79;
   --moroccan-blue-light: #2e6fa3;
   --moroccan-sand: #E8DCCB;
@@ -80,7 +80,7 @@ body {
   background: linear-gradient(180deg,
     var(--moroccan-emerald),
     var(--moroccan-gold),
-    var(--moroccan-terracotta),
+    var(--moroccan-#072167),
     var(--moroccan-blue));
 }
 
@@ -257,7 +257,7 @@ body {
   background: linear-gradient(90deg,
     var(--moroccan-emerald),
     var(--moroccan-gold),
-    var(--moroccan-terracotta),
+    var(--moroccan-#072167),
     var(--moroccan-blue),
     var(--moroccan-emerald));
   box-shadow: 0 -2px 15px rgba(201, 162, 39, 0.2);
@@ -354,7 +354,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .status-text { font-size: 0.8rem; color: rgba(201, 162, 39, 0.5); white-space: nowrap; }
 .status-text.loading { color: var(--moroccan-gold); }
 .status-text.success { color: var(--moroccan-emerald-light); }
-.status-text.error   { color: var(--moroccan-terracotta); }
+.status-text.error   { color: var(--moroccan-#072167); }
 
 /* ============================
    SECURITY ACCESS OVERLAY ON MAP
@@ -977,13 +977,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 .close-btn {
   background: rgba(196, 106, 58, 0.1);
   border: 1px solid rgba(196, 106, 58, 0.3);
-  color: var(--moroccan-terracotta);
+  color: var(--moroccan-#072167);
   width: 40px; height: 40px;
   border-radius: 50%; font-size: 1.5rem;
   cursor: pointer; transition: all 0.2s;
 }
 
-.close-btn:hover { background: var(--moroccan-terracotta); color: #fff; transform: rotate(90deg); }
+.close-btn:hover { background: var(--moroccan-#072167); color: #fff; transform: rotate(90deg); }
 
 .dashboard-content { padding: 35px; max-width: 1400px; margin: 0 auto; }
 
@@ -1042,13 +1042,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 .metric-label { font-size: 0.8rem; color: #000000; margin-bottom: 10px; font-weight: 600; }
 .metric-detail { font-size: 0.85rem; color: #000000; margin-top: 5px; }
 
-.metric-value.risk-high { color: var(--moroccan-terracotta); }
+.metric-value.risk-high { color: var(--moroccan-#072167); }
 .metric-value.risk-moderate { color: var(--moroccan-gold); }
 .metric-value.risk-low { color: var(--moroccan-emerald-light); }
 .metric-value.health-excellent { color: #22c55e; }
 .metric-value.health-good { color: var(--moroccan-emerald-light); }
 .metric-value.health-moderate { color: var(--moroccan-gold); }
-.metric-value.health-poor { color: var(--moroccan-terracotta); }
+.metric-value.health-poor { color: var(--moroccan-#072167); }
 
 .fertilization-grid {
   display: grid;
@@ -1128,7 +1128,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .close-guide {
   position: absolute; top: 15px; right: 20px;
   background: none; border: none;
-  color: var(--moroccan-terracotta); font-size: 1.8rem;
+  color: var(--moroccan-#072167); font-size: 1.8rem;
   cursor: pointer; transition: 0.2s;
 }
 
