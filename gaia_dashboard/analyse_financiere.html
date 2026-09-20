@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>AGRISCIENCE - Analyse Financière</title>
+    <title>Agrisense - Analyse Financi�re</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
@@ -19,16 +19,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         :root {
-            --emerald: #C97B5A;
+            --emerald: #072167;
             --gold: #C9A227;
-            --terracotta: #C46A3A;
+            --terracotta: #072167;
             --light-bg: #F8F4EA;
             --card-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
         }
 
-        /* ─── HERO BANNER ─── */
+        /* --- HERO BANNER --- */
         .fin-hero {
-            background: linear-gradient(135deg, #0a4a3d 0%, #C97B5A 50%, #1a7a68 100%);
+            background: linear-gradient(135deg, #0a4a3d 0%, #072167 50%, #1a7a68 100%);
             border-radius: 20px;
             padding: 40px 45px;
             margin-bottom: 35px;
@@ -38,7 +38,7 @@
         }
 
         .fin-hero::before {
-            content: '📊';
+            content: '??';
             position: absolute;
             font-size: 220px;
             right: -30px;
@@ -88,7 +88,7 @@
             text-transform: uppercase;
         }
 
-        /* ─── KPI CARDS ─── */
+        /* --- KPI CARDS --- */
         .kpi-strip {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
@@ -122,7 +122,7 @@
         }
 
         .kpi-card.green {
-            border-top-color: #C97B5A;
+            border-top-color: #072167;
         }
 
         .kpi-card.info {
@@ -190,7 +190,7 @@
             letter-spacing: .5px;
         }
 
-        /* ─── SECTION CARDS ─── */
+        /* --- SECTION CARDS --- */
         .fin-section {
             background: #fff;
             border-radius: 18px;
@@ -221,7 +221,7 @@
             border: 1px solid rgba(196, 106, 58, .25);
         }
 
-        /* ─── CHARTS ─── */
+        /* --- CHARTS --- */
         .chart-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -263,7 +263,7 @@
             max-height: 300px;
         }
 
-        /* ─── TABLES ─── */
+        /* --- TABLES --- */
         .fin-table {
             width: 100%;
             border-collapse: collapse;
@@ -315,7 +315,7 @@
 
         .fin-table .highlight-row td {
             background: rgba(76, 175, 80, .08);
-            border-left: 4px solid #C97B5A;
+            border-left: 4px solid #072167;
         }
 
         .fin-table td .badge-tag {
@@ -329,7 +329,7 @@
             border: 1px solid rgba(76, 175, 80, .3);
         }
 
-        /* ─── BUDGET DONUT SECTION ─── */
+        /* --- BUDGET DONUT SECTION --- */
         .budget-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -343,7 +343,7 @@
             }
         }
 
-        /* ─── BAR ITEMS (budget breakdown) ─── */
+        /* --- BAR ITEMS (budget breakdown) --- */
         .budget-bars {
             display: flex;
             flex-direction: column;
@@ -411,7 +411,7 @@
             100% { transform: translateX(100%); }
         }
 
-        /* ─── RECOMMENDATIONS ─── */
+        /* --- RECOMMENDATIONS --- */
         .rec-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -458,7 +458,7 @@
             line-height: 1.5;
         }
 
-        /* ─── ROI TIMELINE ─── */
+        /* --- ROI TIMELINE --- */
         .roi-timeline {
             display: flex;
             flex-direction: column;
@@ -502,7 +502,7 @@
             text-align: right;
         }
 
-        /* ─── DIVIDER ─── */
+        /* --- DIVIDER --- */
         .fin-divider {
             height: 4px;
             background: linear-gradient(90deg, var(--terracotta), var(--gold), var(--emerald));
@@ -511,12 +511,12 @@
             opacity: .3;
         }
 
-        /* ─── ANIMATED COUNTER ─── */
+        /* --- ANIMATED COUNTER --- */
         .counter-anim {
             display: inline;
         }
 
-        /* ─── SCROLL ANIMATION ─── */
+        /* --- SCROLL ANIMATION --- */
         .reveal {
             opacity: 0;
             transform: translateY(28px);
@@ -528,7 +528,7 @@
             transform: translateY(0);
         }
 
-        /* ── Responsive overrides for financial page ── */
+        /* -- Responsive overrides for financial page -- */
         @media (max-width: 1024px) {
             .fin-hero {
                 padding: 28px 22px;
@@ -655,9 +655,9 @@
     <!-- PWA Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="AgriScience">
+    <meta name="apple-mobile-web-app-title" content="Agrisense">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="manifest" href="manifest.json">
 </head>
 
@@ -676,20 +676,20 @@
                 title="Toggle Sidebar"></button>
             <div class="sidebar-header"><span class="gaia-text">Terra</span><span class="eye-text">nova</span></div>
             <div class="nav-item" onclick="window.location.href='index.html'" data-tooltip="Dashboard" data-i18n="nav_dashboard"><span
-                    class="nav-icon">🏠</span> <span class="nav-text">Dashboard</span></div>
+                    class="nav-icon">??</span> <span class="nav-text">Dashboard</span></div>
             <div class="nav-item" onclick="window.location.href='plan_parfait_arganier.html'"
-                data-tooltip="Plan Arganier" data-i18n="nav_plan"><span class="nav-icon">🌳</span> <span class="nav-text">Plan
+                data-tooltip="Plan Arganier" data-i18n="nav_plan"><span class="nav-icon">??</span> <span class="nav-text">Plan
                     Arganier</span></div>
             <div class="nav-item" onclick="window.location.href='plan_parfait_arganier.html?view=today'"
-                data-tooltip="Aujourd'hui" data-i18n="nav_today"><span class="nav-icon">📅</span> <span class="nav-text">Aujourd'hui</span>
+                data-tooltip="Aujourd'hui" data-i18n="nav_today"><span class="nav-icon">??</span> <span class="nav-text">Aujourd'hui</span>
             </div>
             <div class="nav-item" onclick="window.location.href='fournisseurs.html'" data-tooltip="Fournisseurs" data-i18n="nav_suppliers"><span
-                    class="nav-icon">🚛</span> <span class="nav-text">Fournisseurs</span></div>
-            <div class="nav-item active" data-tooltip="Analyse Financière" data-i18n="nav_finance"><span class="nav-icon">📊</span> <span
-                    class="nav-text">Analyse Financière</span></div>
+                    class="nav-icon">??</span> <span class="nav-text">Fournisseurs</span></div>
+            <div class="nav-item active" data-tooltip="Analyse Financi�re" data-i18n="nav_finance"><span class="nav-icon">??</span> <span
+                    class="nav-text">Analyse Financi�re</span></div>
             <div class="nav-divider"></div>
             <div class="nav-item back-btn" onclick="window.location.href='../map/index.html'"
-                data-tooltip="Retour Carte" data-i18n="nav_back_map">MAP <span class="nav-icon">🗺️</span> <span class="nav-text">Retour Carte</span>
+                data-tooltip="Retour Carte" data-i18n="nav_back_map">MAP <span class="nav-icon">???</span> <span class="nav-text">Retour Carte</span>
             </div>
             
         </div>
@@ -699,36 +699,36 @@
 
             <!-- Hero -->
             <div class="fin-hero reveal">
-                <div class="hero-badge" data-i18n="fin_hero_badge">🌱 Arganier · 2 Hectares · 25 Ans</div>
-                <h1 data-i18n="fin_hero_title">📊 ANALYSE FINANCIÈRE COMPLÈTE</h1>
-                <p data-i18n="fin_hero_desc">Projections de revenus, budgets d'investissement, flux de trésorerie et retour sur investissement.
+                <div class="hero-badge" data-i18n="fin_hero_badge">?? Arganier � 2 Hectares � 25 Ans</div>
+                <h1 data-i18n="fin_hero_title">?? ANALYSE FINANCI�RE COMPL�TE</h1>
+                <p data-i18n="fin_hero_desc">Projections de revenus, budgets d'investissement, flux de tr�sorerie et retour sur investissement.
                 </p>
             </div>
 
             <!-- KPI Strip -->
             <div class="kpi-strip reveal">
                 <div class="kpi-card">
-                    <div class="kpi-icon">🌳</div>
+                    <div class="kpi-icon">??</div>
                     <div class="kpi-value"><span class="counter-anim" data-target="300">0</span></div>
-                    <div class="kpi-label" data-i18n="fin_kpi_trees">Arbres plantés</div>
+                    <div class="kpi-label" data-i18n="fin_kpi_trees">Arbres plant�s</div>
                 </div>
                 <div class="kpi-card gold">
-                    <div class="kpi-icon">💰</div>
+                    <div class="kpi-icon">??</div>
                     <div class="kpi-value"><span class="counter-anim" data-target="8875">0</span> DH</div>
                     <div class="kpi-label" data-i18n="fin_kpi_invest">Investissement initial</div>
                 </div>
                 <div class="kpi-card terra">
-                    <div class="kpi-icon">📦</div>
+                    <div class="kpi-icon">??</div>
                     <div class="kpi-value">180 DH/kg</div>
                     <div class="kpi-label" data-i18n="fin_kpi_price">Prix vente noix</div>
                 </div>
                 <div class="kpi-card green">
-                    <div class="kpi-icon">🏆</div>
+                    <div class="kpi-icon">??</div>
                     <div class="kpi-value">1 an et 3 j</div>
-                    <div class="kpi-label" data-i18n="fin_kpi_rentability">Délai de rentabilité</div>
+                    <div class="kpi-label" data-i18n="fin_kpi_rentability">D�lai de rentabilit�</div>
                 </div>
                 <div class="kpi-card info">
-                    <div class="kpi-icon">📈</div>
+                    <div class="kpi-icon">??</div>
                     <div class="kpi-value">887 625 DH</div>
                     <div class="kpi-label" data-i18n="fin_kpi_net_income">Revenu net 1 ans</div>
                 </div>
@@ -737,8 +737,8 @@
             <!-- Section 1: Revenue Charts -->
             <div class="fin-section reveal">
                 <h2 class="fin-section-title">
-                    <span data-i18n="fin_part1">📈 PARTIE 1 — ESTIMATION DU REVENU</span>
-                    <span class="badge" data-i18n="fin_badge_2ha">2 ha · Arganier</span>
+                    <span data-i18n="fin_part1">?? PARTIE 1 � ESTIMATION DU REVENU</span>
+                    <span class="badge" data-i18n="fin_badge_2ha">2 ha � Arganier</span>
                 </h2>
 
                 <!-- Horizontal layout: chart + table side by side -->
@@ -746,41 +746,41 @@
 
                     <!-- Bar chart (left column) -->
                     <div class="chart-box" style="flex:1 1 340px;min-width:280px;">
-                        <h4 data-i18n="fin_chart_rev_year">📊 Revenu Net par Année (DH)</h4>
+                        <h4 data-i18n="fin_chart_rev_year">?? Revenu Net par Ann�e (DH)</h4>
                         <canvas id="barRevenueChart" style="max-height:300px;"></canvas>
                     </div>
                     <div style="flex:1 1 320px;min-width:260px;overflow-x:auto;">
                         <table class="fin-table">
                             <thead>
                                 <tr>
-                                    <th data-i18n="fin_table_period">Période</th>
+                                    <th data-i18n="fin_table_period">P�riode</th>
                                     <th data-i18n="fin_table_prod">Production totale</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td data-i18n="fin_year_1">Année 1 · Installation</td>
+                                    <td data-i18n="fin_year_1">Ann�e 1 � Installation</td>
                                     <td data-i18n="fin_year_1_desc">Cultures intercalaires</td>
                                 </tr>
                                 <tr>
-                                    <td data-i18n="fin_year_2">Année 2 · Début production</td>
-                                    <td data-i18n="fin_year_2_desc">5 000 kg (20 kg × 250 arbres)</td>
+                                    <td data-i18n="fin_year_2">Ann�e 2 � D�but production</td>
+                                    <td data-i18n="fin_year_2_desc">5 000 kg (20 kg � 250 arbres)</td>
                                 </tr>
                                 <tr>
-                                    <td data-i18n="fin_year_3">Année 3 · Croissance</td>
-                                    <td data-i18n="fin_year_3">Année 3 · Croissance</td>
+                                    <td data-i18n="fin_year_3">Ann�e 3 � Croissance</td>
+                                    <td data-i18n="fin_year_3">Ann�e 3 � Croissance</td>
                                 </tr>
                                 <tr>
-                                    <td data-i18n="fin_year_4">Année 4 · Croissance</td>
-                                    <td data-i18n="fin_year_4">Année 4 · Croissance</td>
+                                    <td data-i18n="fin_year_4">Ann�e 4 � Croissance</td>
+                                    <td data-i18n="fin_year_4">Ann�e 4 � Croissance</td>
                                 </tr>
                                 <tr>
-                                    <td data-i18n="fin_year_5">Année 5 · Croissance</td>
-                                    <td data-i18n="fin_year_5">Année 5 · Croissance</td>
+                                    <td data-i18n="fin_year_5">Ann�e 5 � Croissance</td>
+                                    <td data-i18n="fin_year_5">Ann�e 5 � Croissance</td>
                                 </tr>
                                 <tr>
-                                    <td data-i18n="fin_year_6_25">Années 6–25 · Pleine production</td>
-                                    <td data-i18n="fin_year_6_25_desc">9 000 kg/an (30 kg × 300 arbres)</td>
+                                    <td data-i18n="fin_year_6_25">Ann�es 6�25 � Pleine production</td>
+                                    <td data-i18n="fin_year_6_25_desc">9 000 kg/an (30 kg � 300 arbres)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -790,17 +790,17 @@
             </div><!-- /fin-section part 1 -->
 
 
-            <!-- Section 2 : Budget Matériel -->
+            <!-- Section 2 : Budget Mat�riel -->
             <div class="fin-section reveal">
                 <h2 class="fin-section-title">
-                    <span data-i18n="fin_part2">🔧 PARTIE 2 — BUDGET DU MATÉRIEL</span>
+                    <span data-i18n="fin_part2">?? PARTIE 2 � BUDGET DU MAT�RIEL</span>
                     <span class="badge" data-i18n="fin_init_invest_badge">Investissement initial : 8 875 DH</span>
                 </h2>
 
                 <div class="budget-layout">
                     <!-- Donut chart -->
                     <div class="chart-box" style="background:#fff;">
-                        <h4 data-i18n="fin_chart_invest_dist">🍩 Répartition de l'investissement</h4>
+                        <h4 data-i18n="fin_chart_invest_dist">?? R�partition de l'investissement</h4>
                         <canvas id="donutBudgetChart" style="max-height:280px;"></canvas>
                     </div>
                     <!-- Bar items -->
@@ -812,17 +812,17 @@
 
             </div>
 
-            <!-- Section 3 : Rentabilité -->
+            <!-- Section 3 : Rentabilit� -->
             <div class="fin-section reveal">
                 <h2 class="fin-section-title">
-                    <span data-i18n="fin_part3">⚡ PARTIE 3 — RENTABILITÉ &amp; FLUX DE TRÉSORERIE</span>
+                    <span data-i18n="fin_part3">? PARTIE 3 � RENTABILIT� &amp; FLUX DE TR�SORERIE</span>
                     <span class="badge" data-i18n="fin_roi_badge">ROI : 1 an et 3 jours</span>
                 </h2>
 
                 <div style="display:flex;gap:28px;align-items:flex-start;flex-wrap:wrap;">
                     
                     <div class="chart-box" style="flex:1 1 400px;min-width:280px;">
-                        <h4 data-i18n="fin_chart_cashflow">📈 Flux de trésorerie cumulé sur 25 ans</h4>
+                        <h4 data-i18n="fin_chart_cashflow">?? Flux de tr�sorerie cumul� sur 25 ans</h4>
                         <canvas id="cashflowChart" style="max-height:320px;"></canvas>
                     </div>
 
@@ -839,16 +839,16 @@
             <!-- Section 4 : Evolution Production -->
             <div class="fin-section reveal">
                 <h2 class="fin-section-title">
-                    <span data-i18n="fin_part4">🌿 PARTIE 4 — ÉVOLUTION DE LA PRODUCTION</span>
-                    <span class="badge" data-i18n="fin_unit_kg_300trees">kg · 300 arbres</span>
+                    <span data-i18n="fin_part4">?? PARTIE 4 � �VOLUTION DE LA PRODUCTION</span>
+                    <span class="badge" data-i18n="fin_unit_kg_300trees">kg � 300 arbres</span>
                 </h2>
                 <div class="chart-grid">
                     <div class="chart-box">
-                        <h4 data-i18n="fin_chart_prod_annual">🌰 Production annuelle de noix (kg)</h4>
+                        <h4 data-i18n="fin_chart_prod_annual">?? Production annuelle de noix (kg)</h4>
                         <canvas id="productionChart"></canvas>
                     </div>
                     <div class="chart-box">
-                        <h4 data-i18n="fin_chart_rev_dist">🥧 Répartition du revenu sur 25 ans</h4>
+                        <h4 data-i18n="fin_chart_rev_dist">?? R�partition du revenu sur 25 ans</h4>
                         <canvas id="revenuePieChart"></canvas>
                     </div>
                 </div>
@@ -857,55 +857,55 @@
             <!-- Section 5 : Recommandations -->
             <div class="fin-section reveal">
                 <h2 class="fin-section-title" data-i18n="fin_part5">
-                    🔑 PARTIE 5 — RECOMMANDATIONS STRATÉGIQUES
+                    ?? PARTIE 5 � RECOMMANDATIONS STRAT�GIQUES
                 </h2>
                 <div class="rec-grid">
                     <div class="rec-card">
-                        <div class="rec-icon">🏛️</div>
+                        <div class="rec-icon">???</div>
                         <div>
-                            <h4 data-i18n="fin_rec1_title">Subventions ORMVA Saïss</h4>
-                            <p data-i18n="fin_rec1_desc">Profitez de la subvention plantation de 3 DH/pied pour réduire votre investissement de
+                            <h4 data-i18n="fin_rec1_title">Subventions ORMVA Sa�ss</h4>
+                            <p data-i18n="fin_rec1_desc">Profitez de la subvention plantation de 3 DH/pied pour r�duire votre investissement de
                                 ~900 DH sur 300 plants.</p>
                         </div>
                     </div>
                     <div class="rec-card" style="border-left-color:var(--gold);">
-                        <div class="rec-icon">🤝</div>
+                        <div class="rec-icon">??</div>
                         <div>
                             <h4 data-i18n="fin_rec2_title">Contractualiser la vente</h4>
-                            <p data-i18n="fin_rec2_desc">Sécurisez le prix de 180 DH/kg avec une coopérative ou acheteur direct avant la mise en
-                                production (année 2).</p>
+                            <p data-i18n="fin_rec2_desc">S�curisez le prix de 180 DH/kg avec une coop�rative ou acheteur direct avant la mise en
+                                production (ann�e 2).</p>
                         </div>
                     </div>
                     <div class="rec-card" style="border-left-color:var(--terracotta);">
-                        <div class="rec-icon">💧</div>
+                        <div class="rec-icon">??</div>
                         <div>
-                            <h4 data-i18n="fin_rec3_title">Prioriser le goutte-à-goutte</h4>
-                            <p data-i18n="fin_rec3_desc">Le système d'irrigation (4 100 DH) est l'investissement le plus rentable — il détermine
-                                la survie des plants les premières années.</p>
+                            <h4 data-i18n="fin_rec3_title">Prioriser le goutte-�-goutte</h4>
+                            <p data-i18n="fin_rec3_desc">Le syst�me d'irrigation (4 100 DH) est l'investissement le plus rentable � il d�termine
+                                la survie des plants les premi�res ann�es.</p>
                         </div>
                     </div>
                     <div class="rec-card" style="border-left-color:#1565C0;">
-                        <div class="rec-icon">👨‍🌾</div>
+                        <div class="rec-icon">?????</div>
                         <div>
                             <h4 data-i18n="fin_rec4_title">Entraide agricole</h4>
-                            <p data-i18n="fin_rec4_desc">Regroupez-vous avec d'autres agriculteurs pour l'achat groupé de plants (prix dégressif)
-                                et le transport partagé des intrants.</p>
+                            <p data-i18n="fin_rec4_desc">Regroupez-vous avec d'autres agriculteurs pour l'achat group� de plants (prix d�gressif)
+                                et le transport partag� des intrants.</p>
                         </div>
                     </div>
                     <div class="rec-card" style="border-left-color:#7b1fa2;">
-                        <div class="rec-icon">🌾</div>
+                        <div class="rec-icon">??</div>
                         <div>
-                            <h4 data-i18n="fin_rec5_title">Cultures intercalaires (A1–A3)</h4>
-                            <p data-i18n="fin_rec5_desc">Semez orge, féverole et luzerne entre les arganiers pour générer un revenu dès la 1ère
-                                année et améliorer la fertilité du sol.</p>
+                            <h4 data-i18n="fin_rec5_title">Cultures intercalaires (A1�A3)</h4>
+                            <p data-i18n="fin_rec5_desc">Semez orge, f�verole et luzerne entre les arganiers pour g�n�rer un revenu d�s la 1�re
+                                ann�e et am�liorer la fertilit� du sol.</p>
                         </div>
                     </div>
                     <div class="rec-card" style="border-left-color:#2e7d32;">
-                        <div class="rec-icon">📊</div>
+                        <div class="rec-icon">??</div>
                         <div>
                             <h4 data-i18n="fin_rec6_title">Suivi financier mensuel</h4>
-                            <p data-i18n="fin_rec6_desc">Tenez un carnet de bord mensuel pour suivre les charges réelles vs estimées et optimiser
-                                la trésorerie dès la 2ème année.</p>
+                            <p data-i18n="fin_rec6_desc">Tenez un carnet de bord mensuel pour suivre les charges r�elles vs estim�es et optimiser
+                                la tr�sorerie d�s la 2�me ann�e.</p>
                         </div>
                     </div>
                 </div>
@@ -927,9 +927,9 @@
         4376025 + 1614000 * 15,
             36656025];
 
-        const EMERALD = '#C97B5A';
+        const EMERALD = '#072167';
         const GOLD = '#C9A227';
-        const TERRACOTTA = '#C46A3A';
+        const TERRACOTTA = '#072167';
 
         const chartDefaults = {
             font: { family: 'Inter, sans-serif' },
@@ -994,7 +994,7 @@
             data: {
                 labels: ['A0','A1', 'A2', 'A3', 'A4', 'A5', 'A25'],
                 datasets: [{
-                    label: 'Flux cumulé',
+                    label: 'Flux cumul�',
                     data: [-8875, -7875, 887625, 1889625, 3032025, 4376025, 36656025],
                     borderColor: EMERALD,
                     backgroundColor: 'rgba(201,123,90,.08)',
@@ -1006,7 +1006,7 @@
                     tension: .35
                 },
                 {
-                    label: 'Seuil zéro',
+                    label: 'Seuil z�ro',
                     data: [0,0,0,0,0,0,0],
                     borderColor: 'rgba(198,40,40,.4)',
                     borderWidth: 2,
@@ -1072,7 +1072,7 @@
         function renderBudgetBars() {
             const barsEl = document.getElementById('budgetBars');
             if (!barsEl) return;
-            const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
+            const lang = localStorage.getItem('Agrisense_lang') || localStorage.getItem('terranova_lang') || 'fr';
             const sectionVisible = barsEl.closest('.reveal').classList.contains('visible');
             barsEl.innerHTML = '';
             const items = [
@@ -1090,7 +1090,7 @@
                     <div class="budget-bar-item">
                         <div class="budget-bar-label">
                             <span>${label}</span>
-                            <span style="color:${item.color};font-weight:700;">${item.amount.toLocaleString(lang === 'ar' ? 'ar-MA' : 'fr-MA')} DH · ${pct}%</span>
+                            <span style="color:${item.color};font-weight:700;">${item.amount.toLocaleString(lang === 'ar' ? 'ar-MA' : 'fr-MA')} DH � ${pct}%</span>
                         </div>
                         <div class="budget-bar-track">
                             <div class="budget-bar-fill" data-width="${pct}" style="width:${sectionVisible ? pct : 0}%;background:${item.color};"></div>
@@ -1105,12 +1105,12 @@
             const sectionVisible = roiEl.closest('.reveal').classList.contains('visible');
             roiEl.innerHTML = '';
             const roiData = [
-                { yearKey: 'fin_year_0', amount: -8875, label: '–8 875 DH', color: '#c62828', pct: 2 },
-                { yearKey: 'fin_year_1', amount: -7875, label: '–7 875 DH', color: '#ef9a9a', pct: 4 },
-                { yearKey: 'fin_year_2', amount: 887625, label: '+887 625 DH ✅', color: '#C97B5A', pct: 35 },
+                { yearKey: 'fin_year_0', amount: -8875, label: '�8 875 DH', color: '#c62828', pct: 2 },
+                { yearKey: 'fin_year_1', amount: -7875, label: '�7 875 DH', color: '#ef9a9a', pct: 4 },
+                { yearKey: 'fin_year_2', amount: 887625, label: '+887 625 DH ?', color: '#072167', pct: 35 },
                 { yearKey: 'fin_year_3', amount: 1889625, label: '+1,89 M DH', color: EMERALD, pct: 55 },
                 { yearKey: 'fin_year_5', amount: 4376025, label: '+4,38 M DH', color: EMERALD, pct: 75 },
-                { yearKey: 'fin_year_25', amount: 36656025, label: '+36,66 M DH 🏆', color: GOLD, pct: 100 },
+                { yearKey: 'fin_year_25', amount: 36656025, label: '+36,66 M DH ??', color: GOLD, pct: 100 },
             ];
             roiData.forEach(r => {
                 const year = t(r.yearKey);
@@ -1135,7 +1135,7 @@
         new Chart(document.getElementById('productionChart'), {
             type: 'bar',
             data: {
-                labels: ['Année 1', 'Année 2', 'Année 3', 'Année 4', 'Année 5', 'Années 6+'],
+                labels: ['Ann�e 1', 'Ann�e 2', 'Ann�e 3', 'Ann�e 4', 'Ann�e 5', 'Ann�es 6+'],
                 datasets: [{
                     label: 'Production (kg)',
                     data: [0, 5000, 5600, 6380, 7500, 9000],
@@ -1178,7 +1178,7 @@
         new Chart(document.getElementById('revenuePieChart'), {
             type: 'pie',
             data: {
-                labels: ['Année 1 (0%)', 'Année 2 (2,4%)', 'Années 3–5 (9,5%)', 'Années 6–25 (88,1%)'],
+                labels: ['Ann�e 1 (0%)', 'Ann�e 2 (2,4%)', 'Ann�es 3�5 (9,5%)', 'Ann�es 6�25 (88,1%)'],
                 datasets: [{
                     data: [1000, 895500, 3488400, 32280000],
                     backgroundColor: [
@@ -1254,7 +1254,7 @@
         /* ============================================================
            DYNAMIC LANGUAGE SWITCHER FOR CHARTS & LISTS
            ============================================================ */
-        window.addEventListener('agriscienceLanguageChanged', (e) => {
+        window.addEventListener('AgrisenseLanguageChanged', (e) => {
             const lang = e.detail;
             const data = langData[lang];
 
@@ -1292,7 +1292,7 @@
             if (pieChart) {
                 pieChart.data.labels = [
                     data['fin_year_1'] + ' (0%)', data['fin_year_2'] + ' (2,4%)',
-                    data['fin_year_3'] + '–A5 (9,5%)', data['fin_year_6_25'] + ' (88,1%)'
+                    data['fin_year_3'] + '�A5 (9,5%)', data['fin_year_6_25'] + ' (88,1%)'
                 ];
                 pieChart.update();
             }

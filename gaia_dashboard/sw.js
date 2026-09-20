@@ -1,4 +1,4 @@
-const CACHE_NAME = 'agriscience-v1';
+const CACHE_NAME = 'Agrisense-v1';
 const ASSETS_TO_CACHE = [
     './',
     'index.html',

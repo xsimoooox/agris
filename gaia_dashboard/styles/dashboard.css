@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    GAIA EYE DASHBOARD - STYLING
    ============================================ */
 
@@ -58,7 +58,7 @@ body {
 }
 
 .gaia-text {
-    color: #C97B5A;
+    color: #072167;
 }
 
 .eye-text {
@@ -82,15 +82,15 @@ body {
 
 .nav-item:hover {
     background: rgba(78, 222, 128, 0.1);
-    border-color: #C97B5A;
-    color: #C97B5A;
+    border-color: #072167;
+    color: #072167;
     transform: translateX(5px);
 }
 
 .nav-item.active {
     background: linear-gradient(135deg, rgba(78, 222, 128, 0.15), rgba(96, 165, 250, 0.1));
-    border-color: #C97B5A;
-    color: #C97B5A;
+    border-color: #072167;
+    color: #072167;
     font-weight: 700;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -127,7 +127,7 @@ body {
 }
 
 .main-content::-webkit-scrollbar-thumb {
-    background: #C97B5A;
+    background: #072167;
     border-radius: 4px;
 }
 
@@ -165,7 +165,7 @@ body {
 .main-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 28px;
-    color: #C97B5A;
+    color: #072167;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -206,7 +206,7 @@ h4 {
 }
 
 .card:hover {
-    border-color: #C97B5A;
+    border-color: #072167;
     box-shadow: 0 8px 30px rgba(201, 123, 90, 0.08);
 }
 
@@ -269,7 +269,7 @@ h4 {
 .metric-value {
     font-size: 22px;
     font-weight: 700;
-    color: #C97B5A;
+    color: #072167;
 }
 
 .metric-value.alert {
@@ -308,7 +308,7 @@ h4 {
     padding: 12px;
     text-align: left;
     font-size: 13px;
-    color: #C97B5A;
+    color: #072167;
     border-bottom: 2px solid #cbd5e1;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -336,7 +336,7 @@ h4 {
 }
 
 .data-table td.success {
-    color: #C97B5A;
+    color: #072167;
     font-weight: 600;
 }
 
@@ -386,7 +386,7 @@ h4 {
 
 .alert-box.success {
     background: rgba(78, 222, 128, 0.12);
-    border-color: #C97B5A;
+    border-color: #072167;
     color: #0a4a3d;
 }
 
@@ -457,7 +457,7 @@ h4 {
 }
 
 .zone-card.good {
-    border-color: #C97B5A;
+    border-color: #072167;
 }
 
 .zone-card h4 {
@@ -522,7 +522,7 @@ h4 {
 }
 
 .scenario-card.optimized {
-    border-color: #C97B5A;
+    border-color: #072167;
     box-shadow: 0 0 30px rgba(78, 222, 128, 0.2);
 }
 
@@ -571,7 +571,7 @@ h4 {
     padding: 20px;
     background: linear-gradient(135deg, rgba(78, 222, 128, 0.2), rgba(96, 165, 250, 0.2));
     border-radius: 12px;
-    border: 2px solid #C97B5A;
+    border: 2px solid #072167;
 }
 
 .gain-label {
@@ -762,7 +762,7 @@ h4 {
 }
 
 .carbon-section.sequestration {
-    border-left: 4px solid #C97B5A;
+    border-left: 4px solid #072167;
 }
 
 .carbon-section h4 {
@@ -790,7 +790,7 @@ h4 {
 
 .carbon-balance-result.success {
     background: rgba(78, 222, 128, 0.15);
-    border: 2px solid #C97B5A;
+    border: 2px solid #072167;
     color: #0a4a3d;
 }
 
@@ -819,7 +819,7 @@ h4 {
 }
 
 .cert-card h4 {
-    color: #C97B5A;
+    color: #072167;
     margin-bottom: 12px;
     font-size: 18px;
 }
@@ -835,7 +835,7 @@ h4 {
 
 .cert-status.success {
     background: rgba(78, 222, 128, 0.2);
-    color: #C97B5A;
+    color: #072167;
 }
 
 .cert-status.warning {
@@ -881,7 +881,7 @@ h4 {
     top: 0;
     bottom: 0;
     width: 3px;
-    background: linear-gradient(180deg, #C9A227, #C97B5A);
+    background: linear-gradient(180deg, #C9A227, #072167);
 }
 
 .timeline-item {
@@ -895,7 +895,7 @@ h4 {
     top: 8px;
     width: 15px;
     height: 15px;
-    background: #C97B5A;
+    background: #072167;
     border-radius: 50%;
     border: 3px solid #0f172a;
     box-shadow: 0 0 15px rgba(78, 222, 128, 0.5);
@@ -904,7 +904,7 @@ h4 {
 .timeline-year {
     font-size: 16px;
     font-weight: 700;
-    color: #C97B5A;
+    color: #072167;
     margin-bottom: 8px;
 }
 
@@ -942,7 +942,7 @@ h4 {
 }
 
 .summary-section h4 {
-    color: #C97B5A;
+    color: #072167;
     margin-bottom: 15px;
     font-size: 16px;
 }
@@ -965,7 +965,7 @@ h4 {
     text-align: center;
     font-size: 20px;
     font-style: italic;
-    color: #C97B5A;
+    color: #072167;
     margin: 30px 0;
     padding: 20px;
     border-top: 1px solid rgba(78, 222, 128, 0.3);

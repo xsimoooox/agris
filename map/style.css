@@ -1,5 +1,5 @@
-ï»¿/* ============================================================
-   AGRISCIENCE â€” MOROCCAN MAP PAGE THEME
+/* ============================================================
+   Agrisense — MOROCCAN MAP PAGE THEME
    ============================================================ */
 
 /* --- Animation Keyframes --- */
@@ -20,10 +20,10 @@
 }
 
 :root {
-  --moroccan-emerald: #C97B5A;
+  --moroccan-emerald: #072167;
   --moroccan-emerald-light: #D4906F;
   --moroccan-gold: #C9A227;
-  --moroccan-terracotta: #C46A3A;
+  --moroccan-terracotta: #072167;
   --moroccan-blue: #1F4E79;
   --moroccan-blue-light: #2e6fa3;
   --moroccan-sand: #E8DCCB;
@@ -137,7 +137,7 @@ body {
 
 .sidebar-item.active {
   opacity: 1;
-  background: linear-gradient(135deg, #C97B5A, #f59e0b);
+  background: linear-gradient(135deg, #072167, #f59e0b);
   border-color: transparent;
   color: white;
   box-shadow: 0 4px 15px rgba(201, 123, 90, 0.4);
@@ -743,7 +743,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #C97B5A;
+  background: #072167;
   color: #fff;
   display: none;
   align-items: center;
@@ -829,7 +829,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 .modern-card.selected {
   background: rgba(201, 123, 90, 0.1) !important;
-  border-color: #C97B5A !important;
+  border-color: #072167 !important;
   transform: translateY(-4px) scale(1.02) !important;
   box-shadow: 0 10px 25px rgba(201, 123, 90, 0.25) !important;
 }
@@ -838,7 +838,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .custom-crop-box {
   margin-top: 25px;
   background: #ffffff;
-  border: 2px solid #C97B5A;
+  border: 2px solid #072167;
   border-radius: 16px;
   padding: 22px;
   box-shadow: 0 12px 30px rgba(201, 123, 90, 0.1);
@@ -853,7 +853,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .custom-crop-header h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #C97B5A;
+  color: #072167;
   margin: 0 0 4px 0;
 }
 
@@ -876,13 +876,13 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .custom-crop-text-input:focus {
-  border-color: #C97B5A;
+  border-color: #072167;
   box-shadow: 0 0 0 3px rgba(201, 123, 90, 0.15);
 }
 
 .custom-crop-btn {
   padding: 12px 24px;
-  background: linear-gradient(135deg, #C97B5A, #b06040);
+  background: linear-gradient(135deg, #072167, #b06040);
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -911,7 +911,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .tag-example-btn {
   background: rgba(201, 123, 90, 0.08);
   border: 1px solid rgba(201, 123, 90, 0.2);
-  color: #C97B5A;
+  color: #072167;
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -921,7 +921,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .tag-example-btn:hover {
-  background: #C97B5A;
+  background: #072167;
   color: #ffffff;
   transform: translateY(-1px);
 }
@@ -940,7 +940,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 60px;
   height: 60px;
   border: 4px solid rgba(74, 222, 128, 0.1);
-  border-top: 4px solid #C97B5A;
+  border-top: 4px solid #072167;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -1157,7 +1157,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .guide-footer p { color: #000000; font-size: 0.8rem; opacity: 0.6; }
 
 /* ============================================================
-   UNIVERSAL HOVER ZOOM SYSTEM â€” MAP PAGE
+   UNIVERSAL HOVER ZOOM SYSTEM — MAP PAGE
    GPU-accelerated with will-change: transform
    ============================================================ */
 
@@ -1223,7 +1223,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-/* Sidebar items on map â€” refined (no scale, just slide) */
+/* Sidebar items on map — refined (no scale, just slide) */
 .sidebar-item:hover {
   transform: translateX(-6px) !important;
 }

@@ -1,15 +1,15 @@
 /* ============================================================
-   AGRISCIENCE — MOROCCAN INNOVATION THEME
+   Agrisense — MOROCCAN INNOVATION THEME
    Palette: Emerald Green, Gold, Terracotta, Atlas Blue, Sand
    ============================================================ */
 
 /* --- CSS Variables --- */
 :root {
-  --moroccan-emerald: #C97B5A;
+  --moroccan-emerald: #072167;
   --moroccan-emerald-light: #D4906F;
   --moroccan-gold: #C9A227;
   --moroccan-gold-light: #f0c843;
-  --moroccan-terracotta: #C46A3A;
+  --moroccan-terracotta: #072167;
   --moroccan-blue: #1F4E79;
   --moroccan-blue-light: #2e6fa3;
   --moroccan-sand: #E8DCCB;
@@ -2250,7 +2250,7 @@ em {
   content: attr(data-tooltip);
   position: absolute;
   left: 80px;
-  background: #C97B5A;
+  background: #072167;
   color: #FFFFFF !important;
   padding: 6px 12px !important;
   border-radius: 6px;
@@ -2305,7 +2305,7 @@ em {
 
 .fab-wrapper:hover .fab-main {
   transform: scale(1.1) rotate(45deg);
-  background: #C97B5A; /* Vibrant Green on hover */
+  background: #072167; /* Vibrant Green on hover */
 }
 
 .fab-options {

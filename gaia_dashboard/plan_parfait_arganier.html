@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>AGRISCIENCE - Plan Parfait Fruits de l'arganier</title>
+    <title>Agrisense - Plan Parfait Fruits de l'arganier</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
@@ -32,7 +32,7 @@
         }
 
         .vineyard-hero::before {
-            content: '🌳';
+            content: '??';
             position: absolute;
             font-size: 200px;
             opacity: 0.05;
@@ -68,7 +68,7 @@
         }
 
         .progress-bar-fill {
-            background: linear-gradient(90deg, #C97B5A, #8bc34a);
+            background: linear-gradient(90deg, #072167, #8bc34a);
             height: 100%;
             border-radius: 15px;
             transition: width 0.5s ease;
@@ -108,7 +108,7 @@
         }
 
         .day-card.completed {
-            background: linear-gradient(135deg, #b0583a, #C97B5A);
+            background: linear-gradient(135deg, #b0583a, #072167);
             border-color: #D4906F;
             color: #fff;
         }
@@ -158,7 +158,7 @@
 
         .iot-stat span:last-child {
             font-weight: 700;
-            color: #C97B5A;
+            color: #072167;
         }
 
         .action-item {
@@ -206,7 +206,7 @@
         }
 
         .final-banner {
-            background: linear-gradient(135deg, #2e7d32, #C97B5A);
+            background: linear-gradient(135deg, #2e7d32, #072167);
             padding: 40px;
             border-radius: 20px;
             text-align: center;
@@ -357,7 +357,7 @@
             align-items: center;
             justify-content: center;
             font-size: 22px;
-            color: #C97B5A;
+            color: #072167;
             border: 1px solid rgba(201, 123, 90, 0.1);
         }
 
@@ -386,8 +386,8 @@
         }
 
         .task-card:hover {
-            border-color: #C97B5A;
-            border-left-color: #C97B5A;
+            border-color: #072167;
+            border-left-color: #072167;
             transform: translateY(-4px) translateX(5px);
             box-shadow: 0 12px 40px rgba(0,0,0,0.08);
             z-index: 2;
@@ -453,12 +453,12 @@
         }
 
         .custom-checkbox.checked {
-            background: #C97B5A;
-            border-color: #C97B5A;
+            background: #072167;
+            border-color: #072167;
         }
 
         .custom-checkbox.checked::after {
-            content: '✓';
+            content: '?';
             color: white;
             font-size: 14px;
             font-weight: bold;
@@ -482,7 +482,7 @@
             text-decoration: line-through; 
             background: rgba(201, 123, 90, 0.05);
         }
-        .task-row.done td:first-child { border-left-color: #C97B5A; }
+        .task-row.done td:first-child { border-left-color: #072167; }
 
         /* Modal Styles */
         .modal-overlay {
@@ -517,7 +517,7 @@
         }
 
         .modal-header {
-            background: #C97B5A;
+            background: #072167;
             padding: 30px;
             color: #E8DCCB;
             position: sticky;
@@ -529,7 +529,7 @@
         
         .modal-section { margin-bottom: 25px; }
         .modal-section h4 { 
-            color: #C46A3A; 
+            color: #072167; 
             font-family: 'Orbitron', sans-serif; 
             font-size: 14px; 
             margin-bottom: 10px;
@@ -545,7 +545,7 @@
             line-height: 1.6;
         }
         .step-num { 
-            background: #C46A3A; 
+            background: #072167; 
             color: #fff; 
             width: 24px; 
             height: 24px; 
@@ -581,7 +581,7 @@
             z-index: 3;
             font-size: 18px;
         }
-        /* ── Responsive overrides for plan page ── */
+        /* -- Responsive overrides for plan page -- */
         @media (max-width: 1024px) {
             .hero-title { font-size: 26px !important; }
             .calc-overlay { flex-direction: column; align-items: stretch; gap: 14px; }
@@ -636,14 +636,14 @@
             <div class="sidebar-nav">
             <button class="sidebar-toggle-btn" onclick="document.querySelector('.dashboard-container').classList.toggle('sidebar-collapsed'); document.querySelector('.dashboard-container').classList.toggle('sidebar-open')" title="Toggle Sidebar"></button>
             <div class="sidebar-header"><span class="gaia-text">Terra</span><span class="eye-text">nova</span></div>
-            <div class="nav-item" onclick="window.location.href='index.html'" data-tooltip="Dashboard" data-i18n="nav_dashboard" data-i18n-tooltip="nav_dashboard"><span class="nav-icon">🏠</span> <span class="nav-text">Dashboard</span></div>
-            <div class="nav-item active" id="nav-plan" onclick="switchView('plan')" data-tooltip="Plan Arganier" data-i18n="nav_plan" data-i18n-tooltip="nav_plan"><span class="nav-icon">📋</span> <span class="nav-text">Plan Arganier</span></div>
-            <div class="nav-item" id="nav-today" onclick="switchView('today')" data-tooltip="Aujourd'hui" data-i18n="nav_today" data-i18n-tooltip="nav_today"><span class="nav-icon">📅</span> <span class="nav-text">Aujourd'hui</span></div>
-            <div class="nav-item" onclick="window.location.href='fournisseurs.html'" data-tooltip="Fournisseurs" data-i18n="nav_suppliers" data-i18n-tooltip="nav_suppliers"><span class="nav-icon">🚛</span> <span class="nav-text">Fournisseurs</span></div>
-            <div class="nav-item" onclick="window.location.href='analyse_financiere.html'" data-tooltip="Analyse Financière" data-i18n="nav_finance" data-i18n-tooltip="nav_finance"><span class="nav-icon">📊</span> <span class="nav-text">Analyse Financière</span></div>
+            <div class="nav-item" onclick="window.location.href='index.html'" data-tooltip="Dashboard" data-i18n="nav_dashboard" data-i18n-tooltip="nav_dashboard"><span class="nav-icon">??</span> <span class="nav-text">Dashboard</span></div>
+            <div class="nav-item active" id="nav-plan" onclick="switchView('plan')" data-tooltip="Plan Arganier" data-i18n="nav_plan" data-i18n-tooltip="nav_plan"><span class="nav-icon">??</span> <span class="nav-text">Plan Arganier</span></div>
+            <div class="nav-item" id="nav-today" onclick="switchView('today')" data-tooltip="Aujourd'hui" data-i18n="nav_today" data-i18n-tooltip="nav_today"><span class="nav-icon">??</span> <span class="nav-text">Aujourd'hui</span></div>
+            <div class="nav-item" onclick="window.location.href='fournisseurs.html'" data-tooltip="Fournisseurs" data-i18n="nav_suppliers" data-i18n-tooltip="nav_suppliers"><span class="nav-icon">??</span> <span class="nav-text">Fournisseurs</span></div>
+            <div class="nav-item" onclick="window.location.href='analyse_financiere.html'" data-tooltip="Analyse Financi�re" data-i18n="nav_finance" data-i18n-tooltip="nav_finance"><span class="nav-icon">??</span> <span class="nav-text">Analyse Financi�re</span></div>
 
             <div class="nav-divider"></div>
-            <div class="nav-item back-btn" onclick="window.location.href='../map/index.html'" data-tooltip="Retour Carte" data-i18n="nav_back_map" data-i18n-tooltip="nav_back_map">MAP <span class="nav-icon">🗺️</span> <span class="nav-text">Retour Carte</span></div>
+            <div class="nav-item back-btn" onclick="window.location.href='../map/index.html'" data-tooltip="Retour Carte" data-i18n="nav_back_map" data-i18n-tooltip="nav_back_map">MAP <span class="nav-icon">???</span> <span class="nav-text">Retour Carte</span></div>
             
         </div>
             <div class="main-content">
@@ -663,15 +663,15 @@
                             onchange="updateCalculations()">
                     </div>
                     <div class="calc-result-badge">
-                        <span data-i18n="plan_volume_total">VOLUME TOTAL PRÉVU</span>
+                        <span data-i18n="plan_volume_total">VOLUME TOTAL PR�VU</span>
                         <span id="total-volume-display">---</span>
                     </div>
                     <div class="calc-result-badge">
-                        <span data-i18n="plan_water_total">EAU TOTALE ESTIMÉE</span>
+                        <span data-i18n="plan_water_total">EAU TOTALE ESTIM�E</span>
                         <span id="total-water-display">---</span>
                     </div>
                     <div class="calc-result-badge">
-                        <span data-i18n="plan_ref_system">RÉFÉRENCE SYSTÈME</span>
+                        <span data-i18n="plan_ref_system">R�F�RENCE SYST�ME</span>
                         <span id="ref-system-badge">TN-NOVA-2024-X4</span>
                     </div>
                 </div>
@@ -687,7 +687,7 @@
             </div>
             <div id="plan-view">
                 <div class="card">
-                    <h2 id="timeline-title" data-i18n="plan_timeline_title">📅 Timeline</h2>
+                    <h2 id="timeline-title" data-i18n="plan_timeline_title">?? Timeline</h2>
                     <div id="timeline" class="timeline-container"></div>
                 </div>
                 <div id="day-details-container"></div>
@@ -697,8 +697,8 @@
             <div id="today-view" style="display:none">
                 <div class="today-header">
                     <div style="z-index: 1;">
-                        <h2 style="color: #111; margin:0; font-family:'Orbitron', sans-serif; letter-spacing: 2px;" data-i18n="today_title">📅 AUJOURD'HUI</h2>
-                        <div style="font-size: 12px; color: #C9A227; font-weight: 700; margin-top: 5px;" data-i18n="today_unit">UNITÉ DE PRODUCTION ARGANIER</div>
+                        <h2 style="color: #111; margin:0; font-family:'Orbitron', sans-serif; letter-spacing: 2px;" data-i18n="today_title">?? AUJOURD'HUI</h2>
+                        <div style="font-size: 12px; color: #C9A227; font-weight: 700; margin-top: 5px;" data-i18n="today_unit">UNIT� DE PRODUCTION ARGANIER</div>
                     </div>
                     <div class="date-picker-wrapper">
                         <span style="font-size: 12px; font-weight: 700; color: #111;" data-i18n="today_date_label">Date :</span>
@@ -708,24 +708,24 @@
 
                 <div class="today-summary">
                     <div class="summary-card">
-                        <div class="summary-icon">🛠️</div>
+                        <div class="summary-icon">???</div>
                         <div>
                             <div id="summary-total" style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 800; color: #111;">0</div>
                             <div style="font-size: 11px; color: #000000; font-weight: 600; text-transform: uppercase;" data-i18n="today_actions">Actions</div>
                         </div>
                     </div>
                     <div class="summary-card">
-                        <div class="summary-icon" style="color: #C97B5A;">✅</div>
+                        <div class="summary-icon" style="color: #072167;">?</div>
                         <div>
                             <div id="summary-completed" style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 800; color: #b0583a;">0</div>
-                            <div style="font-size: 11px; color: #000000; font-weight: 600; text-transform: uppercase;" data-i18n="today_validated">Validées</div>
+                            <div style="font-size: 11px; color: #000000; font-weight: 600; text-transform: uppercase;" data-i18n="today_validated">Valid�es</div>
                         </div>
                     </div>
                     <div class="summary-card">
-                        <div class="summary-icon" style="color: #C46A3A;">📊</div>
+                        <div class="summary-icon" style="color: #072167;">??</div>
                         <div>
-                            <div id="summary-progress" style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 800; color: #C46A3A;">0%</div>
-                            <div style="font-size: 11px; color: #000000; font-weight: 600; text-transform: uppercase;" data-i18n="today_success">Réussite</div>
+                            <div id="summary-progress" style="font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 800; color: #072167;">0%</div>
+                            <div style="font-size: 11px; color: #000000; font-weight: 600; text-transform: uppercase;" data-i18n="today_success">R�ussite</div>
                         </div>
                     </div>
                 </div>
@@ -735,12 +735,12 @@
                 </div>
             </div>
             <div class="nav-buttons">
-                <button class="nav-btn" id="prev-day" onclick="navigateDay(-1)" data-i18n="nav_prev">⬅️ Précédent</button>
-                <button class="nav-btn" id="next-day" onclick="navigateDay(1)" data-i18n="nav_next">Suivant ➡️</button>
+                <button class="nav-btn" id="prev-day" onclick="navigateDay(-1)" data-i18n="nav_prev">?? Pr�c�dent</button>
+                <button class="nav-btn" id="next-day" onclick="navigateDay(1)" data-i18n="nav_next">Suivant ??</button>
             </div>
             <div id="final-banner" class="final-banner" style="display:none">
-                <h2 data-i18n="plan_final_title">🏆 SOL PARFAIT ATTEINT !</h2>
-                <p data-i18n="plan_final_desc">Excellence agronomique validée par AgriScience.</p>
+                <h2 data-i18n="plan_final_title">?? SOL PARFAIT ATTEINT !</h2>
+                <p data-i18n="plan_final_desc">Excellence agronomique valid�e par Agrisense.</p>
             </div>
         </div>
     </div>
@@ -765,7 +765,7 @@
 
             // Update Timeline Header
             const timelineHeader = document.getElementById('timeline-title');
-            if (timelineHeader) timelineHeader.innerText = `📅 ${t('plan_timeline_title')} - ${PLAN_DURATION} ${t('plan_timeline_days')}`;
+            if (timelineHeader) timelineHeader.innerText = `?? ${t('plan_timeline_title')} - ${PLAN_DURATION} ${t('plan_timeline_days')}`;
 
             for (let i = 1; i <= PLAN_DURATION; i++) {
                 const el = document.createElement('div');
@@ -840,7 +840,7 @@
 
         function updateCalculations() {
             const hectares = parseFloat(document.getElementById('hectare-input').value) || 1;
-            // Calculs simplifiés basés sur GLOBAL_CALCULATION_REFERENCE
+            // Calculs simplifi�s bas�s sur GLOBAL_CALCULATION_REFERENCE
             const waterPerHectare = 1250; // m3 pour tout le plan
             const compostPerHectare = 47; // t pour tout le plan
 
@@ -879,7 +879,7 @@
                         
                         <div class="interactive-timeline" style="position: relative; padding: 10px 0; width: 100%;">
                             <div class="timeline-track" style="position: absolute; left: 24px; top: 30px; bottom: 30px; width: 4px; background: rgba(196,106,58,0.15); border-radius: 4px; z-index: 1;">
-                                <div class="timeline-progress" style="position: absolute; top: 0; left: 0; width: 100%; height: 0%; background: #C46A3A; border-radius: 4px; transition: height 0.4s ease-out; z-index: 2;"></div>
+                                <div class="timeline-progress" style="position: absolute; top: 0; left: 0; width: 100%; height: 0%; background: #072167; border-radius: 4px; transition: height 0.4s ease-out; z-index: 2;"></div>
                             </div>
                             
                             ${d.actions.map((a, i) => `
@@ -889,13 +889,13 @@
                                     <div class="action-item instruction-row" 
                                          onmouseover="showInstructionTooltip(event, '${t(a.title).replace(/'/g, "\\'")}', '${t(a.description).replace(/'/g, "\\'")}', '${a.timing}')"
                                          onmouseout="hideInstructionTooltip()"
-                                         style="flex: 1; background: #FFFFFF; border: 1px solid rgba(201,162,39,0.2); border-left: 4px solid #C46A3A; border-radius: 12px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; gap: 12px; align-items: center; transition: all 0.2s; cursor: help; margin: 0;">
-                                        <input type="checkbox" style="width: 18px; height: 18px; cursor: pointer; accent-color: #C46A3A;" onclick="event.stopPropagation(); this.parentElement.style.opacity = this.checked ? '0.4' : '1'">
+                                         style="flex: 1; background: #FFFFFF; border: 1px solid rgba(201,162,39,0.2); border-left: 4px solid #072167; border-radius: 12px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; gap: 12px; align-items: center; transition: all 0.2s; cursor: help; margin: 0;">
+                                        <input type="checkbox" style="width: 18px; height: 18px; cursor: pointer; accent-color: #072167;" onclick="event.stopPropagation(); this.parentElement.style.opacity = this.checked ? '0.4' : '1'">
                                         <div style="display:flex; gap: 15px; align-items: center; flex: 1; flex-wrap: wrap;">
                                             <span style="font-family: 'Orbitron', sans-serif; font-size: 12px; color: #7c4500; font-weight: 700; min-width: 50px; background: rgba(196,106,58,0.1); padding: 4px 8px; border-radius: 6px;">${a.timing}</span>
                                             <span style="font-size: 14px; color: #1a1a1a; font-weight: 600; word-wrap: break-word;">${t(a.title)}</span>
                                         </div>
-                                        <span style="font-size: 14px; color: rgba(196,106,58,0.4);">✦</span>
+                                        <span style="font-size: 14px; color: rgba(196,106,58,0.4);">?</span>
                                     </div>
                                 </div>
                             `).join('')}
@@ -909,7 +909,7 @@
                                 <p style="font-size:14px; line-height:1.6; color:#2d3748; word-wrap:break-word;">${t(d.impact.effect)}</p>
                             </div>
                             <div style="text-align:center; padding:15px; background:rgba(201,123,90,0.08); border-radius:10px; min-width:100px; border:1px solid rgba(201,123,90,0.15);">
-                                <div style="font-size:24px; font-weight:700; color:#C97B5A">${Math.round((n / PLAN_DURATION) * 100)}%</div>
+                                <div style="font-size:24px; font-weight:700; color:#072167">${Math.round((n / PLAN_DURATION) * 100)}%</div>
                                 <div style="font-size:10px; color:#374151; font-weight:600;" data-i18n="plan_progress">${t('plan_progress')}</div>
                             </div>
                         </div>
@@ -964,7 +964,7 @@
             container.innerHTML = tasks.sort((a,b) => a.time.localeCompare(b.time)).map((t_item, i) => `
                 <div class="task-card ${t_item.done ? 'done' : ''}" onclick="showTaskDetail('${t_item.id}')" style="animation-delay: ${i * 0.05}s">
                     <div class="task-time">${t('task_time').split(' ')[0]} ${t_item.time}</div>
-                    <div><span class="task-zone-tag">📍 ${t('zone_' + t_item.zone)}</span></div>
+                    <div><span class="task-zone-tag">?? ${t('zone_' + t_item.zone)}</span></div>
                     <div class="task-title">${t(t_item.id + '_title')}</div>
                     <div class="task-status" onclick="event.stopPropagation()">
                         <div class="custom-checkbox ${t_item.done ? 'checked' : ''}" onclick="toggleTask('${t_item.id}')"></div>
@@ -1003,7 +1003,7 @@
                     <div class="modal-section">
                         <h4>${t('task_material')}</h4>
                         <ul style="display:flex; gap:10px; flex-wrap:wrap; padding:0; list-style:none">
-                            ${task.material.map((m, i) => `<li style="background:#E8DCCB; padding:5px 12px; border-radius:20px; font-size:12px; border:1px solid #C9A227; color:#1F4E79">📦 ${t(task.id + '_mat_' + i) || m}</li>`).join('')}
+                            ${task.material.map((m, i) => `<li style="background:#E8DCCB; padding:5px 12px; border-radius:20px; font-size:12px; border:1px solid #C9A227; color:#1F4E79">?? ${t(task.id + '_mat_' + i) || m}</li>`).join('')}
                         </ul>
                     </div>
 
@@ -1028,14 +1028,14 @@
 
                     <div class="modal-section">
                         <h4>${t('task_verification')}</h4>
-                        <p style="background:rgba(201,123,90,0.05); padding:15px; border-radius:8px; color:#C97B5A; border:1px dashed #C97B5A">
+                        <p style="background:rgba(201,123,90,0.05); padding:15px; border-radius:8px; color:#072167; border:1px dashed #072167">
                             <strong>${t('task_verify_how')}</strong><br>
                             ${t(task.id + '_verify') || task.verification}
                         </p>
                     </div>
 
                     <button onclick="toggleTask('${task.id}'); closeModal();" 
-                            style="width:100%; padding:15px; background:${task.done ? '#666' : '#C97B5A'}; color:#fff; border:none; border-radius:10px; font-weight:700; cursor:pointer; font-family:'Orbitron', sans-serif">
+                            style="width:100%; padding:15px; background:${task.done ? '#666' : '#072167'}; color:#fff; border:none; border-radius:10px; font-weight:700; cursor:pointer; font-family:'Orbitron', sans-serif">
                         ${task.done ? t('task_mark_undone') : t('task_mark_done')}
                     </button>
                 </div>
@@ -1082,9 +1082,9 @@
             setTimeout(() => {
                 const config = CROP_CONFIG[getSelectedCrop()];
                 let reply = t('chat_reply_standard');
-                if (userText.includes("plan") || userText.includes("tâche") || userText.includes("jour")) reply = t('chat_reply_specific');
+                if (userText.includes("plan") || userText.includes("t�che") || userText.includes("jour")) reply = t('chat_reply_specific');
                 
-                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
+                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
                 msgs.scrollTop = msgs.scrollHeight;
             }, 1000);
         }
@@ -1103,7 +1103,7 @@
             if (text.trim() === '') return;
             
             const btn = document.querySelector('.submit-feedback-btn');
-            btn.innerText = (getSavedLang() === 'ar') ? 'جاري الإرسال...' : 'ENVOI EN COURS...';
+            btn.innerText = (getSavedLang() === 'ar') ? '???? ???????...' : 'ENVOI EN COURS...';
             btn.disabled = true;
             
             setTimeout(() => {
@@ -1122,7 +1122,7 @@
                 position: fixed; display: none; z-index: 10000; width: 330px;
                 background: #ffffff; color: #1a1a1a; padding: 22px; border-radius: 14px;
                 box-shadow: 0 20px 50px rgba(0,0,0,0.4); font-family: 'Inter', sans-serif;
-                pointer-events: none; border-top: 5px solid #C97B5A;
+                pointer-events: none; border-top: 5px solid #072167;
                 animation: tooltipFadeIn 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
             `;
             document.body.appendChild(tt);
@@ -1135,7 +1135,7 @@
                 }
                 #instruction-tooltip::before {
                     content: ''; position: absolute; inset: 0;
-                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23C97B5A' stroke-opacity='0.03' stroke-width='0.8'%3E%3Cpolygon points='30,2 58,17 58,43 30,58 2,43 2,17'/%3E%3C/g%3E%3C/svg%3E");
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23072167' stroke-opacity='0.03' stroke-width='0.8'%3E%3Cpolygon points='30,2 58,17 58,43 30,58 2,43 2,17'/%3E%3C/g%3E%3C/svg%3E");
                     pointer-events: none; border-radius: 14px;
                 }
                 .instruction-row:hover {
@@ -1153,17 +1153,17 @@
             tt.innerHTML = `
                 <div style="position:relative; z-index:1">
                     <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px">
-                        <div style="width:32px; height:32px; background:rgba(201,123,90,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px">🌿</div>
+                        <div style="width:32px; height:32px; background:rgba(201,123,90,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:18px">??</div>
                         <div>
-                            <div style="font-family:'Orbitron', sans-serif; font-size:9px; color:#C97B5A; font-weight:700; letter-spacing:1.5px; opacity:0.8">${timing} - ${t('protocol_soil')}</div>
+                            <div style="font-family:'Orbitron', sans-serif; font-size:9px; color:#072167; font-weight:700; letter-spacing:1.5px; opacity:0.8">${timing} - ${t('protocol_soil')}</div>
                             <div style="font-size:10px; color:#C9A227; font-weight:600">${t('diagnostic_nova')}</div>
                         </div>
                     </div>
                     <h4 style="margin:0 0 12px 0; color:#111; font-size:16px; font-weight:800; line-height:1.2; font-family:'Inter', sans-serif">${title}</h4>
                     <p style="margin:0; font-size:13px; line-height:1.7; color:#000000; text-align:inherit; font-weight:400">${desc}</p>
                     <div style="margin-top:18px; padding-top:12px; border-top:1px solid #f0f0f0; display:flex; justify-content:space-between; align-items:center">
-                        <span style="font-size:9px; color:#C46A3A; font-weight:700; text-transform:uppercase">${t('agronomy_spatial')}</span>
-                        <span style="font-size:12px; color:#C97B5A">✦</span>
+                        <span style="font-size:9px; color:#072167; font-weight:700; text-transform:uppercase">${t('agronomy_spatial')}</span>
+                        <span style="font-size:12px; color:#072167">?</span>
                     </div>
                 </div>
             `;
@@ -1218,8 +1218,8 @@
                         step.style.opacity = '1';
                         step.style.transform = 'translateX(0)';
                         if(node) {
-                            node.style.borderColor = '#C46A3A';
-                            node.style.backgroundColor = '#C46A3A';
+                            node.style.borderColor = '#072167';
+                            node.style.backgroundColor = '#072167';
                             node.style.transform = 'scale(1.2)';
                         }
                         activeIndex = index;
@@ -1251,7 +1251,7 @@
         }
 
 
-        window.addEventListener('agriscienceLanguageChanged', (e) => {
+        window.addEventListener('AgrisenseLanguageChanged', (e) => {
             if (document.getElementById('today-view').style.display === 'block') {
                 renderTodayPlanning();
             } else {
@@ -1268,10 +1268,10 @@
         </button>
         <div class="fab-options">
             <button class="fab-btn" data-i18n-tooltip="tooltip_support" data-tooltip="Support" onclick="toggleChat()">
-                <span>💬</span>
+                <span>??</span>
             </button>
             <button class="fab-btn" data-i18n-tooltip="tooltip_feedback" data-tooltip="Envoyer un commentaire" onclick="toggleFeedback()">
-                <span>📝</span>
+                <span>??</span>
             </button>
         </div>
     </div>
@@ -1280,7 +1280,7 @@
     <div id="feedback-modal">
         <div class="feedback-header">
             <h4 data-i18n="feedback_title">Envoyer un commentaire</h4>
-            <span class="feedback-close" onclick="toggleFeedback()">✕</span>
+            <span class="feedback-close" onclick="toggleFeedback()">?</span>
         </div>
         <div class="feedback-body">
             <label data-i18n="feedback_label">Votre message ou feedback :</label>
@@ -1292,24 +1292,24 @@
     </div>
 
     <!-- Chat Widget -->
-    <div id="chat-widget" style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #C46A3A; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
-        <div style="background:linear-gradient(90deg, #C46A3A, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
-            <span data-i18n="chat_support_title">💬 SUPPORT ARGANIER</span>
-            <button onclick="toggleChat()" style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">✕</button>
+    <div id="chat-widget" style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #072167; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
+        <div style="background:linear-gradient(90deg, #072167, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
+            <span data-i18n="chat_support_title">?? SUPPORT ARGANIER</span>
+            <button onclick="toggleChat()" style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">?</button>
         </div>
         <div id="chat-messages" style="flex:1; padding:15px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; font-size:13px; color:#111; background:#e8f5f2; background-image:url('images/moroccan_zellige.png'); background-size:100px; background-blend-mode:multiply;">
-            <div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)" data-i18n="chat_welcome">Bonjour. Comment pouvons-nous vous aider ?</span></div>
+            <div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)" data-i18n="chat_welcome">Bonjour. Comment pouvons-nous vous aider ?</span></div>
         </div>
         <div style="padding:15px; border-top:1px solid rgba(201, 162, 39, 0.2); display:flex; gap:10px; background:#f0f9f7;">
             <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Tapez votre message..." style="flex:1; background:#FFFFFF; border:1px solid rgba(201, 162, 39, 0.3); border-radius:8px; padding:8px 12px; color:#111; outline:none;" onkeypress="if(event.key === 'Enter') sendMessage()">
-            <button onclick="sendMessage()" style="background:#C46A3A; color:#FFFFFF; border:none; border-radius:8px; padding:8px 15px; cursor:pointer; font-weight:700; transition:all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#d47a4a';" onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#C46A3A';" data-i18n="chat_send">ENVOYER</button>
+            <button onclick="sendMessage()" style="background:#072167; color:#FFFFFF; border:none; border-radius:8px; padding:8px 15px; cursor:pointer; font-weight:700; transition:all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#d47a4a';" onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#072167';" data-i18n="chat_send">ENVOYER</button>
         </div>
     </div>
 
     <!-- Task Modal Overlay -->
     <div id="task-modal" class="modal-overlay" onclick="if(event.target === this) closeModal()">
         <div class="modal-card">
-            <button class="close-modal" onclick="closeModal()">✕</button>
+            <button class="close-modal" onclick="closeModal()">?</button>
             <div id="modal-content"></div>
         </div>
     </div>

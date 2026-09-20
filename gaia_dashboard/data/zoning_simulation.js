@@ -1,5 +1,5 @@
 /**
- * Système de zonage avancé AGRISCIENCE Intelligence - 12 Zones Indépendantes
+ * Système de zonage avancé Agrisense Intelligence - 12 Zones Indépendantes
  * Calibré pour 2 hectares de Vigne
  */
 
@@ -8,7 +8,7 @@ const GAIA_ZONING_SIMULATION = {
         total_area_hectares: 2,
         target_crop: "Fruits de l'arganier",
         simulation_duration: "Dynamique (93-140 Jours)",
-        ai_engine: "AGRISCIENCE-MultiZone-Core v6.1"
+        ai_engine: "Agrisense-MultiZone-Core v6.1"
     },
     zones: [
         { id: "Z01", name: "Zone Nord-Est 1", i18nName: "zone_ne1", area_ht: 5.2, soil: "Argilo-Calcaire", i18nSoil: "soil_arg_calc", moisture: "14%", ndvi: 0.38, target_yield: "+62%" },
