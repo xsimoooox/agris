@@ -15,6 +15,31 @@ function saveLang(lang) {
     LEGACY_LANG_KEYS.forEach((key) => localStorage.setItem(key, lang));
 }
 
+function applyAgrisenseBranding() {
+    if (!document.body) return;
+
+    document.querySelectorAll('.gaia-text').forEach((el) => { el.textContent = 'Agri'; });
+    document.querySelectorAll('.eye-text').forEach((el) => { el.textContent = 'sense'; });
+    document.querySelectorAll('.gaia-brand').forEach((el) => { el.textContent = 'AGRI'; });
+    document.querySelectorAll('.eye-brand').forEach((el) => { el.textContent = 'SENSE'; });
+
+    const brandRe = /Terra\s*Nova|Terranova|TERRANOVA|Agri\s*Science|AGRISCIENCE/gi;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+        if (!node.nodeValue || !brandRe.test(node.nodeValue)) return;
+        brandRe.lastIndex = 0;
+        node.nodeValue = node.nodeValue
+            .replace(/Terra\s*Nova|Terranova|Agri\s*Science/gi, 'Agrisense')
+            .replace(/TERRANOVA|AGRISCIENCE/g, 'AGRISENSE');
+    });
+
+    if (document.title && /TERRANOVA|Terranova|AGRISCIENCE|AgriScience/i.test(document.title)) {
+        document.title = document.title.replace(/TERRANOVA|Terranova|AGRISCIENCE|AgriScience/gi, 'Agrisense');
+    }
+}
+
 function applyLanguage(lang) {
     if (typeof langData === 'undefined' || !langData[lang]) {
         console.warn('Language data not found for:', lang);
@@ -23,6 +48,7 @@ function applyLanguage(lang) {
         document.body.classList.toggle('rtl-mode', isAr);
         document.documentElement.dir = isAr ? 'rtl' : 'ltr';
         document.documentElement.lang = lang;
+        applyAgrisenseBranding();
         return;
     }
 
@@ -81,6 +107,7 @@ function applyLanguage(lang) {
 
         // Dispatch global event so local page scripts can react
         window.dispatchEvent(new CustomEvent('agrisenseLanguageChanged', { detail: lang }));
+        applyAgrisenseBranding();
 
         // Apply fade-in
         document.body.style.opacity = '1';
@@ -103,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Apply saved or default language
+    applyAgrisenseBranding();
     applyLanguage(getSavedLang());
 });
 

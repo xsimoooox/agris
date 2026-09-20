@@ -36,14 +36,7 @@ function updatePageTerminology() {
 
     // Update sidebar logo text
     document.querySelectorAll('.sidebar-header').forEach(header => {
-        const gaia = header.querySelector('.gaia-text');
-        const eye = header.querySelector('.eye-text');
-        if (gaia && eye) {
-            gaia.textContent = 'Agri';
-            eye.textContent = 'sense';
-        } else if (header.children.length === 0 || header.textContent.toLowerCase().includes('terra') || header.textContent.toLowerCase().includes('science')) {
-            header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">sense</span>';
-        }
+        header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">sense</span>';
     });
 
     // 2. ACTIVE CROP HEADER BADGE

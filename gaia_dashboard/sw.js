@@ -1,4 +1,4 @@
-const CACHE_NAME = 'agrisense-v1';
+const CACHE_NAME = 'agrisense-v3';
 const ASSETS_TO_CACHE = [
     './',
     'index.html',
@@ -17,64 +17,37 @@ const ASSETS_TO_CACHE = [
     '../images/moroccan_zellige.png'
 ];
 
-
-// Install event - Cache core assets
 self.addEventListener('install', event => {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => {
-                console.log('Opened cache');
-                return cache.addAll(ASSETS_TO_CACHE);
-            })
+            .then(cache => cache.addAll(ASSETS_TO_CACHE))
             .catch(err => console.error('Cache addAll failed:', err))
     );
 });
 
-// Fetch event - Serve from cache first, then network
 self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.match(event.request)
-            .then(cachedResponse => {
-                // Return cached response if found
-                if (cachedResponse) {
-                    return cachedResponse;
-                }
-                
-                // Otherwise fetch from network
-                return fetch(event.request).then(
-                    response => {
-                        // Check if we received a valid response
-                        if(!response || response.status !== 200 || response.type !== 'basic') {
-                            return response;
-                        }
-
-                        // Clone the response
-                        var responseToCache = response.clone();
-
-                        caches.open(CACHE_NAME)
-                            .then(cache => {
-                                cache.put(event.request, responseToCache);
-                            });
-
-                        return response;
-                    }
-                );
-            })
+        fetch(event.request).then(response => {
+            if (response && response.status === 200 && response.type === 'basic') {
+                const responseToCache = response.clone();
+                caches.open(CACHE_NAME).then(cache => {
+                    cache.put(event.request, responseToCache);
+                });
+            }
+            return response;
+        }).catch(() => caches.match(event.request))
     );
 });
 
-// Activate event - Clean up old caches
 self.addEventListener('activate', event => {
-    const cacheWhiteList = [CACHE_NAME];
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
-                cacheNames.map(cacheName => {
-                    if (cacheWhiteList.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
+                cacheNames
+                    .filter(cacheName => cacheName !== CACHE_NAME)
+                    .map(cacheName => caches.delete(cacheName))
             );
-        })
+        }).then(() => self.clients.claim())
     );
 });

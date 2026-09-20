@@ -1058,7 +1058,7 @@ h4 {
 .alert-box.warning {
   background: #FFF9F0;
   border-color: var(--moroccan-terracotta);
-  color: #7c4500;
+  color: #072167;
   font-weight: 500;
 }
 
@@ -1599,7 +1599,7 @@ h4 {
 
 .cert-status.warning {
   background: rgba(7, 33, 103, 0.15);
-  color: #7c4500;
+  color: #072167;
 }
 
 .cert-card ul {
