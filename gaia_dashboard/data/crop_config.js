@@ -22,7 +22,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/ARG-2024/789654-V.A",
             client: "Coopérative Souss-Massa",
-            ia_model: "AGRISCIENCE-DeepArgan v2.3",
+            ia_model: "AGRISENSE-DeepArgan v2.3",
             module: "HARMONIA-Argan v4.2"
         },
         recommendations: [
@@ -63,7 +63,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/MAJ-2024/991234-V.M",
             client: "Domaine Palmier Tafilalet",
-            ia_model: "AGRISCIENCE-DeepPalm v3.2",
+            ia_model: "AGRISENSE-DeepPalm v3.2",
             module: "HARMONIA-Dates v4.2"
         },
         recommendations: [
@@ -104,7 +104,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/OLI-2024/654120-V.O",
             client: "Domaine Oléicole Saïss",
-            ia_model: "AGRISCIENCE-DeepOlive v2.4",
+            ia_model: "AGRISENSE-DeepOlive v2.4",
             module: "HARMONIA-Olea v4.2"
         },
         recommendations: [
@@ -145,7 +145,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/AGR-2024/431980-V.C",
             client: "Coopérative Agrumicole Berkane",
-            ia_model: "AGRISCIENCE-DeepCitrus v2.1",
+            ia_model: "AGRISENSE-DeepCitrus v2.1",
             module: "HARMONIA-Citrus v4.2"
         },
         recommendations: [
@@ -186,7 +186,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/VIG-2024/778120-V.V",
             client: "Domaine Viticole de Meknès",
-            ia_model: "AGRISCIENCE-DeepVitis v3.0",
+            ia_model: "AGRISENSE-DeepVitis v3.0",
             module: "HARMONIA-Vitis v4.2"
         },
         recommendations: [
@@ -227,7 +227,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/CER-2024/312890-V.C",
             client: "Groupement Céréalier Chaouia",
-            ia_model: "AGRISCIENCE-DeepCereal v1.9",
+            ia_model: "AGRISENSE-DeepCereal v1.9",
             module: "HARMONIA-Grains v4.2"
         },
         recommendations: [
@@ -268,7 +268,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/MAR-2024/889210-V.M",
             client: "Agropôle Chtouka Aït Baha",
-            ia_model: "AGRISCIENCE-DeepMarket v2.5",
+            ia_model: "AGRISENSE-DeepMarket v2.5",
             module: "HARMONIA-Horti v4.2"
         },
         recommendations: [
@@ -309,7 +309,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/BER-2024/902140-V.B",
             client: "Domaine Fruits Rouges Larache",
-            ia_model: "AGRISCIENCE-DeepBerry v3.1",
+            ia_model: "AGRISENSE-DeepBerry v3.1",
             module: "HARMONIA-Berries v4.2"
         },
         recommendations: [
@@ -350,7 +350,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/AMA-2024/541290-V.A",
             client: "Association Amandiers Tafraout",
-            ia_model: "AGRISCIENCE-DeepAlmond v2.0",
+            ia_model: "AGRISENSE-DeepAlmond v2.0",
             module: "HARMONIA-Nuts v4.2"
         },
         recommendations: [
@@ -391,7 +391,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/GRE-2024/619840-V.G",
             client: "Domaine Sefri Beni Mellal",
-            ia_model: "AGRISCIENCE-DeepPome v2.2",
+            ia_model: "AGRISENSE-DeepPome v2.2",
             module: "HARMONIA-Punica v4.2"
         },
         recommendations: [
@@ -432,7 +432,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/FIG-2024/721340-V.F",
             client: "Coopérative Nabout Taounate",
-            ia_model: "AGRISCIENCE-DeepFig v2.0",
+            ia_model: "AGRISENSE-DeepFig v2.0",
             module: "HARMONIA-Ficus v4.2"
         },
         recommendations: [
@@ -473,7 +473,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/PEC-2024/819340-V.P",
             client: "Vergers Fruitier Sefrou",
-            ia_model: "AGRISCIENCE-DeepPeach v2.2",
+            ia_model: "AGRISENSE-DeepPeach v2.2",
             module: "HARMONIA-Prunus v4.2"
         },
         recommendations: [
@@ -514,7 +514,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/POM-2024/920410-V.M",
             client: "Domaine Arboricole Midelt",
-            ia_model: "AGRISCIENCE-DeepApple v2.8",
+            ia_model: "AGRISENSE-DeepApple v2.8",
             module: "HARMONIA-Malus v4.2"
         },
         recommendations: [
@@ -555,7 +555,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/LEG-2024/491020-V.L",
             client: "Union des Producteurs de Légumineuses",
-            ia_model: "AGRISCIENCE-DeepPulse v2.0",
+            ia_model: "AGRISENSE-DeepPulse v2.0",
             module: "HARMONIA-Rhizo v4.2"
         },
         recommendations: [
@@ -596,7 +596,7 @@ const CROP_CONFIG = {
         reference: {
             ref: "AS/PAM-2024/639180-V.A",
             client: "Coopérative PAM Aromas Atlas",
-            ia_model: "AGRISCIENCE-DeepAroma v2.4",
+            ia_model: "AGRISENSE-DeepAroma v2.4",
             module: "HARMONIA-Aroma v4.2"
         },
         recommendations: [
@@ -683,7 +683,7 @@ function getCropConfig(cropIdOrName) {
         reference: {
             ref: `AS/CUST-${cleanId.toUpperCase().slice(0, 4)}/884120-V.P`,
             client: "Exploitation Agricole Partenaire",
-            ia_model: `AGRISCIENCE-CustomCrop v2.4`,
+            ia_model: `AGRISENSE-CustomCrop v2.4`,
             module: "HARMONIA-Adaptive v4.2"
         },
         recommendations: [

@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>AGRISCIENCE - Dashboard Agro-Spatial</title>
+    <title>Agrisense - Dashboard Agro-Spatial</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
@@ -66,7 +66,7 @@
 
         .zone-btn-card {
             background: #ffffff;
-            border: 1px solid rgba(201, 123, 90, 0.08);
+            border: 1px solid rgba(7, 33, 103, 0.08);
             border-radius: 16px;
             padding: 20px 10px;
             text-align: center;
@@ -91,7 +91,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(201, 123, 90, 0.04) 0%, rgba(201, 162, 39, 0.04) 100%);
+            background: linear-gradient(135deg, rgba(7, 33, 103, 0.04) 0%, rgba(201, 162, 39, 0.04) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: -1;
@@ -99,8 +99,8 @@
 
         .zone-btn-card:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(201, 123, 90, 0.1);
-            border-color: rgba(201, 123, 90, 0.2);
+            box-shadow: 0 15px 30px rgba(7, 33, 103, 0.1);
+            border-color: rgba(7, 33, 103, 0.2);
             border-bottom: 3px solid #C9A227;
         }
 
@@ -111,19 +111,19 @@
         .zone-card-icon {
             font-size: 20px;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, rgba(201, 123, 90, 0.08), rgba(201, 162, 39, 0.08));
+            background: linear-gradient(135deg, rgba(7, 33, 103, 0.08), rgba(201, 162, 39, 0.08));
             width: 44px;
             height: 44px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 14px;
-            color: #C97B5A;
+            color: #072167;
             transition: all 0.4s ease;
         }
 
         .zone-btn-card:hover .zone-card-icon {
-            background: linear-gradient(135deg, #C97B5A, #C9A227);
+            background: linear-gradient(135deg, #072167, #C9A227);
             color: #ffffff;
             transform: scale(1.1);
         }
@@ -138,7 +138,7 @@
         }
 
         .zone-btn-card:hover .zone-name {
-            color: #C97B5A;
+            color: #072167;
         }
 
         .zone-btn-card .zone-badge {
@@ -147,8 +147,8 @@
             right: 10px;
             font-size: 8px;
             font-weight: 800;
-            background: rgba(201, 123, 90, 0.06);
-            color: #C97B5A;
+            background: rgba(7, 33, 103, 0.06);
+            color: #072167;
             padding: 3px 8px;
             border-radius: 8px;
             text-transform: uppercase;
@@ -187,7 +187,7 @@
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
             transform: scale(0.9);
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            border-top: 8px solid #C97B5A;
+            border-top: 8px solid #072167;
         }
 
         #zone-popup-overlay.active .zone-popup-content {
@@ -213,16 +213,16 @@
 
         .close-popup:hover {
             background: #e5e7eb;
-            color: #C97B5A;
+            color: #072167;
             transform: rotate(90deg);
         }
 
         .popup-title {
-            color: #C97B5A;
+            color: #072167;
             font-family: 'Orbitron', sans-serif;
             font-size: 20px;
             margin-bottom: 20px;
-            border-bottom: 1px solid rgba(201, 123, 90, 0.1);
+            border-bottom: 1px solid rgba(7, 33, 103, 0.1);
             padding-bottom: 15px;
         }
 
@@ -270,7 +270,7 @@
         .step-number {
             width: 24px;
             height: 24px;
-            background: #C97B5A;
+            background: #072167;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -322,7 +322,7 @@
             <button class="sidebar-toggle-btn"
                 onclick="document.querySelector('.dashboard-container').classList.toggle('sidebar-collapsed'); document.querySelector('.dashboard-container').classList.toggle('sidebar-open')"
                 title="Toggle Sidebar"></button>
-            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">Science</span></div>
+            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">sense</span></div>
             <div class="nav-item active" data-tooltip="Dashboard" data-i18n="nav_dashboard"><span
                     class="nav-icon">🏠</span> <span class="nav-text">Dashboard</span></div>
             <div class="nav-item" id="nav-plan" onclick="window.location.href='plan_parfait_arganier.html'"
@@ -355,10 +355,10 @@
             <h1 class="main-title" data-i18n="dash_main_title">🌍 TABLEAU DE BORD AGRO-SPATIAL</h1>
 
             <!-- Active Crop Indicator Banner -->
-            <div id="active-crop-indicator" class="active-crop-banner" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(201, 123, 90, 0.08); border: 1px solid rgba(201, 162, 39, 0.35); padding: 8px 18px; border-radius: 25px; margin-top: 5px; margin-bottom: 25px; font-size: 14px; font-weight: 600; color: #C97B5A; box-shadow: 0 4px 15px rgba(201, 123, 90, 0.05);">
+            <div id="active-crop-indicator" class="active-crop-banner" style="display: inline-flex; align-items: center; gap: 10px; background: rgba(7, 33, 103, 0.08); border: 1px solid rgba(201, 162, 39, 0.35); padding: 8px 18px; border-radius: 25px; margin-top: 5px; margin-bottom: 25px; font-size: 14px; font-weight: 600; color: #072167; box-shadow: 0 4px 15px rgba(7, 33, 103, 0.05);">
                 <span id="active-crop-icon" style="font-size: 1.3rem;">🌳</span>
                 <span><span data-i18n="crop_active_label">Culture analysée :</span> <strong id="active-crop-name" style="color: #C9A227; font-size: 15px;">Arganier</strong></span>
-                <span style="background: #C97B5A; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
+                <span style="background: #072167; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
             </div>
 
             <!-- Horizontal Layout for Score & Reference -->
@@ -367,9 +367,9 @@
 
                 <!-- Global Advancement Score Card -->
                 <div class="card"
-                    style="border-top: 5px solid #C97B5A; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
+                    style="border-top: 5px solid #072167; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px;">
                     <h3 data-i18n="dash_matching_score"
-                        style="margin: 0 0 10px 0; color: #C97B5A; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px;">
+                        style="margin: 0 0 10px 0; color: #072167; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px;">
                         🎯 Score d’avancement
                     </h3>
                     <p id="matching-score-desc" data-i18n="dash_matching_desc"
@@ -384,24 +384,24 @@
                             <!-- Circumference = 2 * pi * 70 = 439.82. 67% = 294.68. Offset = 439.82 - 294.68 = 145.14 -->
                             <circle cx="80" cy="80" r="70" fill="none" stroke="url(#scoreGrad)" stroke-width="12"
                                 stroke-dasharray="439.82" stroke-dashoffset="439.82" stroke-linecap="round"
-                                style="transition: stroke-dashoffset 2s cubic-bezier(0.1, 0.7, 0.1, 1); filter: drop-shadow(0 4px 6px rgba(201,123,90,0.2));"
+                                style="transition: stroke-dashoffset 2s cubic-bezier(0.1, 0.7, 0.1, 1); filter: drop-shadow(0 4px 6px rgba(7, 33, 103,0.2));"
                                 id="circle-score" />
                             <defs>
                                 <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
                                     <stop offset="0%" stop-color="#C9A227" />
-                                    <stop offset="100%" stop-color="#C97B5A" />
+                                    <stop offset="100%" stop-color="#072167" />
                                 </linearGradient>
                             </defs>
                         </svg>
                         <div
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                             <span id="matching-score-text"
-                                style="font-size: 42px; font-weight: 800; color: #C97B5A; font-family: 'Orbitron', sans-serif;">67%</span>
+                                style="font-size: 42px; font-weight: 800; color: #072167; font-family: 'Orbitron', sans-serif;">67%</span>
                         </div>
                     </div>
 
                     <div
-                        style="background: rgba(201,123,90,0.08); padding: 8px 20px; border-radius: 20px; color: #C97B5A; font-weight: 700; font-size: 12px; text-transform: uppercase; border: 1px solid rgba(201,123,90,0.2);"
+                        style="background: rgba(7, 33, 103,0.08); padding: 8px 20px; border-radius: 20px; color: #072167; font-weight: 700; font-size: 12px; text-transform: uppercase; border: 1px solid rgba(7, 33, 103,0.2);"
                         data-i18n="dash_certified">
                         ✓ Objectif agricole ciblé
                     </div>
@@ -409,9 +409,9 @@
 
                 <!-- Reference Card -->
                 <div class="card ref-card"
-                    style="border-top: 5px solid #C97B5A !important; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 40px 20px; display: flex; flex-direction: column; justify-content: center;">
+                    style="border-top: 5px solid #072167 !important; background: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); padding: 40px 20px; display: flex; flex-direction: column; justify-content: center;">
                     <h3
-                        style="margin: 0 0 20px 0; color: #C97B5A; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px; border-bottom: none;">
+                        style="margin: 0 0 20px 0; color: #072167; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 20px; border-bottom: none;">
                         📋 Référence Projet</h3>
                     <div class="ref-grid"
                         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
@@ -434,15 +434,15 @@
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_ia">Modèle IA:</span>
-                            <span id="ref-ia" class="ref-value">AGRISCIENCE-DeepSoil v5.3</span>
+                            <span id="ref-ia" class="ref-value">AGRISENSE-DeepSoil v5.3</span>
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_module">Module:</span>
-                            <span id="ref-module" class="ref-value">agriscience v2.1</span>
+                            <span id="ref-module" class="ref-value">agrisense v2.1</span>
                         </div>
                         <div class="ref-item">
                             <span class="ref-label" data-i18n="dash_ref_area">Superficie:</span>
-                            <span id="display-area" class="ref-value" style="color: #C97B5A; font-weight: 700;">2
+                            <span id="display-area" class="ref-value" style="color: #072167; font-weight: 700;">2
                                 ht</span>
                         </div>
                     </div>
@@ -454,10 +454,10 @@
                 <div class="royal-frame">
                     <div style="text-align: center; margin-bottom: 40px;">
                         <h2 data-i18n="zone_split_title"
-                            style="color: #C97B5A; display: inline-block; font-family: 'Orbitron', sans-serif; font-size: 26px; position: relative; letter-spacing: 2px; text-transform: uppercase;">
+                            style="color: #072167; display: inline-block; font-family: 'Orbitron', sans-serif; font-size: 26px; position: relative; letter-spacing: 2px; text-transform: uppercase;">
                             Découpage du terrain
                             <div
-                                style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: linear-gradient(90deg, #C97B5A, #C9A227, #C97B5A); border-radius: 2px;">
+                                style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 100px; height: 4px; background: linear-gradient(90deg, #072167, #C9A227, #072167); border-radius: 2px;">
                             </div>
                         </h2>
                         <p style="color: #666; margin-top: 25px; font-size: 15px; max-width: 600px; margin-left: auto; margin-right: auto;"
@@ -491,8 +491,8 @@
             <section id="overview" class="section">
 
                 <!-- Quick Access to Plan Fruits de l'arganier -->
-                <div class="card" style="background: #FFFFFF; border: 2px solid #C46A3A; text-align: center;">
-                    <h3 style="color: #C46A3A; margin-bottom: 15px;"><img src="../images/arganier.png"
+                <div class="card" style="background: #FFFFFF; border: 2px solid #072167; text-align: center;">
+                    <h3 style="color: #072167; margin-bottom: 15px;"><img src="../images/arganier.png"
                             style="width:24px; height:24px; vertical-align:middle; margin-right:8px;"><span
                             data-i18n="plan_hero_title">PLAN PARFAIT
                             FRUITS DE L'ARGANIER</span></h3>
@@ -500,9 +500,9 @@
                         au plan de
                         culture complet et optimisé par IA pour maximiser votre production de arganier.</p>
                     <button id="quick-access-btn"
-                        style="padding: 12px 30px; background: #C46A3A; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; transition: 0.3s; box-shadow: 0 4px 15px rgba(196, 106, 58, 0.3); font-size: 14px;"
+                        style="padding: 12px 30px; background: #072167; color: #fff; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-family: 'Orbitron', sans-serif; transition: 0.3s; box-shadow: 0 4px 15px rgba(7, 33, 103, 0.3); font-size: 14px;"
                         onmouseover="this.style.background='#a1562e'; this.style.transform='scale(1.05)'"
-                        onmouseout="this.style.background='#C46A3A'; this.style.transform='scale(1)'"
+                        onmouseout="this.style.background='#072167'; this.style.transform='scale(1)'"
                         data-i18n="dash_view_plan">
                         📋 VOIR LE PLAN COMPLET
                     </button>
@@ -762,7 +762,7 @@
                         <h3 data-i18n="dash_monitoring_phenology">📷 Phénologie IA</h3>
                         <div style="text-align: center; margin-bottom: 15px;">
                             <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
-                                <span style="font-size: 14px; font-weight: 700; color: #C97B5A;"
+                                <span style="font-size: 14px; font-weight: 700; color: #072167;"
                                     data-i18n="dash_phenology_stage">STADE : TUBÉRISATION
                                     (60%)</span>
                             </div>
@@ -843,9 +843,9 @@
 
             <footer
                 style="margin-top: 50px; padding: 30px; border-top: 1px solid rgba(0,0,0,0.1); text-align: center; color: #000000; font-size: 11px; line-height: 1.6;">
-                <p data-i18n="dash_footer">Document généré automatiquement par AgriScience Decision Support System.</p>
+                <p data-i18n="dash_footer">Document généré automatiquement par Agrisense Decision Support System.</p>
                 <p><em data-i18n="dash_footer_validity"> Version: 4.2-SUP </em></p>
-                <p><em data-i18n="dash_copyright">© 2026 AgriScience Technologies. Tous droits réservés. </em></p>
+                <p><em data-i18n="dash_copyright">© 2026 Agrisense Technologies. Tous droits réservés. </em></p>
             </footer>
         </div>
     </div>
@@ -873,7 +873,7 @@
             if (input.value.trim() === '') return;
 
             // User msg
-            msgs.innerHTML += `<div style="margin-bottom:10px; text-align:right;"><span style="background:#C97B5A; color:#0a0e27; padding:6px 12px; border-radius:12px; font-size:12px; display:inline-block;">${input.value}</span></div>`;
+            msgs.innerHTML += `<div style="margin-bottom:10px; text-align:right;"><span style="background:#072167; color:#ffffff; padding:6px 12px; border-radius:12px; font-size:12px; display:inline-block;">${input.value}</span></div>`;
 
             const userText = input.value.toLowerCase();
             input.value = '';
@@ -882,11 +882,11 @@
             // Simple Auto-reply
             setTimeout(() => {
                 const config = (typeof getCropConfig === 'function') ? getCropConfig(getSelectedCrop()) : CROP_CONFIG[getSelectedCrop()];
-                let reply = "Merci pour votre message. Un expert AgriScience va vous répondre sous peu.";
+                let reply = "Merci pour votre message. Un expert Agrisense va vous répondre sous peu.";
                 if (userText.includes("plan") || (config && userText.includes(config.name.toLowerCase()))) reply = `Le plan ${config ? config.display : ''} est optimisé pour votre zone. Souhaitez-vous des détails sur un jour précis ?`;
                 if (userText.includes("prix") || userText.includes("coût")) reply = "Les coûts sont estimés selon votre surface. Contactez-nous pour un devis précis.";
 
-                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
+                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(7, 33, 103, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(7, 33, 103, 0.2)">${reply}</span></div>`;
                 msgs.scrollTop = msgs.scrollHeight;
             }, 1000);
         }
@@ -909,7 +909,7 @@
             btn.disabled = true;
 
             setTimeout(() => {
-                alert('Merci pour votre message ! Votre commentaire a été envoyé avec succès à l\'équipe AgriScience.');
+                alert('Merci pour votre message ! Votre commentaire a été envoyé avec succès à l\'équipe Agrisense.');
                 document.getElementById('feedback-text').value = '';
                 toggleFeedback();
                 btn.innerText = 'ENVOYER';
@@ -946,7 +946,7 @@
                         </div>
                         <span style="font-size:10px; font-weight:700; color:${getZoneColorDark(zone.ndvi)}">${(zone.ndvi * 100).toFixed(0)}%</span>
                     </div>
-                    <button onclick="runSimulation('${zone.id}', ${scaledArea})" style="width:100%; padding:6px; background:rgba(201,123,90,0.1); color:#C97B5A; border:1px solid #C97B5A; border-radius:4px; font-size:9px; font-weight:700; cursor:pointer;">
+                    <button onclick="runSimulation('${zone.id}', ${scaledArea})" style="width:100%; padding:6px; background:rgba(7, 33, 103,0.1); color:#072167; border:1px solid #072167; border-radius:4px; font-size:9px; font-weight:700; cursor:pointer;">
                         ${simulateBtnText}
                     </button>
                 </div>
@@ -1005,38 +1005,38 @@
                         <h4 style="color:#1F4E79; margin-top:0; font-weight:700;" data-i18n="dash_sim_status_current">📊 ÉTAT ACTUEL VS SOL PARFAIT</h4>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.05); color:#111;">
                             <span data-i18n="dash_kpi_vigueur">Vigueur (NDVI)</span>
-                            <span>${zone.ndvi} ➔ <b style="color:#C97B5A">0.75</b></span>
+                            <span>${zone.ndvi} ➔ <b style="color:#072167">0.75</b></span>
                         </div>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(0,0,0,0.05); color:#111;">
                             <span data-i18n="dash_sim_moisture">Humidité Sol</span>
-                            <span>${zone.moisture} ➔ <b style="color:#C97B5A">22%</b></span>
+                            <span>${zone.moisture} ➔ <b style="color:#072167">22%</b></span>
                         </div>
                         <div class="metric-row" style="display:flex; justify-content:space-between; padding:8px 0; color:#111;">
                             <span data-i18n="dash_sim_potential">Potentiel de Rendement</span>
-                            <span style="color:#C97B5A; font-weight:700;">${zone.target_yield}</span>
+                            <span style="color:#072167; font-weight:700;">${zone.target_yield}</span>
                         </div>
                     </div>
 
-                    <div style="border: 1px solid rgba(201,123,90,0.3); background:rgba(201,123,90,0.04); padding:15px; border-radius:10px;">
+                    <div style="border: 1px solid rgba(7, 33, 103,0.3); background:rgba(7, 33, 103,0.04); padding:15px; border-radius:10px;">
                         <h4 style="color:#0a4a3d; margin-top:0; font-weight:700;"><span data-i18n="dash_sim_status_93d">📈 BILAN 93 JOURS</span> (${area} ${typeof t === 'function' ? t('dash_unit_ht') : 'ht'})</h4>
                         <div class="data-grid" style="grid-template-columns: 1fr 1fr; gap:10px;">
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:85%; opacity:0.3;"></div>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:85%; opacity:0.3;"></div>
                                 <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_water">💧 EAU TOTALE</span>
                                 <span class="metric-value success" style="font-size:18px;">${bilan.eau_totale} m³</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:65%; opacity:0.3;"></div>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:65%; opacity:0.3;"></div>
                                 <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_compost">🍂 COMPOST MÛR</span>
                                 <span class="metric-value success" style="font-size:18px;">${bilan.compost_total} T</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C46A3A; width:45%; opacity:0.3;"></div>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:45%; opacity:0.3;"></div>
                                 <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_amendments">🧪 AMENDEMENTS</span>
                                 <span class="metric-value" style="font-size:18px; color:#7c4500;">${bilan.amendements_kg} kg</span>
                             </div>
                             <div class="metric" style="padding:10px; position:relative; overflow:hidden;">
-                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#C97B5A; width:95%; opacity:0.3;"></div>
+                                <div style="position:absolute; bottom:0; left:0; height:4px; background:#072167; width:95%; opacity:0.3;"></div>
                                 <span class="metric-label" style="font-size:9px;" data-i18n="dash_sim_co2">🌳 CO₂ SÉQUESTRÉ</span>
                                 <span class="metric-value" style="font-size:18px; color:#0a4a3d;">${bilan.co2_sequestre} T</span>
                             </div>
@@ -1044,12 +1044,12 @@
                     </div>
                 </div>
 
-                <div style="margin-top:20px; background:#FFF9F0; padding:20px; border-radius:10px; border-top:2px solid #C46A3A; border:1px solid rgba(196,106,58,0.25);">
+                <div style="margin-top:20px; background:#FFF9F0; padding:20px; border-radius:10px; border-top:2px solid #072167; border:1px solid rgba(7, 33, 103,0.25);">
                     <h4 style="color:#7c4500; margin-top:0; font-weight:700;" data-i18n="dash_sim_action_title">🤖 ACTION DIRECTIVE GAIA EYE (AUTO-PILOT)</h4>
                     <p style="font-size:12px; color:#2d3748;" data-i18n="dash_sim_action_desc">Simulation complète effectuée pour le cycle de 93 jours. Le plan sera exécuté par la Box Gaia Eye par micro-secteurs pour maximiser l'homogénéité.</p>
                     <div style="display:flex; gap:15px; margin-top:10px; flex-wrap:wrap;">
-                        <span style="font-size:10px; background:rgba(196,106,58,0.1); color:#7c4500; padding:5px 10px; border-radius:15px; border:1px solid rgba(196,106,58,0.2);"><span data-i18n="dash_sim_global_cost">Coût Global:</span> ${bilan.cout_estime}€</span>
-                        <span style="font-size:10px; background:rgba(201,123,90,0.1); color:#0a4a3d; padding:5px 10px; border-radius:15px; border:1px solid rgba(201,123,90,0.2);"><span data-i18n="dash_sim_ai_eff">Efficacité IA:</span> 98.4%</span>
+                        <span style="font-size:10px; background:rgba(7, 33, 103,0.1); color:#7c4500; padding:5px 10px; border-radius:15px; border:1px solid rgba(7, 33, 103,0.2);"><span data-i18n="dash_sim_global_cost">Coût Global:</span> ${bilan.cout_estime}€</span>
+                        <span style="font-size:10px; background:rgba(7, 33, 103,0.1); color:#0a4a3d; padding:5px 10px; border-radius:15px; border:1px solid rgba(7, 33, 103,0.2);"><span data-i18n="dash_sim_ai_eff">Efficacité IA:</span> 98.4%</span>
                     </div>
                 </div>
             `;
@@ -1318,17 +1318,17 @@
     <div id="chat-widget"
         style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #C9A227; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
         <div
-            style="background:linear-gradient(90deg, #C97B5A, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
-            <span data-i18n="chat_title">💬 SUPPORT AGRISCIENCE</span>
+            style="background:linear-gradient(90deg, #072167, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
+            <span data-i18n="chat_title">💬 SUPPORT AGRISENSE</span>
             <button onclick="toggleChat()"
                 style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">✕</button>
         </div>
         <div id="chat-messages"
             style="flex:1; padding:15px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; font-size:13px; color:#111; background:#e8f5f2; background-image:url('images/moroccan_zellige.png'); background-size:100px; background-blend-mode:multiply;">
             <div style="margin-bottom:10px;"><span
-                    style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)"
+                    style="background:rgba(7, 33, 103, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(7, 33, 103, 0.2)"
                     data-i18n="chat_welcome">Bienvenue
-                    dans l'espace de communication AgriScience. Comment pouvons-nous vous aider aujourd'hui ?</span>
+                    dans l'espace de communication Agrisense. Comment pouvons-nous vous aider aujourd'hui ?</span>
             </div>
         </div>
         <div

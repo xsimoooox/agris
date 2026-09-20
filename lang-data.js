@@ -1,4 +1,4 @@
-﻿const langData = {
+const langData = {
     fr: {
         // Global / Generic
         "nav_dashboard": "Dashboard",
@@ -784,25 +784,25 @@
         "zone_z11_desc": "Point de départ : est du centre du terrain, à 5 mètres du bord est. Avancez vers le sud sur 12 mètres, tournez à 90° vers l’ouest, avancez 5 mètres le long de la limite sud. Tournez à 90° vers le nord, avancez 12 mètres le long de la limite ouest, puis tournez à 90° vers l’est et avancez 5 mètres le long de la limite nord pour revenir au point de départ. Zone encadrée.",
         "zone_z12_desc": "Point de départ : ouest du centre du terrain, à 5 mètres du bord ouest. Avancez vers le sud sur 12 mètres, tournez à 90° vers l’est, avancez 5 mètres le long de la limite sud. Tournez à 90° vers le nord, avancez 12 mètres le long de la limite est, puis tournez à 90° vers l’ouest et avancez 5 mètres le long de la limite nord pour revenir au point de départ. Zone entièrement encadrée.",
         "plan_final_title": "🏆 SOL PARFAIT ATTEINT !",
-        "plan_final_desc": "Excellence agronomique validée par AgriScience.",
-        "chat_support_title": "💬 SUPPORT AGRISCIENCE",
+        "plan_final_desc": "Excellence agronomique validée par Agrisense.",
+        "chat_support_title": "💬 SUPPORT AGRISENSE",
         "chat_welcome": "Bonjour. Comment pouvons-nous vous aider ?",
         "chat_placeholder": "Tapez votre message...",
         "chat_send": "ENVOYER",
-        "chat_reply_standard": "Merci pour votre message. Un expert AgriScience va vous répondre sous peu concernant votre plan.",
+        "chat_reply_standard": "Merci pour votre message. Un expert Agrisense va vous répondre sous peu concernant votre plan.",
         "chat_reply_specific": "Avez-vous une question spécifique sur les instructions d'aujourd'hui ?",
         "feedback_title": "Envoyer un commentaire",
         "feedback_label": "Votre message ou feedback :",
         "feedback_placeholder": "Dites-nous ce que vous en pensez...",
-        "feedback_success": "Merci pour votre message ! Votre commentaire a été envoyé avec succès à l'équipe AgriScience.",
+        "feedback_success": "Merci pour votre message ! Votre commentaire a été envoyé avec succès à l'équipe Agrisense.",
         "tooltip_support": "Support",
         "tooltip_feedback": "Envoyer un commentaire",
         "sec_confirmation_text": "Je confirme l’utilisation de ma localisation du terroir et de mes informations personnelles",
         "map_info_label": "INFO",
         "map_guide_label": "Guide",
-        "nav_brand": "AgriScience Intelligence",
+        "nav_brand": "Agrisense Intelligence",
         "protocol_soil": "PROTOCOLE SOL",
-        "diagnostic_nova": "DIAGNOSTIC AGRISCIENCE",
+        "diagnostic_nova": "DIAGNOSTIC AGRISENSE",
         "agronomy_spatial": "Agronomie Spatiale",
 
         // Map Analysis Overlay
@@ -840,7 +840,7 @@
         "analysis_error_loc_detail": "Impossible de localiser votre position. Vérifiez vos réglages de navigation.",
         "analysis_ready": "Visualisation prête.",
         "analysis_error": "Impossible d'analyser cette zone.",
-        "dash_footer": "Document généré automatiquement par AgriScience Decision Support System."
+        "dash_footer": "Document généré automatiquement par Agrisense Decision Support System."
     },
     ar: {
         // Global / Generic
@@ -1038,7 +1038,7 @@
         "dash_soil_title": "🌍 حالة التربة",
         "dash_forecast_title": "🎯 توقعات الإنتاج",
         "dash_action_plan": "🏁 خطة عمل الطوارئ (المنطقة 1)",
-        "dash_footer": "وثيقة منشأة تلقائياً بواسطة نظام دعم القرار AgriScience.",
+        "dash_footer": "وثيقة منشأة تلقائياً بواسطة نظام دعم القرار Agrisense.",
 
         // Finance Page
         "fin_hero_title": "📊 تحليل مالي شامل",
@@ -1665,7 +1665,7 @@
         "plan_progress_label": "التقدم نحو التربة المثالية",
         "plan_timeline_title": "📅 الجدول الزمني",
         "plan_final_title": "🏆 تم الوصول إلى التربة المثالية!",
-        "plan_final_desc": "تم تأكيد التميز الزراعي من قبل AgriScience.",
+        "plan_final_desc": "تم تأكيد التميز الزراعي من قبل Agrisense.",
 
         // Task 1-10 Details
         "task_1_mat_0": "عربة يدوية",
@@ -1986,23 +1986,23 @@
         "Stress Hydrique": "الإجهاد المائي",
         "Indice Résilience": "مؤشر المرونة",
         "Indice Santé": "مؤشر الصحة",
-        "chat_support_title": "💬 دعم AgriScience",
+        "chat_support_title": "💬 دعم Agrisense",
         "chat_welcome": "مرحباً. كيف يمكننا مساعدتك؟",
         "chat_placeholder": "اكتب رسالتك...",
         "chat_send": "إرسال",
-        "chat_reply_standard": "شكراً لرسالتك. سيقوم خبير من AgriScience بالرد عليك قريباً بخصوص خطتك.",
+        "chat_reply_standard": "شكراً لرسالتك. سيقوم خبير من Agrisense بالرد عليك قريباً بخصوص خطتك.",
         "chat_reply_specific": "هل لديك سؤال محدد حول تعليمات اليوم؟",
         "feedback_title": "إرسال تعليق",
         "feedback_label": "رسالتك أو ملاحظاتك:",
         "feedback_placeholder": "أخبرنا برأيك...",
-        "feedback_success": "شكراً لرسالتك! تم إرسال تعليقك بنجاح إلى فريق AgriScience.",
+        "feedback_success": "شكراً لرسالتك! تم إرسال تعليقك بنجاح إلى فريق Agrisense.",
         "tooltip_support": "الدعم",
         "tooltip_feedback": "إرسال تعليق",
         "map_info_label": "معلومات",
         "map_guide_label": "دليل",
-        "nav_brand": "AgriScience الذكية",
+        "nav_brand": "Agrisense الذكية",
         "protocol_soil": "بروتوكول التربة",
-        "diagnostic_nova": "تشخيص AgriScience",
+        "diagnostic_nova": "تشخيص Agrisense",
         "agronomy_spatial": "الزراعة الفضائية",
         "OBJECTIF AGRO-SPATIAL ATTEINT": "تم تحقيق الهدف الزراعي المكاني",
         "DIAGNOSTIC INITIAL ET FONDATION": "التشخيص الأولي والتأسيس",

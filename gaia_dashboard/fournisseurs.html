@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>AGRISCIENCE - Fournisseurs</title>
+    <title>Agrisense - Fournisseurs</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/moroccan-theme.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -27,7 +27,7 @@
         .category-header {
             font-family: 'Orbitron', sans-serif;
             color: var(--moroccan-terracotta);
-            border-bottom: 2px solid rgba(196, 106, 58, 0.2);
+            border-bottom: 2px solid rgba(7, 33, 103, 0.2);
             padding-bottom: 15px;
             margin-top: 40px;
             margin-bottom: 25px;
@@ -37,7 +37,7 @@
         }
 
         .category-header span {
-            background: rgba(196, 106, 58, 0.1);
+            background: rgba(7, 33, 103, 0.1);
             color: var(--moroccan-terracotta);
             padding: 8px 15px;
             border-radius: 20px;
@@ -122,8 +122,8 @@
 
         .price-tag {
             font-weight: 700;
-            color: #C46A3A;
-            background: rgba(196,106,58,0.1);
+            color: #072167;
+            background: rgba(7, 33, 103,0.1);
             padding: 2px 8px;
             border-radius: 12px;
             font-size: 11px;
@@ -131,14 +131,14 @@
 
         .special-badge {
             display: inline-block;
-            background: rgba(201, 123, 90, 0.1);
-            color: #C97B5A;
+            background: rgba(7, 33, 103, 0.1);
+            color: #072167;
             padding: 5px 12px;
             border-radius: 12px;
             font-size: 11px;
             font-weight: 600;
             margin-top: 15px;
-            border: 1px solid rgba(201, 123, 90, 0.2);
+            border: 1px solid rgba(7, 33, 103, 0.2);
         }
 
         /* Float Support Button since we removed chat from sidebar */
@@ -146,7 +146,7 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background: #C97B5A;
+            background: #072167;
             color: #fff;
             border: none;
             border-radius: 30px;
@@ -155,7 +155,7 @@
             font-weight: 700;
             font-family: 'Orbitron', sans-serif;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(201,123,90,0.4);
+            box-shadow: 0 4px 15px rgba(7, 33, 103,0.4);
             z-index: 2001;
             display: flex;
             align-items: center;
@@ -193,7 +193,7 @@
         <!-- Sidebar Navigation -->
         <div class="sidebar-nav">
             <button class="sidebar-toggle-btn" onclick="document.querySelector('.dashboard-container').classList.toggle('sidebar-collapsed'); document.querySelector('.dashboard-container').classList.toggle('sidebar-open')" title="Toggle Sidebar"></button>
-            <div class="sidebar-header"><span class="gaia-text">Terra</span><span class="eye-text">nova</span></div>
+            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">sense</span></div>
             <div class="nav-item" onclick="window.location.href='index.html'" data-tooltip="Dashboard" data-i18n-tooltip="nav_dashboard">
                 <span class="nav-icon">🏠</span> <span class="nav-text" data-i18n="nav_dashboard">Dashboard</span>
             </div>
@@ -691,17 +691,17 @@
     </div>
 
     <!-- Chat Widget -->
-    <div id="chat-widget" style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #C46A3A; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
-        <div style="background:linear-gradient(90deg, #C46A3A, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
+    <div id="chat-widget" style="display:none; position:fixed; bottom:100px; right:25px; width:350px; height:450px; background:#f0f9f7; border:2px solid #072167; border-radius:15px; flex-direction:column; z-index:2000; box-shadow:0 10px 40px rgba(0,0,0,0.1); overflow:hidden; backdrop-filter:blur(20px); opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease;">
+        <div style="background:linear-gradient(90deg, #072167, #C9A227); color:#f0ebe2; padding:15px; font-weight:700; font-family:'Orbitron', sans-serif; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(201, 162, 39, 0.3);">
             <span data-i18n="chat_title">💬 SUPPORT </span>
             <button onclick="toggleChat()" style="background:none; border:none; color:#f0ebe2; cursor:pointer; font-weight:700; font-size:18px;">✕</button>
         </div>
         <div id="chat-messages" style="flex:1; padding:15px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; font-size:13px; color:#111; background:#e8f5f2; background-image:url('../images/moroccan_zellige.png'); background-size:100px; background-blend-mode:multiply;">
-            <div style="margin-bottom:10px;"><span class="crop-aware-welcome" data-i18n="chat_welcome" style="background:rgba(15, 107, 101, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">Bonjour. Comment pouvons-nous vous aider ?</span></div>
+            <div style="margin-bottom:10px;"><span class="crop-aware-welcome" data-i18n="chat_welcome" style="background:rgba(15, 107, 101, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(7, 33, 103, 0.2)">Bonjour. Comment pouvons-nous vous aider ?</span></div>
         </div>
         <div style="padding:15px; border-top:1px solid rgba(201, 162, 39, 0.2); display:flex; gap:10px; background:#f0f9f7;">
             <input type="text" id="chat-input" data-i18n-placeholder="chat_placeholder" placeholder="Tapez votre message..." style="flex:1; background:#FFFFFF; border:1px solid rgba(201, 162, 39, 0.3); border-radius:8px; padding:8px 12px; color:#111; outline:none;" onkeypress="if(event.key === 'Enter') sendMessage()">
-            <button onclick="sendMessage()" data-i18n="chat_send" style="background:#C46A3A; color:#FFFFFF; border:none; border-radius:8px; padding:8px 15px; cursor:pointer; font-weight:700; transition:all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#d47a4a';" onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#C46A3A';">ENVOYER</button>
+            <button onclick="sendMessage()" data-i18n="chat_send" style="background:#072167; color:#FFFFFF; border:none; border-radius:8px; padding:8px 15px; cursor:pointer; font-weight:700; transition:all 0.3s;" onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#0a3185';" onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#072167';">ENVOYER</button>
         </div>
     </div>
 
@@ -732,11 +732,11 @@
 
             setTimeout(() => {
                 const config = CROP_CONFIG[getSelectedCrop()];
-                let reply = "Merci pour votre message. Un expert AgriScience va vous répondre sous peu.";
+                let reply = "Merci pour votre message. Un expert Agrisense va vous répondre sous peu.";
                 if (userText.includes("plan") || userText.includes(config.name.toLowerCase())) reply = `Le plan ${config.display} est optimisé pour votre zone. Souhaitez-vous des détails sur un jour précis ?`;
                 if (userText.includes("prix") || userText.includes("coût")) reply = "Les coûts sont estimés selon votre surface. Contactez-nous pour un devis précis.";
                 
-                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(201, 123, 90, 0.1); color:#C97B5A; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(201, 123, 90, 0.2)">${reply}</span></div>`;
+                msgs.innerHTML += `<div style="margin-bottom:10px;"><span style="background:rgba(7, 33, 103, 0.1); color:#072167; padding:8px 14px; border-radius:12px; font-size:12px; display:inline-block; border:1px solid rgba(7, 33, 103, 0.2)">${reply}</span></div>`;
                 msgs.scrollTop = msgs.scrollHeight;
             }, 1000);
         }
@@ -760,7 +760,7 @@
             btn.disabled = true;
             
             setTimeout(() => {
-                alert('Merci pour votre message ! Votre commentaire a été envoyé avec succès à l\'équipe AgriScience.');
+                alert('Merci pour votre message ! Votre commentaire a été envoyé avec succès à l\'équipe Agrisense.');
                 document.getElementById('feedback-text').value = '';
                 toggleFeedback();
                 btn.innerText = originalText;

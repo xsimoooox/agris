@@ -1,15 +1,18 @@
 // lang-system.js
 
-const LANG_KEY = 'agriscience_lang';
-const LEGACY_LANG_KEY = 'terranova_lang';
+const LANG_KEY = 'agrisense_lang';
+const LEGACY_LANG_KEYS = ['agriscience_lang', 'terranova_lang'];
 
 function getSavedLang() {
-    return localStorage.getItem(LANG_KEY) || localStorage.getItem(LEGACY_LANG_KEY) || 'fr';
+    return localStorage.getItem(LANG_KEY)
+        || localStorage.getItem(LEGACY_LANG_KEYS[0])
+        || localStorage.getItem(LEGACY_LANG_KEYS[1])
+        || 'fr';
 }
 
 function saveLang(lang) {
     localStorage.setItem(LANG_KEY, lang);
-    localStorage.setItem(LEGACY_LANG_KEY, lang);
+    LEGACY_LANG_KEYS.forEach((key) => localStorage.setItem(key, lang));
 }
 
 function applyLanguage(lang) {
@@ -77,7 +80,7 @@ function applyLanguage(lang) {
         });
 
         // Dispatch global event so local page scripts can react
-        window.dispatchEvent(new CustomEvent('agriscienceLanguageChanged', { detail: lang }));
+        window.dispatchEvent(new CustomEvent('agrisenseLanguageChanged', { detail: lang }));
 
         // Apply fade-in
         document.body.style.opacity = '1';

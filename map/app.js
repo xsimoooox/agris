@@ -1,4 +1,4 @@
-﻿const API_BASE_URL = 'http://127.0.0.1:5001';
+const API_BASE_URL = 'http://127.0.0.1:5001';
 const API_URL = `${API_BASE_URL}/api/analyze`;
 
 let currentIndicator = 'NDVI';
@@ -31,7 +31,7 @@ const drawControl = new L.Control.Draw({
         circlemarker: false,
         rectangle: {
             shapeOptions: {
-                color: '#C97B5A',
+                color: '#072167',
                 weight: 2
             }
         }
@@ -90,7 +90,7 @@ function updateDateFromSlider() {
 
     const display = document.getElementById('date-display');
     if (display) {
-        const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
+        const lang = localStorage.getItem('agrisense_lang') || localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
         const locale = lang === 'ar' ? 'ar-MA' : 'fr-FR';
         display.textContent = date.toLocaleDateString(locale, { month: 'long', year: 'numeric' });
     }
@@ -205,7 +205,7 @@ document.getElementById('draw-zone-custom').addEventListener('click', function (
 
     if (isCustomDrawing) {
         btn.classList.add('active'); // Style for active state
-        btn.style.color = "#C97B5A";
+        btn.style.color = "#072167";
         btn.style.backgroundColor = "rgba(74, 222, 128, 0.1)";
         if (statusMsg) updateStatus('analysis_draw_mode');
         map.getContainer().style.cursor = 'crosshair';
@@ -243,7 +243,7 @@ map.on('click', function (e) {
     // Add marker
     const marker = L.circleMarker(latlng, {
         radius: 4,
-        color: '#C97B5A',
+        color: '#072167',
         fillColor: '#000',
         fillOpacity: 1,
         weight: 2
@@ -254,9 +254,9 @@ map.on('click', function (e) {
     if (customPoints.length > 1) {
         if (tempPolygon) map.removeLayer(tempPolygon);
         tempPolygon = L.polygon(customPoints, {
-            color: '#C97B5A',
+            color: '#072167',
             weight: 2,
-            fillColor: '#C97B5A',
+            fillColor: '#072167',
             fillOpacity: 0.2,
             dashArray: '5, 10'
         }).addTo(map);
@@ -268,9 +268,9 @@ function finalizeCustomZone() {
     if (currentLayer) map.removeLayer(currentLayer);
 
     const finalPolygon = L.polygon(customPoints, {
-        color: '#C97B5A',
+        color: '#072167',
         weight: 2,
-        fillColor: '#C97B5A',
+        fillColor: '#072167',
         fillOpacity: 0.3
     }).addTo(drawnItems);
 
@@ -649,7 +649,7 @@ function updateStatus(key, extra = "") {
     const statusMsg = document.getElementById('status-msg');
     if (!statusMsg) return;
     
-    const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
+    const lang = localStorage.getItem('agrisense_lang') || localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
     let text = (langData[lang] && langData[lang][key]) ? langData[lang][key] : key;
     if (extra) text += " " + extra;
     
@@ -657,10 +657,10 @@ function updateStatus(key, extra = "") {
 }
 
 // Global lang system listener
-window.addEventListener('agriscienceLanguageChanged', (e) => {
+window.addEventListener('agrisenseLanguageChanged', (e) => {
     updateStatus(lastStatusKey, lastStatusExtra);
 });
-window.addEventListener('agriscienceLanguageChanged', (e) => {
+window.addEventListener('agrisenseLanguageChanged', (e) => {
     updateStatus(lastStatusKey, lastStatusExtra);
 });
 

@@ -1,5 +1,5 @@
-﻿/* ============================================================
-   AGRISCIENCE — RESPONSIVE STYLES (Mobile-First)
+/* ============================================================
+   AGRISENSE — RESPONSIVE STYLES (Mobile-First)
    Breakpoints:
      Mobile : 320px – 480px
      Tablet : 481px – 1024px
@@ -32,7 +32,7 @@ body {
   top: 12px;
   left: 12px;
   z-index: 9999;
-  background: var(--moroccan-emerald, #C97B5A);
+  background: var(--moroccan-emerald, #072167);
   border: none;
   border-radius: 10px;
   width: 46px;

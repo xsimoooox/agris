@@ -1,5 +1,5 @@
 /**
- * AgriScience — Crop & Terminology Manager
+ * Agrisense — Crop & Terminology Manager
  * Dynamically updates all UI elements, scores, plans, and metrics based on selected crop.
  */
 
@@ -10,10 +10,10 @@ function updatePageTerminology() {
     const config = getCropConfig(cropId);
     if (!config) return;
 
-    const lang = (typeof getSavedLang === 'function') ? getSavedLang() : (localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr');
+    const lang = (typeof getSavedLang === 'function') ? getSavedLang() : (localStorage.getItem('agrisense_lang') || localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr');
     const isAr = lang === 'ar';
 
-    // 1. BRANDING: Replace any residual "TerraNova" occurrences in visible UI
+    // 1. BRANDING: Replace residual TerraNova / AgriScience occurrences in visible UI
     const allTextElements = document.querySelectorAll('h1, h2, h3, h4, h5, p, span, div, button, li, a, label, .nav-text, .metric-label, .metric-note, .ref-value');
     allTextElements.forEach(el => {
         // Skip script/style tags or inputs
@@ -21,8 +21,10 @@ function updatePageTerminology() {
 
         // Clean up branding in text nodes if present
         if (el.children.length === 0) {
-            if (el.textContent.includes('TerraNova') || el.textContent.includes('Terranova') || el.textContent.includes('TERRANOVA')) {
-                el.textContent = el.textContent.replace(/TerraNova|Terranova/g, 'AgriScience').replace(/TERRANOVA/g, 'AGRISCIENCE');
+            if (/TerraNova|Terranova|TERRANOVA|AgriScience|AGRISCIENCE/i.test(el.textContent)) {
+                el.textContent = el.textContent
+                    .replace(/TerraNova|Terranova|AgriScience/g, 'Agrisense')
+                    .replace(/TERRANOVA|AGRISCIENCE/g, 'AGRISENSE');
             }
             if (el.textContent.includes('Matching') || el.textContent.includes('matching')) {
                 el.textContent = el.textContent.replace(/Score de [Mm]atching [Gg]lobal/g, isAr ? 'نسبة التقدم الزراعي' : 'Score d’avancement')
@@ -38,9 +40,9 @@ function updatePageTerminology() {
         const eye = header.querySelector('.eye-text');
         if (gaia && eye) {
             gaia.textContent = 'Agri';
-            eye.textContent = 'Science';
-        } else if (header.children.length === 0 || header.textContent.toLowerCase().includes('terra')) {
-            header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">Science</span>';
+            eye.textContent = 'sense';
+        } else if (header.children.length === 0 || header.textContent.toLowerCase().includes('terra') || header.textContent.toLowerCase().includes('science')) {
+            header.innerHTML = '<span class="gaia-text">Agri</span><span class="eye-text">sense</span>';
         }
     });
 
@@ -55,7 +57,7 @@ function updatePageTerminology() {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: rgba(201, 123, 90, 0.08);
+            background: rgba(7, 33, 103, 0.08);
             border: 1px solid rgba(201, 162, 39, 0.35);
             padding: 8px 18px;
             border-radius: 25px;
@@ -63,8 +65,8 @@ function updatePageTerminology() {
             margin-bottom: 25px;
             font-size: 14px;
             font-weight: 600;
-            color: #C97B5A;
-            box-shadow: 0 4px 15px rgba(201, 123, 90, 0.05);
+            color: #072167;
+            box-shadow: 0 4px 15px rgba(7, 33, 103, 0.05);
             transition: all 0.3s ease;
         `);
         mainTitle.parentNode.insertBefore(cropBadge, mainTitle.nextSibling);
@@ -74,7 +76,7 @@ function updatePageTerminology() {
         cropBadge.innerHTML = `
             <span style="font-size: 1.3rem;">${config.icon}</span>
             <span>${labelText} <strong style="color: #C9A227; font-size: 15px;">${config.display}</strong></span>
-            <span style="background: #C97B5A; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
+            <span style="background: #072167; color: #fff; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase;">Actif</span>
         `;
     }
 
@@ -204,8 +206,8 @@ function updatePageTerminology() {
         const recSection = document.getElementById('crop-recommendations-container');
         if (recSection) {
             recSection.innerHTML = config.recommendations.map(rec => `
-                <div class="card" style="margin-bottom: 15px; border-left: 4px solid #C97B5A;">
-                    <h4 style="margin: 0 0 8px 0; color: #C97B5A;">💡 ${rec.title}</h4>
+                <div class="card" style="margin-bottom: 15px; border-left: 4px solid #072167;">
+                    <h4 style="margin: 0 0 8px 0; color: #072167;">💡 ${rec.title}</h4>
                     <p style="margin: 0; color: #555; font-size: 14px; line-height: 1.5;">${rec.desc}</p>
                 </div>
             `).join('');
@@ -213,12 +215,12 @@ function updatePageTerminology() {
     }
 
     // 8. UPDATE DOCUMENT TITLE
-    if (document.title.includes('TERRANOVA') || document.title.includes('Terranova')) {
-        document.title = document.title.replace(/TERRANOVA|Terranova/g, 'AGRISCIENCE');
+    if (/TERRANOVA|Terranova|AGRISCIENCE|AgriScience/i.test(document.title)) {
+        document.title = document.title.replace(/TERRANOVA|Terranova|AGRISCIENCE|AgriScience/gi, 'Agrisense');
     }
 }
 
 // Attach listener on DOMContentLoaded and load
 document.addEventListener('DOMContentLoaded', updatePageTerminology);
 window.addEventListener('load', updatePageTerminology);
-window.addEventListener('agriscienceLanguageChanged', updatePageTerminology);
+window.addEventListener('agrisenseLanguageChanged', updatePageTerminology);

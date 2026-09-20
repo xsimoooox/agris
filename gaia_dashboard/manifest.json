@@ -1,11 +1,11 @@
-﻿{
-  "name": "AgriScience Dashboard",
-  "short_name": "AgriScience",
+{
+  "name": "Agrisense Dashboard",
+  "short_name": "Agrisense",
   "description": "Dashboard Agro-Spatial pour la gestion agricole",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#F8F4EA",
-  "theme_color": "#C97B5A",
+  "theme_color": "#072167",
   "icons": [
     {
       "src": "../images/imagefav.png",

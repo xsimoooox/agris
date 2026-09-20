@@ -1,14 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="icon" type="image/png" href="../images/imagefav.png">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
     <link rel="manifest" href="manifest.json">
-    <title>AGRISCIENCE - Analyse Financière</title>
+    <title>Agrisense - Analyse Financière</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@400;700&display=swap"
         rel="stylesheet">
@@ -19,16 +19,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         :root {
-            --emerald: #C97B5A;
+            --emerald: #072167;
             --gold: #C9A227;
-            --terracotta: #C46A3A;
+            --terracotta: #072167;
             --light-bg: #F8F4EA;
             --card-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
         }
 
         /* ─── HERO BANNER ─── */
         .fin-hero {
-            background: linear-gradient(135deg, #0a4a3d 0%, #C97B5A 50%, #1a7a68 100%);
+            background: linear-gradient(135deg, #0a4a3d 0%, #072167 50%, #1a7a68 100%);
             border-radius: 20px;
             padding: 40px 45px;
             margin-bottom: 35px;
@@ -122,7 +122,7 @@
         }
 
         .kpi-card.green {
-            border-top-color: #C97B5A;
+            border-top-color: #072167;
         }
 
         .kpi-card.info {
@@ -138,7 +138,7 @@
             justify-content: center;
             font-size: 22px;
             margin: 0 auto 12px;
-            background: rgba(201, 123, 90, .08);
+            background: rgba(7, 33, 103, .08);
         }
 
         .kpi-card.gold .kpi-icon {
@@ -146,7 +146,7 @@
         }
 
         .kpi-card.terra .kpi-icon {
-            background: rgba(196, 106, 58, .12);
+            background: rgba(7, 33, 103, .12);
         }
 
         .kpi-card.green .kpi-icon {
@@ -209,16 +209,16 @@
             gap: 12px;
             margin: 0 0 25px;
             padding-bottom: 16px;
-            border-bottom: 2px solid rgba(196, 106, 58, .15);
+            border-bottom: 2px solid rgba(7, 33, 103, .15);
         }
 
         .fin-section-title .badge {
-            background: rgba(196, 106, 58, .1);
+            background: rgba(7, 33, 103, .1);
             color: var(--terracotta);
             font-size: 10px;
             padding: 4px 12px;
             border-radius: 20px;
-            border: 1px solid rgba(196, 106, 58, .25);
+            border: 1px solid rgba(7, 33, 103, .25);
         }
 
         /* ─── CHARTS ─── */
@@ -271,7 +271,7 @@
         }
 
         .fin-table th {
-            background: rgba(201, 123, 90, .08);
+            background: rgba(7, 33, 103, .08);
             color: var(--emerald);
             padding: 12px 16px;
             text-align: left;
@@ -299,8 +299,8 @@
         .fin-table .total-row td {
             font-weight: 700;
             color: var(--terracotta);
-            background: rgba(196, 106, 58, .05);
-            border-top: 2px solid rgba(196, 106, 58, .3);
+            background: rgba(7, 33, 103, .05);
+            border-top: 2px solid rgba(7, 33, 103, .3);
         }
 
         .fin-table td.positive {
@@ -315,7 +315,7 @@
 
         .fin-table .highlight-row td {
             background: rgba(76, 175, 80, .08);
-            border-left: 4px solid #C97B5A;
+            border-left: 4px solid #072167;
         }
 
         .fin-table td .badge-tag {
@@ -655,9 +655,9 @@
     <!-- PWA Tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="AgriScience">
+    <meta name="apple-mobile-web-app-title" content="Agrisense">
     <link rel="apple-touch-icon" href="../images/imagefav.png">
-    <meta name="theme-color" content="#C97B5A">
+    <meta name="theme-color" content="#072167">
     <link rel="manifest" href="manifest.json">
 </head>
 
@@ -674,7 +674,7 @@
             <button class="sidebar-toggle-btn"
                 onclick="document.querySelector('.dashboard-container').classList.toggle('sidebar-collapsed'); document.querySelector('.dashboard-container').classList.toggle('sidebar-open')"
                 title="Toggle Sidebar"></button>
-            <div class="sidebar-header"><span class="gaia-text">Terra</span><span class="eye-text">nova</span></div>
+            <div class="sidebar-header"><span class="gaia-text">Agri</span><span class="eye-text">sense</span></div>
             <div class="nav-item" onclick="window.location.href='index.html'" data-tooltip="Dashboard" data-i18n="nav_dashboard"><span
                     class="nav-icon">🏠</span> <span class="nav-text">Dashboard</span></div>
             <div class="nav-item" onclick="window.location.href='plan_parfait_arganier.html'"
@@ -927,9 +927,9 @@
         4376025 + 1614000 * 15,
             36656025];
 
-        const EMERALD = '#C97B5A';
+        const EMERALD = '#072167';
         const GOLD = '#C9A227';
-        const TERRACOTTA = '#C46A3A';
+        const TERRACOTTA = '#072167';
 
         const chartDefaults = {
             font: { family: 'Inter, sans-serif' },
@@ -949,9 +949,9 @@
                     label: 'Revenu Net (DH)',
                     data: revenueNet,
                     backgroundColor: years.map((_, i) =>
-                        i === 0 ? 'rgba(196,106,58,.5)' :
+                        i === 0 ? 'rgba(7, 33, 103,.5)' :
                             i < 2 ? 'rgba(201,162,39,.6)' :
-                                'rgba(201,123,90,.7)'
+                                'rgba(7, 33, 103,.7)'
                     ),
                     borderColor: years.map((_, i) =>
                         i === 0 ? TERRACOTTA :
@@ -997,7 +997,7 @@
                     label: 'Flux cumulé',
                     data: [-8875, -7875, 887625, 1889625, 3032025, 4376025, 36656025],
                     borderColor: EMERALD,
-                    backgroundColor: 'rgba(201,123,90,.08)',
+                    backgroundColor: 'rgba(7, 33, 103,.08)',
                     borderWidth: 3,
                     pointBackgroundColor: [-8875, -7875, 887625, 1889625, 3032025].map(v => v < 0 ? TERRACOTTA : EMERALD),
                     pointRadius: 6,
@@ -1072,7 +1072,7 @@
         function renderBudgetBars() {
             const barsEl = document.getElementById('budgetBars');
             if (!barsEl) return;
-            const lang = localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
+            const lang = localStorage.getItem('agrisense_lang') || localStorage.getItem('agriscience_lang') || localStorage.getItem('terranova_lang') || 'fr';
             const sectionVisible = barsEl.closest('.reveal').classList.contains('visible');
             barsEl.innerHTML = '';
             const items = [
@@ -1107,7 +1107,7 @@
             const roiData = [
                 { yearKey: 'fin_year_0', amount: -8875, label: '–8 875 DH', color: '#c62828', pct: 2 },
                 { yearKey: 'fin_year_1', amount: -7875, label: '–7 875 DH', color: '#ef9a9a', pct: 4 },
-                { yearKey: 'fin_year_2', amount: 887625, label: '+887 625 DH ✅', color: '#C97B5A', pct: 35 },
+                { yearKey: 'fin_year_2', amount: 887625, label: '+887 625 DH ✅', color: '#072167', pct: 35 },
                 { yearKey: 'fin_year_3', amount: 1889625, label: '+1,89 M DH', color: EMERALD, pct: 55 },
                 { yearKey: 'fin_year_5', amount: 4376025, label: '+4,38 M DH', color: EMERALD, pct: 75 },
                 { yearKey: 'fin_year_25', amount: 36656025, label: '+36,66 M DH 🏆', color: GOLD, pct: 100 },
@@ -1141,11 +1141,11 @@
                     data: [0, 5000, 5600, 6380, 7500, 9000],
                     backgroundColor: [
                         'rgba(201,162,39,.25)',
-                        'rgba(201,123,90,.4)',
-                        'rgba(201,123,90,.55)',
-                        'rgba(201,123,90,.7)',
-                        'rgba(201,123,90,.85)',
-                        'rgba(201,123,90,1)'
+                        'rgba(7, 33, 103,.4)',
+                        'rgba(7, 33, 103,.55)',
+                        'rgba(7, 33, 103,.7)',
+                        'rgba(7, 33, 103,.85)',
+                        'rgba(7, 33, 103,1)'
                     ],
                     borderColor: [GOLD, EMERALD, EMERALD, EMERALD, EMERALD, EMERALD],
                     borderWidth: 2,
@@ -1183,8 +1183,8 @@
                     data: [1000, 895500, 3488400, 32280000],
                     backgroundColor: [
                         'rgba(201,162,39,.4)',
-                        'rgba(196,106,58,.6)',
-                        'rgba(201,123,90,.6)',
+                        'rgba(7, 33, 103,.6)',
+                        'rgba(7, 33, 103,.6)',
                         EMERALD
                     ],
                     borderColor: '#fff',
@@ -1254,7 +1254,7 @@
         /* ============================================================
            DYNAMIC LANGUAGE SWITCHER FOR CHARTS & LISTS
            ============================================================ */
-        window.addEventListener('agriscienceLanguageChanged', (e) => {
+        window.addEventListener('agrisenseLanguageChanged', (e) => {
             const lang = e.detail;
             const data = langData[lang];
 
