@@ -206,8 +206,8 @@ const CROP_CONFIG = {
     },
     cereales: {
         id: "cereales",
-        name: "Céréales",
-        display: "Céréales",
+        name: "Blé",
+        display: "Blé",
         terroir: "Grandes cultures du Chaouia & Doukkala",
         production: "Blé dur, blé tendre et orge",
         botanical: "Triticum durum & Hordeum vulgare",
